@@ -1,5 +1,6 @@
 import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
 import Hero from '@/Components/Hero/Hero'
+import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
 import Navbar from '@/Components/Navbar/Navbar'
 import React from 'react'
 
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Navbar />
       {/* <Hero /> */}
       <EssentialFeatures/>
+      <MonetizationSection/>
     </div>
   )
 }

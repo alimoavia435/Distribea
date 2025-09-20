@@ -20,9 +20,10 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
   mb-4">
           Essential Features
         </h2>
-        <p className="text-gray-400 text-base md:text-lg mb-16"  style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
-          Key Features to Protect Your Content, Avoid Copyright Strikes, and Maximize Earnings
-        </p>
+<p className="text-[#CECFD2] text-[18px] md:text-[20px] lg:text-[22px] font-normal leading-[28px] text-center mb-16 font-[SpaceGrotesk]">
+  Key Features to Protect Your Content, Avoid Copyright Strikes, and Maximize Earnings
+</p>
+
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
