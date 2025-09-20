@@ -20,7 +20,32 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  /* color: var(--foreground); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+@font-face {
+  font-family: "Space Grotesk_Light";
+  src: url('/FontFamily/SpaceGrotesk-Light.ttf') format("truetype");
+  font-display: block;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url('/FontFamily/SpaceGrotesk-Regular.ttf') format("truetype");
+  font-display: block;
+}
+@font-face {
+  font-family: "Space Grotesk_Medium";
+  src: url('/FontFamily/SpaceGrotesk-Medium.ttf') format("truetype");
+  font-display: block;
+}
+@font-face {
+  font-family: "Space Grotesk_Semibold";
+  src: url('/FontFamily/SpaceGrotesk-SemiBold.ttf') format("truetype");
+  font-display: block;
+}
+@font-face {
+  font-family: "Space Grotesk_Bold";
+  src: url('/FontFamily/SpaceGrotesk-Bold.ttf') format("truetype");
+  font-display: block;
 }
