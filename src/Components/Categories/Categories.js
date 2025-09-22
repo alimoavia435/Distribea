@@ -26,7 +26,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
 {/* Categories */}
 <div className="relative z-1 w-full overflow-x-auto scrollbar-hide ">
-  <div className="flex gap-6  mx-auto  md:px-0">
+  <div className="flex  gap-6  mx-auto  md:px-0 lg:justify-center">
 
     {/* Card 1 - Genres */}
     <div
