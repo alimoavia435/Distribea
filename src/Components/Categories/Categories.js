@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-   <section className=" text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
+   <section className="relative bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
        <h1   style={{ fontFamily: 'Space Grotesk_Bold',textTransform: 'capitalize' }}  className="font-Space Grotesk_Bold 
@@ -167,7 +167,13 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 </div>
 
 
-
+   <Image
+          src="/images/cat.png"
+          alt="Genres"
+          width={220}
+          height={227}
+          className="w-full h-full object-cover absolute top-[-240px] left-[-550px] z-10"
+        />
     </section>
   );
 }
