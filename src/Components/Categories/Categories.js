@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-   <section className="bg-black text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
+   <section className=" text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
        <h1   style={{ fontFamily: 'Space Grotesk_Bold',textTransform: 'capitalize' }}  className="font-Space Grotesk_Bold 
