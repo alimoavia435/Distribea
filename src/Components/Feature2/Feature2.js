@@ -3,7 +3,7 @@ import React from 'react'
 const Feature2 = () => {
   return (
     <div
-      className=' flex flex-col px-[86px] py-[128px] bg-no-repeat bg-[length:100%_100%] gap-[80px] max-[768px]:px-[25px] max-[768px]:py-[50px] max-[768px]:gap-[50px]'
+      className=' flex flex-col px-[86px] py-[128px] bg-no-repeat bg-[length:100%_100%] gap-[80px] max-[768px]:px-[25px] max-[768px]:py-[50px] max-[768px]:gap-[50px] max-[575px]:gap-[35px] max-[768px]:bg-cover max-[768px]:bg-center'
       style={{ backgroundImage: "url('/Images/fbg.png')" }}
     >
       <div className='flex flex-col gap-[20px] max-w-[512px]'>
@@ -18,21 +18,21 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
   leading-[110%] 
   tracking-[-1px] 
   text-left 
-  text-[#F7F7F7]'
+  text-[#F7F7F7] max-[600px]:text-center '
         >
           Royalty Free Music Designed for Content Creators
         </h2>
         <p
-          className=' mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[20px] lg:text-[18px]  font-normal leading-[28px] text-left ml-0'
+          className=' mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[20px] lg:text-[18px]  font-normal leading-[28px] text-left m-0 max-[600px]:text-center '
           style={{ fontFamily: 'Space Grotesk', textTransform: 'capitalize' }}
         >
           The freedom to create, the security to grow.
         </p>
       </div>
       <div className='flex flex-col gap-[48px] items-start max-w-[480px] max-[768px]:gap-[20px]'>
-        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px]'>
+        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px] max-[600px]:flex-col max-[600px]:items-center'>
           <img src='/Images/feature/d.svg' alt='' />
-          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px]'>
+          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px] max-[600px]:items-center max-[600px]:pt-0'>
             <p
               className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
@@ -49,9 +49,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             </p>
           </div>
         </div>
-        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px]'>
+        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px] max-[600px]:flex-col max-[600px]:items-center'>
           <img src='/Images/feature/m.svg' alt='' />
-          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px]'>
+          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px]  max-[600px]:items-center max-[600px]:pt-0'>
             <p
               className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
@@ -68,9 +68,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             </p>
           </div>
         </div>
-        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px]'>
+        <div className='flex items-start gap-[20px] max-[768px]:gap-[15px] max-[600px]:flex-col max-[600px]:items-center'>
           <img src='/Images/feature/mn.svg' alt='' />
-          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px]'>
+          <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px] max-[600px]:items-center max-[600px]:pt-0'>
             <p
               className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
