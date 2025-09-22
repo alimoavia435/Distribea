@@ -1,5 +1,6 @@
 import Categories from '@/Components/Categories/Categories'
 import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
+import Everything from '@/Components/Everything/Everything'
 import Hero from '@/Components/Hero/Hero'
 import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
 import Navbar from '@/Components/Navbar/Navbar'
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Hero />
       <EssentialFeatures/>
       <Categories/>
+      <Everything/>
     </div>
   )
 }
