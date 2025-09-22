@@ -172,7 +172,14 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           alt="Genres"
           width={220}
           height={227}
-          className="w-full h-full object-cover absolute top-[-240px] left-[-550px] z-10"
+          className="
+    w-full h-full object-cover absolute 
+  top-[-150px] left-[-0px]    /* mobile ke liye chhoti shift */
+    sm:top-[-150px] sm:left-[-250px] 
+    md:top-[-200px] md:left-[-400px] 
+    lg:top-[-240px] lg:left-[-550px] /* large screen pe original */
+    z-10
+  "
         />
     </section>
   );
