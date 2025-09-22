@@ -25,7 +25,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
       </div>
 
 {/* Categories */}
-<div className="w-full overflow-x-auto scrollbar-hide">
+<div className="w-full overflow-x-auto scrollbar-hide releative z-2">
   <div className="flex gap-6  mx-auto  md:px-0">
 
     {/* Card 1 - Genres */}
@@ -178,7 +178,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
     sm:top-[-150px] sm:left-[-250px] 
     md:top-[-200px] md:left-[-400px] 
     lg:top-[-240px] lg:left-[-550px] /* large screen pe original */
-    z-10
+    z-0
   "
         />
     </section>
