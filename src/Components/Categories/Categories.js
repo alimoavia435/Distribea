@@ -5,20 +5,20 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-    <section className="bg-black text-white px-6 md:px-20 py-16">
+   <section className="bg-black text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
        <h1   style={{ fontFamily: 'Space Grotesk_Bold',textTransform: 'capitalize' }}  className="font-Space Grotesk_Bold 
   font-bold 
-text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
+text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
   leading-[110%] 
   tracking-[-1px] 
   text-center 
   text-[#F7F7F7] 
-  mb-4">
+  mb-5">
           The Ultimate Sound Library <br /> for Creators
         </h1>
-        <p className=" mx-auto max-w-[900px]  text-[#CECFD2] text-[18px] md:text-[20px] lg:text-[18px] font-normal leading-[28px] text-center mb-16 " style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
+        <p className=" mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[20px] lg:text-[18px] mb-12   lg:mb-20  font-normal leading-[28px] text-center  " style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
           Discover royalty-free music by genre, mood, and culture — the perfect
           sound library for creators, artists, and storytellers worldwide
         </p>
@@ -26,7 +26,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
 
 {/* Categories */}
 <div className="w-full overflow-x-auto scrollbar-hide">
-  <div className="flex gap-6 max-w-6xl mx-auto px-4 md:px-0">
+  <div className="flex gap-6  mx-auto  md:px-0">
 
     {/* Card 1 - Genres */}
     <div
@@ -42,14 +42,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
     >
       <div className="w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]">
         <Image
-          src="/images/card1.svg"
+          src="/images/c1.png"
           alt="Genres"
           width={220}
           height={227}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex-1 flex items-center justify-center text-center font-medium">
+      <div     style={{
+        fontFamily: 'Space Grotesk_Medium'}} className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]" >
         Genres
       </div>
     </div>
@@ -68,14 +69,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
     >
       <div className="w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]">
         <Image
-          src="/images/card1.svg"
+          src="/images/c2.png"
           alt="Moods"
           width={260}
           height={280}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex-1 flex items-center justify-center text-center font-medium">
+      <div style={{
+        fontFamily: 'Space Grotesk_Medium'}} className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]">
         Moods
       </div>
     </div>
@@ -94,14 +96,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
     >
       <div className="w-full h-[227px] sm:h-[320px] overflow-hidden rounded-t-[17.93px]">
         <Image
-          src="/images/card1.svg"
+          src="/images/c3.png"
           alt="Creators"
           width={290}
           height={320}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex-1 flex items-center justify-center text-center font-medium">
+      <div style={{
+        fontFamily: 'Space Grotesk_Medium'}} className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]">
         Creators
       </div>
     </div>
@@ -120,14 +123,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
     >
       <div className="w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]">
         <Image
-          src="/images/card1.svg"
+          src="/images/c2.png"
           alt="Culture"
           width={260}
           height={280}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex-1 flex items-center justify-center text-center font-medium">
+      <div style={{
+        fontFamily: 'Space Grotesk_Medium'}} className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]">
         Culture
       </div>
     </div>
@@ -146,14 +150,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
     >
       <div className="w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]">
         <Image
-          src="/images/card1.svg"
+          src="/images/c4.png"
           alt="Lifestyle"
           width={220}
           height={227}
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex-1 flex items-center justify-center text-center font-medium">
+      <div style={{
+        fontFamily: 'Space Grotesk_Medium'}} className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]">
         Lifestyle
       </div>
     </div>

@@ -5,22 +5,21 @@ import Image from "next/image";
 const MonetizationSection = () => {
   return (
     <div className=" text-white 
-             py-20 px-6 md:px-12 lg:px-20 
-             xxl:pt-[160px] xxl:pb-[96px] text-center ">
+           text-center  px-[16px] py-[30] lg:px-[56px] lg:pt-[96px] lg:pb-[96px]">
       {/* Heading */}
  <h2   style={{ fontFamily: 'Space Grotesk_Bold',textTransform: 'capitalize' }}  className="font-Space Grotesk_Bold 
   font-bold 
-text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
+text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
   leading-[110%] 
   tracking-[-1px] 
   text-center 
   text-[#F7F7F7] 
-  mb-4">
+  mb-5">
         Monetization Without Limits
       </h2>
 
       {/* Subtext */}
-<p className=" mx-auto max-w-[900px]  text-[#CECFD2] text-[18px] md:text-[20px] lg:text-[22px] font-normal leading-[28px] text-center mb-16 " style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
+ <p className=" mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[20px] lg:text-[18px] mb-12   lg:mb-20  font-normal leading-[28px] text-center  " style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
         Distribute to all major platforms and streaming services including Apple, Spotify,
         YouTube, Deezer, Amazon, TikTok, Facebook, Instagram, and many more.
       </p>
