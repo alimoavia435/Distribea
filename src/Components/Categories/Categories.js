@@ -7,7 +7,7 @@ export default function Categories() {
   return (
    <section className="relative bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]">
       {/* Heading */}
-      <div className="max-w-3xl mx-auto text-center mb-12">
+      <div className="relative z-1  max-w-3xl mx-auto text-center mb-12">
        <h1   style={{ fontFamily: 'Space Grotesk_Bold',textTransform: 'capitalize' }}  className="font-Space Grotesk_Bold 
   font-bold 
 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
@@ -25,8 +25,8 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
       </div>
 
 {/* Categories */}
-<div className="w-full overflow-x-auto scrollbar-hide releative z-2">
-  <div className="flex gap-6  mx-auto  md:px-0">
+<div className="relative z-1 w-full overflow-x-auto scrollbar-hide ">
+  <div className="flex  gap-6  mx-auto  md:px-0 lg:justify-center">
 
     {/* Card 1 - Genres */}
     <div
