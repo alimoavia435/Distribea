@@ -6,6 +6,7 @@ import Hero from '@/Components/Hero/Hero'
 import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
 import Money from '@/Components/Money/Money'
 import Navbar from '@/Components/Navbar/Navbar'
+import Pricing from '@/Components/Pricing/Pricing'
 import React from 'react'
 
 const HomePage = () => {
@@ -17,7 +18,8 @@ const HomePage = () => {
       <Categories/>
       <Feature2/>
       <Everything/>
-      <Money/>
+      {/* <Money/> */}
+      <Pricing/>
     </div>
   )
 }
