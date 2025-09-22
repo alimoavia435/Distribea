@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div style={{ backgroundImage: "url('/Images/hero.png')" }} className='bg-[0_0] bg-no-repeat'>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <EssentialFeatures/>
       <MonetizationSection/>
       <Categories/>
