@@ -26,7 +26,7 @@ const Navbar = () => {
       <AppBar
         position='static'
         className='bg-transparent shadow-none max-[1000px]:px-[0px] px-[32px]'
-        style={{ background: 'transparent' }}
+        style={{ background: 'transparent',boxShadow:"none" }}
       >
         <Toolbar className='flex justify-between py-[16px]'>
           {/* Left - Logo */}
@@ -77,8 +77,8 @@ const Navbar = () => {
       <Drawer anchor='right' open={drawerOpen} onClose={toggleDrawer(false)}>
         <div className='w-64 bg-black h-full text-white flex flex-col'>
           <List>
-            {navLinks.map(text => (
-              <ListItem button key={text}>
+            {navLinks?.map(text => (
+              <ListItem key={text}>
                 <p 
                   className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize'
                   style={{ fontFamily: 'Space Grotesk_Medium', textTransform: 'capitalize' }}
