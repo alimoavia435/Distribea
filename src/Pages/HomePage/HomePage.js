@@ -12,7 +12,6 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <EssentialFeatures/>
-      <MonetizationSection/>
       <Categories/>
       <Everything/>
     </div>
