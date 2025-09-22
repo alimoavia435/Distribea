@@ -20,7 +20,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px]
   mb-4">
           Essential Features
         </h2>
-<p className="text-[#CECFD2] text-[18px] md:text-[20px] lg:text-[22px] font-normal leading-[28px] text-center mb-16 font-[SpaceGrotesk]">
+<p className="text-[#CECFD2] text-[18px] md:text-[20px] lg:text-[22px] font-normal leading-[28px] text-center mb-16 " style={{ fontFamily: 'Space Grotesk',textTransform: 'capitalize' }} >
   Key Features to Protect Your Content, Avoid Copyright Strikes, and Maximize Earnings
 </p>
 

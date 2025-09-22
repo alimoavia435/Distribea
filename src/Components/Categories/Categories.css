@@ -1,0 +1,9 @@
+/* globals.css ya tailwind.css me add karo */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE aur Edge */
+  scrollbar-width: none;     /* Firefox */
+}

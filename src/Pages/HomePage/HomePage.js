@@ -1,3 +1,4 @@
+import Categories from '@/Components/Categories/Categories'
 import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
 import Hero from '@/Components/Hero/Hero'
 import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
@@ -11,6 +12,7 @@ const HomePage = () => {
       {/* <Hero /> */}
       <EssentialFeatures/>
       <MonetizationSection/>
+      <Categories/>
     </div>
   )
 }
