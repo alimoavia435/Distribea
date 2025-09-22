@@ -3,6 +3,7 @@ import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
 import Everything from '@/Components/Everything/Everything'
 import Hero from '@/Components/Hero/Hero'
 import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
+import Money from '@/Components/Money/Money'
 import Navbar from '@/Components/Navbar/Navbar'
 import React from 'react'
 
@@ -14,6 +15,7 @@ const HomePage = () => {
       <EssentialFeatures/>
       <Categories/>
       <Everything/>
+      <Money/>
     </div>
   )
 }
