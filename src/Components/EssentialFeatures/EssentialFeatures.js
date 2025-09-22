@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function EssentialFeatures() {
   return (
     <section
-   style={{ backgroundImage: "url('/Images/hero.png')" }} 
+   style={{ backgroundImage: "url('/Images/mara.png')" }} 
   className="bg-cover bg-center bg-no-repeat text-white 
               px-[18px] py-[40] lg:px-[56px] lg:pt-[160px] lg:pb-[96px]">
       <div className="max-w-7xl mx-auto text-center">
