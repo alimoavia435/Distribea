@@ -33,7 +33,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
         <button
           type='button'
           onClick={() => setIsYearly(false)}
-          className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] transition-colors ${
+          className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] cursor-pointer transition-colors ${
             !isYearly ? 'text-white' : 'text-[#9AA4B2]'
           }`}
           style={{ fontFamily: 'Space Grotesk' }}
@@ -46,7 +46,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           role='switch'
           aria-checked={isYearly}
           onClick={() => setIsYearly(p => !p)}
-          className='relative rounded-full border transition-[background,left] duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-[#175CD3]/50'
+          className='relative rounded-full border transition-[background,left] duration-200 ease-out focus:outline-none focus:ring-2 focus:ring-[#175CD3]/50  cursor-pointer'
           style={{
             width: '74px',
             height: '33px',
@@ -68,7 +68,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
         <button
           type='button'
           onClick={() => setIsYearly(true)}
-          className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] transition-colors ${
+          className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] cursor-pointer transition-colors ${
             isYearly ? 'text-white' : 'text-[#9AA4B2]'
           }`}
           style={{ fontFamily: 'Space Grotesk' }}
