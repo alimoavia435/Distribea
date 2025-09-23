@@ -14,9 +14,18 @@ const Carousel = () => {
     },
     {
       quote:
-        'Finally a royalty free music platform I can trust. No more copyright claims, no lost revenue—just quality tracks that make my videos stand out. Highly recommend!',
-      name: 'Henry Cary',
-      title: 'Music Producer & Sound Engineer',
+        'I had been waiting for a platform like Distribea! Everything is simple and clear, with an elegant design that’s a pleasure to use.  I just go to the music category I need and instantly find the perfect fit',
+      name: '— Sarah Giroud',
+      title: '',
+      image: '/Images/prof.svg', // You'll need to add this image to your public folder
+      rating: 5
+    }
+    ,
+    {
+      quote:
+        '"I used to spend so much time searching for the right music, but not anymore. The platform is clear, well-designed, and always delivers relevant results. Exactly what I’ve been waiting for!"',
+      name: 'John Doe',
+      title: 'American Singer',
       image: '/Images/prof.svg', // You'll need to add this image to your public folder
       rating: 5
     }
