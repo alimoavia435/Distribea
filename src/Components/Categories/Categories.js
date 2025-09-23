@@ -1,9 +1,12 @@
 // app/page.tsx or components/Categories.tsx
+'use client'
 import React from 'react'
 import './Categories.css'
 import Image from 'next/image'
+import { useRouter } from "next/navigation";
 
 export default function Categories () {
+  const router = useRouter()
   return (
     <div className='relative overflow-x-hidden'>
       <img
@@ -107,6 +110,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 3 - Creators */}
             <div
+              onClick={() => router.push('/Creators')}
+              role='button'
+              tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -115,7 +121,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[290px] sm:h-[387px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform'
+                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
             >
               <div className='w-full h-[227px] sm:h-[320px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
