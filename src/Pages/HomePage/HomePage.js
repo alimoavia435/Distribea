@@ -12,7 +12,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div style={{ backgroundImage: "url('/Images/hero.png')" }} className='bg-[0_0] bg-no-repeat'>
+    <div style={{ backgroundImage: "url('/Images/hero.png')" }} className='bg-[0_0] bg-no-repeat max-w-[1620px] mx-auto overflow-x-hidden'>
       <Navbar />
       <Hero />
       <EssentialFeatures/>
