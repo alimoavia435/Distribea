@@ -1,3 +1,4 @@
+import CardCategories from '@/Components/CardCategories/CardCategories'
 import Categories from '@/Components/Categories/Categories'
 import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
 import Everything from '@/Components/Everything/Everything'
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Everything/>
       <Money/>
       <Pricing/>
+      <CardCategories/>
       <Footer/>
     </div>
   )
