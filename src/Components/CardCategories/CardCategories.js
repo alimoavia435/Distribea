@@ -44,11 +44,6 @@ export default function CardCategories () {
         alt='pricing-bg'
         className='h-[700px] w-[700px] absolute top-[60px] right-[-190px] 2xl:right-[-190px] max-[1000px]:top[-70px]'
       />
-      <img
-        src='/Images/pricing/shadpricing.png'
-        alt='pricing-bg'
-        className='h-[700px] w-[700px] absolute bottom-[60px] left-[-190px] 2xl:left-[-190px] max-[1000px]:bottom-[-70px]'
-      />
       <section
         className='bg-no-repeat text-white 
     px-4 py-8              /* mobile (default) */

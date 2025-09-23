@@ -238,7 +238,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             </div>
 
             <button
-              class='
+              className='
             text-[16px]
    [background:linear-gradient(var(--Colors-Blue-700,#175CD3),var(--Colors-Blue-700,#175CD3))_padding-box,linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0)_100%)_border-box]
     border-2 border-transparent
@@ -361,7 +361,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             </div>
 
             <button
-              class='
+              className='
             text-[16px]
    [background:linear-gradient(var(--Colors-Blue-700,#175CD3),var(--Colors-Blue-700,#175CD3))_padding-box,linear-gradient(180deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0)_100%)_border-box]
     border-2 border-transparent

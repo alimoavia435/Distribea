@@ -6,13 +6,12 @@ import Everything from '@/Components/Everything/Everything'
 import Feature2 from '@/Components/Feature2/Feature2'
 import Footer from '@/Components/Footer/Footer'
 import Hero from '@/Components/Hero/Hero'
-import MonetizationSection from '@/Components/MonetizationSection/MonetizationSection'
 import Money from '@/Components/Money/Money'
 import Navbar from '@/Components/Navbar/Navbar'
 import Pricing from '@/Components/Pricing/Pricing'
 import React from 'react'
 
-const HomePage = () => {
+const Home = () => {
   return (
     <div
       style={{ backgroundImage: "url('/Images/hero.png')" }}
@@ -26,11 +25,18 @@ const HomePage = () => {
       <Everything />
       <Money />
       <Pricing />
-      <CardCategories />
-      <Carousel />
+      <div className='relative'>
+        <img
+          src='/Images/pricing/shadpricing.png'
+          alt='pricing-bg'
+          className='h-[700px] w-[700px] absolute bottom-[500px] left-[-250px] 2xl:left-[-250px] max-[768px]:bottom-[200px]'
+        />
+        <CardCategories />
+        <Carousel />
+      </div>
       <Footer />
     </div>
   )
 }
 
-export default HomePage
+export default Home

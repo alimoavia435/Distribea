@@ -36,7 +36,7 @@ const Carousel = () => {
   const currentTestimonial = testimonials[currentIndex]
 
   return (
-    <div className='bg-black flex flex-col items-center justify-center px-4 py-[100px]'>
+    <div className='bg-transparent flex flex-col items-center justify-center px-4 py-[100px]'>
       {/* 5-Star Rating */}
       <div className='flex justify-center mb-8'>
         {[...Array(5)].map((_, index) => (
@@ -55,14 +55,14 @@ const Carousel = () => {
         {/* Stylized Quotation Marks */}
         <img
           src='/Images/2.png'
-          className='absolute left-[-144px] top-[-60px]'
+          className='absolute left-[-144px] top-[-60px] max-[1300px]:left-[-70px] max-[768px]:h-[40px] max-[768px]:left-[-30px] max-[400px]:left-[0px] max-[475px]:h-[30px]'
           alt=''
         />
-        <img src='/Images/“.png' className='absolute  right-[-100px] bottom-[100px]' alt='' />
+        <img src='/Images/“.png' className='absolute  right-[-100px] bottom-[100px] max-[1300px]:right-[-50px] max-[768px]:right-[-20px] max-[768px]:right-[10px] max-[768px]:h-[40px] max-[475px]:h-[30px]' alt='' />
 
         {/* Testimonial Quote */}
         <blockquote
-          className='text-white xl:text-[36px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px] leading-[140%] mb-[25px] lg:mb-[40px] xl:mb-[48px]  px-[25px]'
+          className=' text-white xl:text-[36px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[16px] leading-[140%] mb-[25px] lg:mb-[40px] xl:mb-[48px]   px-[25px] max-w-[300px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[750px] xl:max-w-[980px]'
           style={{ fontFamily: 'Space Grotesk_Medium' }}
         >
           {`"${currentTestimonial.quote}"`}

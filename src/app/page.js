@@ -1,7 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic'
 
-const Home = dynamic(() => import('@/Pages/HomePage/HomePage'), {
+const Home = dynamic(() => import('@/pages/MainPage/Home.js'), {
   ssr: false
 })
 
