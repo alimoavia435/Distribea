@@ -1,3 +1,5 @@
+import CardCategories from '@/Components/CardCategories/CardCategories'
+import Carousel from '@/Components/Carousel/Carousel'
 import Categories from '@/Components/Categories/Categories'
 import EssentialFeatures from '@/Components/EssentialFeatures/EssentialFeatures'
 import Everything from '@/Components/Everything/Everything'
@@ -12,16 +14,21 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div style={{ backgroundImage: "url('/Images/hero.png')" }} className='bg-[0_0] bg-no-repeat max-w-[1620px] mx-auto overflow-x-hidden'>
+    <div
+      style={{ backgroundImage: "url('/Images/hero.png')" }}
+      className='bg-[0_0] bg-no-repeat max-w-[1700px] mx-auto overflow-x-hidden'
+    >
       <Navbar />
       <Hero />
-      <EssentialFeatures/>
-      <Categories/>
-      <Feature2/>
-      <Everything/>
-      {/* <Money/> */}
-      <Pricing/>
-      <Footer/>
+      <EssentialFeatures />
+      <Categories />
+      <Feature2 />
+      <Everything />
+      <Money />
+      <Pricing />
+      <CardCategories />
+      <Carousel />
+      <Footer />
     </div>
   )
 }

@@ -49,3 +49,11 @@ body {
   src: url('/FontFamily/SpaceGrotesk-Bold.ttf') format("truetype");
   font-display: block;
 }
+
+@font-face {
+  font-family: "Jacquard_24";
+  src: url('/FontFamily/Jacquard24-Regular.ttf') format("truetype");
+  font-display: block;
+}
+
+/* ..... */

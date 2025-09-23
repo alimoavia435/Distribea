@@ -7,7 +7,7 @@ const Pricing = () => {
       <img
         src='/Images/pricing/shadpricing.png'
         alt='pricing-bg'
-        className='h-[589px] w-[663px] absolute top-[-38px] right-[-150px]'
+        className='h-[689px] w-[663px] absolute top-[-38px] left-[-150px] 2xl:left-[-90px]'
       />
       <section className='text-white w-full px-[25px] sm:px-[32px] md:px-[40px] lg:px-[45px] xl:px-[56px] 2xl:px-[100px] py-[48px] md:py-[64px] lg:py-[80px] xl:py-[96px] bg-no-repeat relative'>
         {/* Heading */}
