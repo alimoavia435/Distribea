@@ -4,98 +4,244 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#0b0c10] to-[#0e1117] text-gray-300 px-6 md:px-20 lg:px-32 py-12">
-      <div className="max-w-7xl mx-auto">
+    <footer className=" text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[32px]">
+  <div className="mx-0 w-full max-w-[1328px]">
         {/* Top Section */}
-        <div className="flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-10">
+       <div className="flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-[48px] max-w-[1328px]">
           {/* Logo + tagline */}
           <div className="flex flex-col space-y-4 max-w-sm">
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <Image
-               src='/Images/logomiddle.svg'// replace with your logo
+                src="/Images/logomiddle.svg" // replace with your logo
                 alt="Distribea Logo"
                 width={79}
                 height={80}
-                 className='max-[79px]:h-[80px]' 
+                className="max-[79px]:h-[80px]"
               />
-            
-              <h2 className="text-2xl font-bold text-white">Distribea</h2>
+
+              <h2
+                className="
+    font-bold 
+    text-[#F7F7F7] 
+    text-[40px] 
+    md:text-[56px] 
+    lg:text-[64px] 
+    leading-[110%] 
+    tracking-[-3px] 
+    text-center
+  "
+                style={{ fontFamily: "Space Grotesk_Bold" }}
+              >
+                Distribea
+              </h2>
             </div>
-            <p className="text-sm text-gray-400">
+            <p
+              style={{ fontFamily: "Space Grotesk" }}
+              className="font-['Space_Grotesk'] font-normal text-[18px] leading-[140%] tracking-[-0.03em] text-[#CECFD2] mb-6 md:mb-10"
+            >
               Music That Moves Your Story
             </p>
 
             {/* Social Icons */}
-            <div className="flex space-x-4 mt-4">
+            <div className="flex space-x-6 ">
               <Link href="#">
-                <Image src="/Images/mine/x.svg" alt="X" width={20} height={20} />
+                <Image
+                  src="/Images/mine/x.svg"
+                  alt="X"
+                  width={20}
+                  height={20}
+                />
               </Link>
               <Link href="#">
-                <Image src="/Images/mine/instagram.svg" alt="Instagram" width={20} height={20} />
+                <Image
+                  src="/Images/mine/instagram.svg"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
               </Link>
               <Link href="#">
-                <Image src="/Images/mine/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                <Image
+                  src="/Images/mine/linkedin.svg"
+                  alt="LinkedIn"
+                  width={20}
+                  height={20}
+                />
               </Link>
               <Link href="#">
-                <Image src="/Images/mine/youtube.svg" alt="YouTube" width={20} height={20} />
+                <Image
+                  src="/Images/mine/youtube.svg"
+                  alt="YouTube"
+                  width={20}
+                  height={20}
+                />
               </Link>
             </div>
           </div>
 
+          <div className="w-full max-w-[1328px]  border-b border-[#0B1425] opacity-100 mx-auto"></div>
+
           {/* Links */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 text-sm">
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-12 lg:gap-24 text-sm">
             {/* Pages */}
             <div>
-              <h3 className="font-semibold text-gray-400 mb-4">Pages</h3>
-              <ul className="space-y-2">
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/get-started">Get Started</Link></li>
-                <li><Link href="/music-platforms">Music Platforms</Link></li>
-                <li><Link href="/pricing">Pricing</Link></li>
-                <li><Link href="/about">About Us</Link></li>
+              <h3
+                className="
+    font-normal 
+    text-sm 
+    leading-[1.25rem] 
+    text-[#94979C] 
+    mb-4
+  "
+                style={{ fontFamily: "Space Grotesk" }}
+              >
+                Pages
+              </h3>
+
+              <ul className="space-y-[12px] sm:space-y-3">
+                <li>
+                  <Link href="/"   style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+ >Home</Link>
+                </li>
+                <li>
+                  <Link href="/get-started" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Get Started</Link>
+                </li>
+                <li>
+                  <Link href="/music-platforms" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Music Platforms</Link>
+                </li>
+                <li>
+                  <Link href="/pricing" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Pricing</Link>
+                </li>
+                <li>
+                  <Link href="/about" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>About Us</Link>
+                </li>
               </ul>
             </div>
 
             {/* Resources */}
             <div>
-              <h3 className="font-semibold text-gray-400 mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li><Link href="/creators">Creators</Link></li>
-                <li><Link href="/gaming">Gaming</Link></li>
-                <li><Link href="/in-store">In-Store</Link></li>
-                <li><Link href="/licences">Licences</Link></li>
-                <li><Link href="/ads">Ads & Branding</Link></li>
+              <h3
+                className="
+    font-normal 
+    text-sm 
+    leading-[1.25rem] 
+    text-[#94979C] 
+    mb-4
+  "
+                style={{ fontFamily: "Space Grotesk" }}
+              >
+                Resources
+              </h3>
+              <ul className="space-y-[12px] sm:space-y-3">
+                <li>
+                  <Link href="/creators" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Creators</Link>
+                </li>
+                <li>
+                  <Link href="/gaming" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Gaming</Link>
+                </li>
+                <li>
+                  <Link href="/in-store" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>In-Store</Link>
+                </li>
+                <li>
+                  <Link href="/licences" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Licences</Link>
+                </li>
+                <li>
+                  <Link href="/ads" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Ads & Branding</Link>
+                </li>
               </ul>
             </div>
 
             {/* Support */}
             <div>
-              <h3 className="font-semibold text-gray-400 mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li><Link href="/contact">Contact Us</Link></li>
-                <li><Link href="/livechat">LiveChat</Link></li>
-                <li><Link href="/faqs">FAQs</Link></li>
-                <li><Link href="/blogs">Blogs</Link></li>
+              <h3
+                className="
+    font-normal 
+    text-sm 
+    leading-[1.25rem] 
+    text-[#94979C] 
+    mb-4
+  "
+                style={{ fontFamily: "Space Grotesk" }}
+              >
+                Support
+              </h3>
+              <ul className="space-y-[12px] sm:space-y-3">
+                <li>
+                  <Link href="/contact" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Contact Us</Link>
+                </li>
+                <li>
+                  <Link href="/livechat" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>LiveChat</Link>
+                </li>
+                <li>
+                  <Link href="/faqs" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>FAQs</Link>
+                </li>
+                <li>
+                  <Link href="/blogs" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Blogs</Link>
+                </li>
               </ul>
             </div>
 
             {/* Legals */}
             <div>
-              <h3 className="font-semibold text-gray-400 mb-4">Legals</h3>
-              <ul className="space-y-2">
-                <li><Link href="/terms">Terms & Conditions</Link></li>
-                <li><Link href="/privacy">Privacy & Policy</Link></li>
-                <li><Link href="/anti-fraud">Anti-Fraud</Link></li>
+              <h3
+                className="
+    font-normal 
+    text-sm 
+    leading-[1.25rem] 
+    text-[#94979C] 
+    mb-4
+  "
+                style={{ fontFamily: "Space Grotesk" }}
+              >
+                Legals
+              </h3>
+              <ul className="space-y-[12px] sm:space-y-3">
+                <li>
+                  <Link href="/terms" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Terms & Conditions</Link>
+                </li>
+                <li>
+                  <Link href="/privacy" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Privacy & Policy</Link>
+                </li>
+                <li>
+                  <Link href="/anti-fraud" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
+>Anti-Fraud</Link>
+                </li>
               </ul>
             </div>
+
           </div>
+
+<div className="w-full max-w-[1328px]  border-b border-[#0B1425] opacity-100 mx-auto"></div>
+
+
+
         </div>
 
-        {/* Bottom Line */}
-        <div className="mt-12 border-t border-gray-700 pt-6 text-xs text-gray-500">
-          © 2025 <span className="font-semibold text-white">Distribea</span>
-        </div>
+        {/* Bottom  */}
+
+    <div className="mt-12 font-['Space_Grotesk'] font-normal text-sm leading-6 tracking-[0%] text-[#94979C]"  style={{ fontFamily: "Space Grotesk" }}>
+  © 2025{" "}
+  <span        style={{ fontFamily: "Space Grotesk_Bold" }}  className="font-['Space_Grotesk'] font-bold text-sm leading-6 tracking-[0%] text-[#94979C]">
+    Distribea
+  </span>
+</div>
+
       </div>
     </footer>
   );
