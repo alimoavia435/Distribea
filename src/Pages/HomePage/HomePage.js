@@ -19,7 +19,7 @@ const HomePage = () => {
       <Categories/>
       <Feature2/>
       <Everything/>
-      {/* <Money/> */}
+      <Money/>
       <Pricing/>
       <Footer/>
     </div>

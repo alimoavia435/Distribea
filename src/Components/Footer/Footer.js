@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[32px]">
+<footer  style={{ backgroundImage: "url('/Images/mine/FOOTERc.png')" }} className="bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[32px] flex justify-center">
   <div className="mx-0 w-full max-w-[1328px]">
         {/* Top Section */}
-       <div className="flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-[48px] max-w-[1328px]">
+       <div className="flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-5 !md:gap-[48px] max-w-[1328px]">
           {/* Logo + tagline */}
           <div className="flex flex-col space-y-4 max-w-sm">
             {/* Logo */}
@@ -99,7 +99,7 @@ export default function Footer() {
                 Pages
               </h3>
 
-              <ul className="space-y-[12px] sm:space-y-3">
+              <ul className="space-y-[8px] sm:space-y-3">
                 <li>
                   <Link href="/"   style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
  >Home</Link>
@@ -137,7 +137,7 @@ export default function Footer() {
               >
                 Resources
               </h3>
-              <ul className="space-y-[12px] sm:space-y-3">
+              <ul className="space-y-[8px] sm:space-y-3">
                 <li>
                   <Link href="/creators" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
 >Creators</Link>
@@ -175,7 +175,7 @@ export default function Footer() {
               >
                 Support
               </h3>
-              <ul className="space-y-[12px] sm:space-y-3">
+              <ul className="space-y-[8px] sm:space-y-3">
                 <li>
                   <Link href="/contact" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
 >Contact Us</Link>
@@ -209,7 +209,7 @@ export default function Footer() {
               >
                 Legals
               </h3>
-              <ul className="space-y-[12px] sm:space-y-3">
+              <ul className="space-y-[8px] sm:space-y-3">
                 <li>
                   <Link href="/terms" style={{ fontFamily: "Space Grotesk" }}  className="font-['Space Grotesk'] font-medium text-base leading-6 tracking-[0%] text-[#F7F7F7] hover:underline"
 >Terms & Conditions</Link>
