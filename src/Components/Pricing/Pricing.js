@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false)
   return (
-    <section className='text-white w-full px-[25px] sm:px-[32px] md:px-[40px] lg:px-[45px] xl:px-[56px] 2xl:px-[100px] py-[48px] md:py-[64px] lg:py-[80px] xl:py-[96px]'>
+    <section className='text-white w-full px-[25px] sm:px-[32px] md:px-[40px] lg:px-[45px] xl:px-[56px] 2xl:px-[100px] py-[48px] md:py-[64px] lg:py-[80px] xl:py-[96px] bg-no-repeat'>
       {/* Heading */}
       <div className='flex flex-col items-center gap-[20px] text-center mb-[25px] md:mb-[40px] lg:mb-[64px]'>
         <h2
@@ -306,7 +306,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
         {/* Enterprise */}
         <div
-          className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] hover:border-[4px] hover:border-[#175cd3] hover:shadow-[0px_15px_25px_0px_#175CD326]'
+          className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] hover:border-[4px] hover:border-[#175cd3] hover:shadow-[0px_15px_25px_0px_#175CD326] md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto xl:col-span-1 xl:justify-self-auto  col-span-1 justify-self-auto'
           style={{
             background:
               'linear-gradient(195.05deg, rgba(18, 81, 179, 0.1) 0%, rgba(18, 81, 179, 0.4) 50%, rgba(18, 81, 179, 0.06) 100%)'
