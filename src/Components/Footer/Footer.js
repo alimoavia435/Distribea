@@ -11,13 +11,13 @@ export default function Footer() {
           {/* Logo + tagline */}
           <div className="flex flex-col space-y-4 max-w-sm">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1 lg:space-x-3">
               <Image
                 src="/Images/logomiddle.svg" // replace with your logo
                 alt="Distribea Logo"
                 width={79}
                 height={80}
-                className="max-[79px]:h-[80px]"
+                className="max-[60px]:h-[70px]  lg:max-[79px]:h-[80px] lg:h-[79px]:w-[80px]  h-[60px] w-[70px] "
               />
 
               <h2
