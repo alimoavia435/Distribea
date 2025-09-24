@@ -48,6 +48,10 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           <div className='flex  gap-6  mx-auto  md:px-0 lg:justify-center'>
             {/* Card 1 - Genres */}
             <div
+                      onClick={() => router.push('/Genre')}
+  role="button"
+  tabIndex={0}
+  
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -79,6 +83,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 2 - Moods */}
             <div
+                 onClick={() => router.push('/Moods')}
+  role="button"
+  tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -144,6 +151,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 4 - Culture */}
             <div
+              onClick={() => router.push('/Culture')}
+  role="button"
+  tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -175,6 +185,10 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 5 - Lifestyle */}
             <div
+                      onClick={() => router.push('/Lifestyle')}
+  role="button"
+  tabIndex={0}
+  
               style={{
                 borderRadius: '17.93px',
                 background:

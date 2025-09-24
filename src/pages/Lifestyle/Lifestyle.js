@@ -4,7 +4,7 @@ import Navbar from '@/Components/Navbar/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
-const Creators = () => {
+const Lifestyle = () => {
   const categories = [
     { title: 'Gaming', img: '/images/mine/n1.png' },
     { title: 'Vlogs', img: '/images/mine/n2.png' },
@@ -16,17 +16,6 @@ const Creators = () => {
     { title: 'Podcasts', img: '/Images/Creators/pod.png' },
     { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
     { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
-
-    // { title: 'Hip-Hop', img: '/images/mine/n6.png' },
-    // { title: 'Trap', img: '/images/mine/n7.png' },
-    // { title: 'Techno', img: '/images/mine/n8.png' },
-    // { title: 'Jazz', img: '/images/mine/n9.png' },
-    // { title: 'Ambient', img: '/images/mine/n10.png' },
-    // { title: 'Home', img: '/images/mine/n11.png' },
-    // { title: 'Pets', img: '/images/mine/n12.png' },
-    // { title: 'Business', img: '/images/mine/n13.png' },
-    // { title: 'Fitness', img: '/images/mine/n14.png' },
-    // { title: 'Tech', img: '/images/mine/n15.png' }
   ]
   const categories1 = [
     { title: 'Tech', img: '/images/mine/n15.png' },
@@ -54,32 +43,79 @@ const Creators = () => {
     { title: 'Wellness', img: '/images/mine/o10.png' }
   ]
 
-  // const gradients = [
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(209, 160, 65, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(245, 218, 94, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(132, 57, 9, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(246, 211, 142, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(248, 178, 188, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(149, 183, 183, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(43, 90, 147, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(254, 199, 97, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(111, 202, 184, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(2, 96, 96, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(143, 185, 174, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(252, 135, 148, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
-    
-
-  // ]
   return (
     <div
       style={{ backgroundImage: "url('/Images/hero.png')" }}
       className='bg-[0_0] bg-no-repeat max-w-[1700px] mx-auto overflow-x-hidden'
     >
       <Navbar />
-      <Hero />
+        <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[30px] md:gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>
+      <div className=' flex flex-col items-center gap-[18px] xl:gap-[24px]'>
+        <p
+          className='text-[30px] sm:text-[35px] md:text-[50px] lg:text-[60px] xl:text-[72px] leading-[140%] tracking-[-1.44px] text-[#ffffff] text-center'
+          style={{ fontFamily: 'Space Grotesk_Bold' }}
+        >
+          Royalties-free music 
+by LifeStyle? 🏙️
+        </p>
+        <p
+          className='text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] text-[#CECFD2] text-center'
+          style={{ fontFamily: 'Space Grotesk' }}
+        >
+          Discover the best music, carefully crafted for creators.
+        </p>
+      </div>
+      <div className='flex flex-wrap items-center justify-center gap-[32px]'>
+        <div className='flex items-center gap-[4px]'>
+          <img
+            src='/Images/pricing/tick.svg'
+            alt=''
+            className='h-[24px] w-[24px]'
+          />
+          <p
+            className='text-[#ffffff] text-[14px] leading-[24px]'
+            style={{
+              fontFamily: 'Space Grotesk_Medium',
+              textTransform: 'uppercase'
+            }}
+          >
+            Premium Quality Tracks
+          </p>
+        </div>
+        <div className='flex items-center gap-[4px]'>
+          <img
+            src='/Images/pricing/tick.svg'
+            alt=''
+            className='h-[24px] w-[24px]'
+          />
+          <p
+            className='text-[#ffffff] text-[14px] leading-[24px]'
+            style={{
+              fontFamily: 'Space Grotesk_Medium',
+              textTransform: 'uppercase'
+            }}
+          >
+            Unlimited downloads
+          </p>
+        </div>
+        <div className='flex items-center gap-[4px]'>
+          <img
+            src='/Images/pricing/tick.svg'
+            alt=''
+            className='h-[24px] w-[24px]'
+          />
+          <p
+            className='text-[#ffffff] text-[14px] leading-[24px]'
+            style={{
+              fontFamily: 'Space Grotesk_Medium',
+              textTransform: 'uppercase'
+            }}
+          >
+            Tailored for Every Video
+          </p>
+        </div>
+      </div>
+    </div>
 
       <section
         className='bg-no-repeat text-white 
@@ -310,7 +346,7 @@ const Creators = () => {
       {/* Background Image */}
       <div className="relative w-full max-w-[1328px] bg-cover bg-center rounded-[32px] overflow-hidden"
         style={{
-          backgroundImage: "url('/Images/mine/comp.png')", // replace with your image
+          backgroundImage: "url('/Images/mine/s4.png')", // replace with your image
         }}
       >
         {/* Overlay for readability */}
@@ -387,4 +423,4 @@ const Creators = () => {
   )
 }
 
-export default Creators
+export default Lifestyle
