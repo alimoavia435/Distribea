@@ -30,7 +30,7 @@ const Genre = () => {
     { title: 'Career', img: '/images/mine/b8.png' }
   ]
 
-    const categories3 = [
+  const categories3 = [
     { title: 'Fitness', img: '/images/mine/o1.png' },
     { title: 'Fashion', img: '/images/mine/o2.png' },
     { title: 'Pets & Animals', img: '/images/mine/o3.png' },
@@ -49,101 +49,114 @@ const Genre = () => {
       className='bg-[0_0] bg-no-repeat max-w-[1700px] mx-auto overflow-x-hidden'
     >
       <Navbar />
-        <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[30px] md:gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>
-      <div className=' flex flex-col items-center gap-[18px] xl:gap-[24px]'>
-        <p
-          className='text-[30px] sm:text-[35px] md:text-[50px] lg:text-[60px] xl:text-[72px] leading-[140%] tracking-[-1.44px] text-[#ffffff] text-center'
-          style={{ fontFamily: 'Space Grotesk_Bold' }}
-        >
-          Royalties-free music by Genre ✨ 🎶
-        </p>
-        <p
-          className='text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] text-[#CECFD2] text-center'
-          style={{ fontFamily: 'Space Grotesk' }}
-        >
-          Discover the best music, carefully crafted for creators.
-        </p>
+      <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[30px] md:gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>
+        <div className=' flex flex-col items-center gap-[18px] xl:gap-[24px]'>
+          <p
+            className='text-[30px] sm:text-[35px] md:text-[50px] lg:text-[60px] xl:text-[72px] leading-[140%] tracking-[-1.44px] text-[#ffffff] text-center'
+            style={{ fontFamily: 'Space Grotesk_Bold' }}
+          >
+            Royalties-free music by Genre ✨ 🎶
+          </p>
+          <p
+            className='text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] text-[#CECFD2] text-center'
+            style={{ fontFamily: 'Space Grotesk' }}
+          >
+            Discover the best music, carefully crafted for creators.
+          </p>
+        </div>
+        <div className='flex flex-wrap items-center justify-center gap-[32px]'>
+          <div className='flex items-center gap-[4px]'>
+            <img
+              src='/Images/pricing/tick.svg'
+              alt=''
+              className='h-[24px] w-[24px]'
+            />
+            <p
+              className='text-[#ffffff] text-[14px] leading-[24px]'
+              style={{
+                fontFamily: 'Space Grotesk_Medium',
+                textTransform: 'uppercase'
+              }}
+            >
+              Premium Quality Tracks
+            </p>
+          </div>
+          <div className='flex items-center gap-[4px]'>
+            <img
+              src='/Images/pricing/tick.svg'
+              alt=''
+              className='h-[24px] w-[24px]'
+            />
+            <p
+              className='text-[#ffffff] text-[14px] leading-[24px]'
+              style={{
+                fontFamily: 'Space Grotesk_Medium',
+                textTransform: 'uppercase'
+              }}
+            >
+              Unlimited downloads
+            </p>
+          </div>
+          <div className='flex items-center gap-[4px]'>
+            <img
+              src='/Images/pricing/tick.svg'
+              alt=''
+              className='h-[24px] w-[24px]'
+            />
+            <p
+              className='text-[#ffffff] text-[14px] leading-[24px]'
+              style={{
+                fontFamily: 'Space Grotesk_Medium',
+                textTransform: 'uppercase'
+              }}
+            >
+              Tailored for Every Video
+            </p>
+          </div>
+        </div>
       </div>
-      <div className='flex flex-wrap items-center justify-center gap-[32px]'>
-        <div className='flex items-center gap-[4px]'>
-          <img
-            src='/Images/pricing/tick.svg'
-            alt=''
-            className='h-[24px] w-[24px]'
-          />
-          <p
-            className='text-[#ffffff] text-[14px] leading-[24px]'
-            style={{
-              fontFamily: 'Space Grotesk_Medium',
-              textTransform: 'uppercase'
-            }}
-          >
-            Premium Quality Tracks
-          </p>
-        </div>
-        <div className='flex items-center gap-[4px]'>
-          <img
-            src='/Images/pricing/tick.svg'
-            alt=''
-            className='h-[24px] w-[24px]'
-          />
-          <p
-            className='text-[#ffffff] text-[14px] leading-[24px]'
-            style={{
-              fontFamily: 'Space Grotesk_Medium',
-              textTransform: 'uppercase'
-            }}
-          >
-            Unlimited downloads
-          </p>
-        </div>
-        <div className='flex items-center gap-[4px]'>
-          <img
-            src='/Images/pricing/tick.svg'
-            alt=''
-            className='h-[24px] w-[24px]'
-          />
-          <p
-            className='text-[#ffffff] text-[14px] leading-[24px]'
-            style={{
-              fontFamily: 'Space Grotesk_Medium',
-              textTransform: 'uppercase'
-            }}
-          >
-            Tailored for Every Video
-          </p>
-        </div>
-      </div>
-    </div>
-
-      <section
-        className='bg-no-repeat text-white 
+      <div
+        style={{
+          backgroundImage: "url('/Images/Creators/creatureshadr.png')",
+          backgroundPositionX: 'right'
+        }}
+        className='bg-no-repeat'
+      >
+        <div
+          style={{
+            backgroundImage: "url('/Images/Creators/createleft.png')",
+            backgroundPosition: '0% 72%'
+          }}
+          className='bg-no-repeat'
+        >
+          <section
+            className='bg-no-repeat text-white 
     px-4 py-8              /* mobile (default) */
     sm:px-6 sm:py-12       /* small screens */
     md:px-10 md:py-16      /* medium screens */
     lg:px-[62px] lg:py-[80px]   /* large screens */
     xl:px-[80px] xl:pt-[96px] xl:pb-[96px] /* ≥1400px screens */
     flex justify-center flex-col gap-5 lg:gap-[64px]'
-      >
-        {/* Heading */}
-        <div className='text-center max-w-3xl  w-auto mx-auto '>
-          <p
-            className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
-            style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            🔥 Modern & Popular
-          </p>
-          <p
-            className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
-            style={{ fontFamily: 'Space Grotesk' }}
-          >
-            Energy, chill, or deep vibes — pick what fits.
-          </p>
-        </div>
+            {/* Heading */}
+            <div className='text-center max-w-3xl  w-auto mx-auto '>
+              <p
+                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                style={{ fontFamily: 'Space Grotesk_Medium' }}
+              >
+                🔥 Modern & Popular
+              </p>
+              <p
+                className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
+                style={{ fontFamily: 'Space Grotesk' }}
+              >
+                Energy, chill, or deep vibes — pick what fits.
+              </p>
+            </div>
 
-        {/* Grid */}
-        <div
-          className='
+            {/* Grid */}
+            <div
+              className='
   !grid 
   grid-cols-1              /* default => <360px */
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
@@ -153,69 +166,69 @@ const Genre = () => {
   !gap-2 lg:!gap-6 
   max-w-[1210px] mx-auto w-full
 '
-        >
-          {categories?.map((cat, index) => (
-            <div
-              key={index}
-              style={{
-                borderRadius: '17.93px',
-                // background: gradients[index % gradients.length] // cycle through gradients
-                 background:"#1C1B1B"
-              }}
-              className='flex !flex-col !w-auto !h-[250.58px] 
+            >
+              {categories?.map((cat, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderRadius: '17.93px',
+                    // background: gradients[index % gradients.length] // cycle through gradients
+                    background: '#1C1B1B'
+                  }}
+                  className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
-            >
-              <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
-                <Image
-                  src={cat.img}
-                  alt={cat.title}
-                  width={220}
-                  height={227}
-                  className='w-full h-full object-cover'
-                />
-              </div>
-              <div
-                style={{
-                  fontFamily: 'Space Grotesk_Medium'
-                }}
-                className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
-              >
-                {cat.title}
-              </div>
+                >
+                  <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
+                    <Image
+                      src={cat.img}
+                      alt={cat.title}
+                      width={220}
+                      height={227}
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium'
+                    }}
+                    className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
+                  >
+                    {cat.title}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-      <section
-        className='bg-no-repeat text-white 
+          </section>
+          <section
+            className='bg-no-repeat text-white 
     px-4 py-8              /* mobile (default) */
     sm:px-6 sm:py-12       /* small screens */
     md:px-10 md:py-16      /* medium screens */
     lg:px-[62px] lg:py-[80px]   /* large screens */
     xl:px-[80px] xl:pt-[96px] xl:pb-[96px] /* ≥1400px screens */
     flex justify-center flex-col gap-5 lg:gap-[64px]'
-      >
-        {/* Heading */}
-        <div className='text-center max-w-3xl  w-auto mx-auto '>
-          <p
-            className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
-            style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            📚 Knowledge & Education
-          </p>
-          <p
-            className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
-            style={{ fontFamily: 'Space Grotesk' }}
-          >
-            Energy, chill, or deep vibes — pick what fits.
-          </p>
-        </div>
+            {/* Heading */}
+            <div className='text-center max-w-3xl  w-auto mx-auto '>
+              <p
+                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                style={{ fontFamily: 'Space Grotesk_Medium' }}
+              >
+                📚 Knowledge & Education
+              </p>
+              <p
+                className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
+                style={{ fontFamily: 'Space Grotesk' }}
+              >
+                Energy, chill, or deep vibes — pick what fits.
+              </p>
+            </div>
 
-        {/* Grid */}
-        <div
-          className='
+            {/* Grid */}
+            <div
+              className='
   !grid 
   grid-cols-1              /* default => <360px */
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
@@ -225,70 +238,70 @@ const Genre = () => {
   !gap-2 lg:!gap-6 
   max-w-[1210px] mx-auto w-full
 '
-        >
-          {categories1?.map((cat, index) => (
-            <div
-              key={index}
-              style={{
-                borderRadius: '17.93px',
-                // background: gradients[index % gradients.length] // cycle through gradients
-                 background:"#1C1B1B"
-              }}
-              className='flex !flex-col !w-auto !h-[250.58px] 
+            >
+              {categories1?.map((cat, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderRadius: '17.93px',
+                    // background: gradients[index % gradients.length] // cycle through gradients
+                    background: '#1C1B1B'
+                  }}
+                  className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
-            >
-              <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
-                <Image
-                  src={cat.img}
-                  alt={cat.title}
-                  width={220}
-                  height={227}
-                  className='w-full h-full object-cover'
-                />
-              </div>
-              <div
-                style={{
-                  fontFamily: 'Space Grotesk_Medium'
-                }}
-                className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
-              >
-                {cat.title}
-              </div>
+                >
+                  <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
+                    <Image
+                      src={cat.img}
+                      alt={cat.title}
+                      width={220}
+                      height={227}
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium'
+                    }}
+                    className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
+                  >
+                    {cat.title}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-{/* .... */}
- <section
-        className='bg-no-repeat text-white 
+          </section>
+          {/* .... */}
+          <section
+            className='bg-no-repeat text-white 
     px-4 py-8              /* mobile (default) */
     sm:px-6 sm:py-12       /* small screens */
     md:px-10 md:py-16      /* medium screens */
     lg:px-[62px] lg:py-[80px]   /* large screens */
     xl:px-[80px] xl:pt-[96px] xl:pb-[240px] /* ≥1400px screens */
     flex justify-center flex-col gap-5 lg:gap-[64px]'
-      >
-        {/* Heading */}
-        <div className='text-center max-w-3xl  w-auto mx-auto '>
-          <p
-            className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
-            style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            🌟 Passion & Inspiration
-          </p>
-          <p
-            className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
-            style={{ fontFamily: 'Space Grotesk' }}
-          >
-            Energy, chill, or deep vibes — pick what fits.
-          </p>
-        </div>
+            {/* Heading */}
+            <div className='text-center max-w-3xl  w-auto mx-auto '>
+              <p
+                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                style={{ fontFamily: 'Space Grotesk_Medium' }}
+              >
+                🌟 Passion & Inspiration
+              </p>
+              <p
+                className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
+                style={{ fontFamily: 'Space Grotesk' }}
+              >
+                Energy, chill, or deep vibes — pick what fits.
+              </p>
+            </div>
 
-        {/* Grid */}
-        <div
-          className='
+            {/* Grid */}
+            <div
+              className='
   !grid 
   grid-cols-1              /* default => <360px */
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
@@ -298,87 +311,89 @@ const Genre = () => {
   !gap-2 lg:!gap-6 
   max-w-[1210px] mx-auto w-full
 '
-        >
-          {categories3?.map((cat, index) => (
-            <div
-              key={index}
-              style={{
-                borderRadius: '17.93px',
-                // background: gradients[index % gradients.length] // cycle through gradients
-                 background:"#1C1B1B"
-              }}
-              className='flex !flex-col !w-auto !h-[250.58px] 
+            >
+              {categories3?.map((cat, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderRadius: '17.93px',
+                    // background: gradients[index % gradients.length] // cycle through gradients
+                    background: '#1C1B1B'
+                  }}
+                  className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
-            >
-              <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
-                <Image
-                  src={cat.img}
-                  alt={cat.title}
-                  width={220}
-                  height={227}
-                  className='w-full h-full object-cover'
-                />
-              </div>
-              <div
-                style={{
-                  fontFamily: 'Space Grotesk_Medium'
-                }}
-                className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
-              >
-                {cat.title}
-              </div>
+                >
+                  <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
+                    <Image
+                      src={cat.img}
+                      alt={cat.title}
+                      width={220}
+                      height={227}
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium'
+                    }}
+                    className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px]'
+                  >
+                    {cat.title}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </section>
+          {/* ...... */}
         </div>
-      </section>
-{/* ...... */}
-
-
-<section
-  className="
+      </div>
+      <section
+        className='
     relative w-full flex justify-center 
     pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-[64px]
-  "
->
-      {/* Background Image */}
-      <div className="relative w-full max-w-[1328px] bg-cover bg-center rounded-[32px] overflow-hidden"
-        style={{
-          backgroundImage: "url('/Images/mine/s3.png')", // replace with your image
-        }}
+  '
       >
-        {/* Overlay for readability */}
-        <div className="w-full h-full bg-black/40 flex items-center justify-center">
-         <div
-  className="
+        {/* Background Image */}
+        <div
+          className='relative w-full max-w-[1328px] bg-cover bg-center rounded-[32px] overflow-hidden'
+          style={{
+            backgroundImage: "url('/Images/mine/s3.png')" // replace with your image
+          }}
+        >
+          {/* Overlay for readability */}
+          <div className='w-full h-full bg-black/40 flex items-center justify-center'>
+            <div
+              className='
     flex flex-col items-center text-center
     px-4 py-12       /* mobile */
     sm:px-8 sm:py-16 /* small devices */
     md:px-16 md:py-20 /* tablets */
     lg:px-24 lg:py-28 /* laptops */
     xl:px-[178.5px] xl:py-[178.5px] /* desktops, your exact spec */
-  "
->
+  '
+            >
+              {/* Text */}
 
-            
-            {/* Text */}
-         
-  <p
-            className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[700] text-[#F7F7F7] tracking-0 leading-[110%] w-full max-w-[652.45px] '
-            style={{ fontFamily: 'Space Grotesk_Bold' }}
-          >
-            Ready to explore the ultimate royalty-free music library, crafted
-              for creators.
-          </p>
-            {/* Gap */}
-            <div className="h-[48px]" />
+              <p
+                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[700] text-[#F7F7F7] tracking-0 leading-[110%] w-full max-w-[652.45px] '
+                style={{ fontFamily: 'Space Grotesk_Bold' }}
+              >
+                Ready to explore the ultimate royalty-free music library,
+                crafted for creators.
+              </p>
+              {/* Gap */}
+              <div className='h-[48px]' />
 
-            {/* Buttons */}
-            <div className="flex gap-3 ">
-<button
-  style={{ fontFamily: "Space Grotesk_Bold", textTransform: "capitalize" }}
-  className="
+              {/* Buttons */}
+              <div className='flex gap-3 '>
+                <button
+                  style={{
+                    fontFamily: 'Space Grotesk_Bold',
+                    textTransform: 'capitalize'
+                  }}
+                  className='
     w-[138px] h-[52px] 
     rounded-full 
     border-2 border-transparent 
@@ -387,15 +402,17 @@ const Genre = () => {
     text-[#414651] font-bold text-md leading-md
     flex items-center justify-center
     transition-all hover:bg-[#e5e7eb]
-  "
->
-  Our Pricing
-</button>
+  '
+                >
+                  Our Pricing
+                </button>
 
-
-       <button
-  style={{ fontFamily: "Space Grotesk_Bold", textTransform: "capitalize" }}
-  className="
+                <button
+                  style={{
+                    fontFamily: 'Space Grotesk_Bold',
+                    textTransform: 'capitalize'
+                  }}
+                  className='
     w-[160px] h-[52px] 
     rounded-full 
     border-2 border-transparent 
@@ -404,20 +421,18 @@ const Genre = () => {
     text-white font-bold text-md leading-md
     flex items-center justify-center
     transition-all hover:bg-[#154ab8]
-  "
->
-  Start For Free
-</button>
-
+  '
+                >
+                  Start For Free
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    {/* .... */}
+      </section>
+      {/* .... */}
 
-<Footer/>
-
+      <Footer />
     </div>
   )
 }
