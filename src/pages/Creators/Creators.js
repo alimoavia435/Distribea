@@ -298,7 +298,88 @@ const Creators = () => {
           ))}
         </div>
       </section>
+{/* ...... */}
 
+
+<section
+  className="
+    relative w-full flex justify-center 
+    pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-[64px]
+  "
+>
+      {/* Background Image */}
+      <div className="relative w-full max-w-[1328px] bg-cover bg-center rounded-[32px] overflow-hidden"
+        style={{
+          backgroundImage: "url('/Images/mine/comp.png')", // replace with your image
+        }}
+      >
+        {/* Overlay for readability */}
+        <div className="w-full h-full bg-black/40 flex items-center justify-center">
+         <div
+  className="
+    flex flex-col items-center text-center
+    px-4 py-12       /* mobile */
+    sm:px-8 sm:py-16 /* small devices */
+    md:px-16 md:py-20 /* tablets */
+    lg:px-24 lg:py-28 /* laptops */
+    xl:px-[178.5px] xl:py-[178.5px] /* desktops, your exact spec */
+  "
+>
+
+            
+            {/* Text */}
+         
+  <p
+            className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[700] text-[#F7F7F7] tracking-0 leading-[110%] w-full max-w-[652.45px] '
+            style={{ fontFamily: 'Space Grotesk_Bold' }}
+          >
+            Ready to explore the ultimate royalty-free music library, crafted
+              for creators.
+          </p>
+            {/* Gap */}
+            <div className="h-[48px]" />
+
+            {/* Buttons */}
+            <div className="flex gap-3 ">
+<button
+  style={{ fontFamily: "Space Grotesk_Bold", textTransform: "capitalize" }}
+  className="
+    w-[138px] h-[52px] 
+    rounded-full 
+    border-2 border-transparent 
+    bg-[#F7F7F7] 
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.1),inset_0_-2px_0_0_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(255,255,255,0.12)] 
+    text-[#414651] font-bold text-md leading-md
+    flex items-center justify-center
+    transition-all hover:bg-[#e5e7eb]
+  "
+>
+  Our Pricing
+</button>
+
+
+       <button
+  style={{ fontFamily: "Space Grotesk_Bold", textTransform: "capitalize" }}
+  className="
+    w-[160px] h-[52px] 
+    rounded-full 
+    border-2 border-transparent 
+    bg-[#175CD3] 
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.1),inset_0_-2px_0_0_rgba(0,0,0,0.05),inset_0_0_0_1px_rgba(255,255,255,0.12)] 
+    text-white font-bold text-md leading-md
+    flex items-center justify-center
+    transition-all hover:bg-[#154ab8]
+  "
+>
+  Start For Free
+</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* .... */}
 
 <Footer/>
 
