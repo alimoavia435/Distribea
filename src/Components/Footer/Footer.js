@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-<footer  style={{ backgroundImage: "url('/Images/mine/FOOTERc.png')" }} className="bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[32px] flex justify-center">
-  <div className="mx-0 w-full max-w-[1328px]">
+<footer  style={{ backgroundImage: "url('/Images/mine/FOOTERc.png')", backgroundSize:"100% 100%"}} className="bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[32px] flex justify-center">
+  <div className="mx-0 w-full max-w-[1700px]">
         {/* Top Section */}
        <div className="flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-5 !md:gap-[48px] max-w-[1328px]">
           {/* Logo + tagline */}

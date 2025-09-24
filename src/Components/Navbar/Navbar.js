@@ -11,10 +11,11 @@ import {
   Divider
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
+import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
-
+  const router = useRouter()
   const toggleDrawer = open => () => {
     setDrawerOpen(open)
   }
@@ -26,12 +27,16 @@ const Navbar = () => {
       <AppBar
         position='static'
         className='bg-transparent shadow-none max-[1000px]:px-[0px] px-[32px]'
-        style={{ background: 'transparent',boxShadow:"none" }}
+        style={{ background: 'transparent', boxShadow: 'none' }}
       >
         <Toolbar className='flex justify-between py-[16px]'>
           {/* Left - Logo */}
           <div className='flex items-center space-x-2'>
-            <img src='/Images/logo.svg' alt='logo' className='max-[768px]:w-[120px]' />
+            <img
+              src='/Images/logo.svg'
+              alt='logo'
+              className='max-[768px]:w-[120px]'
+            />
           </div>
 
           {/* Center - Nav links (Desktop only) */}
@@ -40,7 +45,10 @@ const Navbar = () => {
               <button
                 key={link}
                 className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize'
-                style={{ fontFamily: 'Space Grotesk_Medium',textTransform: 'capitalize' }}
+                style={{
+                  fontFamily: 'Space Grotesk_Medium',
+                  textTransform: 'capitalize'
+                }}
               >
                 {link}
               </button>
@@ -50,14 +58,16 @@ const Navbar = () => {
           {/* Right - Buttons (Desktop) */}
           <div className='hidden md:flex space-x-[12px]'>
             <button
-              className='text-white border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] max-[1000px]:text-[14px] text-[15px] font-[700]'
+              className='cursor-pointer text-white border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] max-[1000px]:text-[14px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
+              onClick={() => router.push('/Login')}
             >
               Log in
             </button>
             <button
-              className='bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
+              onClick={() => router.push('/Signup')}
             >
               Join Us
             </button>
@@ -79,24 +89,31 @@ const Navbar = () => {
           <List>
             {navLinks?.map(text => (
               <ListItem key={text}>
-                <p 
+                <p
                   className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize'
-                  style={{ fontFamily: 'Space Grotesk_Medium', textTransform: 'capitalize' }}
-                >{text}</p>
+                  style={{
+                    fontFamily: 'Space Grotesk_Medium',
+                    textTransform: 'capitalize'
+                  }}
+                >
+                  {text}
+                </p>
               </ListItem>
             ))}
           </List>
           <Divider className='bg-[rgba(55,58,65,1)]' />
           <div className='flex flex-col space-y-3 p-4'>
             <button
-              className='text-[rgba(247,247,247,1)] border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer text-[rgba(247,247,247,1)] border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
+              onClick={() => router.push('/Login')}
             >
               Log in
             </button>
             <button
-              className='text-[rgba(247,247,247,1)] bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer text-[rgba(247,247,247,1)] bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
+              onClick={() => router.push('/Signup')}
             >
               Join Us
             </button>
