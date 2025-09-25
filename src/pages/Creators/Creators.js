@@ -3,8 +3,9 @@ import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import Image from 'next/image'
 import React from 'react'
-
+import { useRouter } from 'next/navigation'
 const Creators = () => {
+  const router = useRouter()
   const categories = [
     { title: 'Gaming', img: '/images/mine/n1.png' },
     { title: 'Vlogs', img: '/images/mine/n2.png' },
@@ -16,17 +17,6 @@ const Creators = () => {
     { title: 'Podcasts', img: '/Images/Creators/pod.png' },
     { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
     { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
-
-    // { title: 'Hip-Hop', img: '/images/mine/n6.png' },
-    // { title: 'Trap', img: '/images/mine/n7.png' },
-    // { title: 'Techno', img: '/images/mine/n8.png' },
-    // { title: 'Jazz', img: '/images/mine/n9.png' },
-    // { title: 'Ambient', img: '/images/mine/n10.png' },
-    // { title: 'Home', img: '/images/mine/n11.png' },
-    // { title: 'Pets', img: '/images/mine/n12.png' },
-    // { title: 'Business', img: '/images/mine/n13.png' },
-    // { title: 'Fitness', img: '/images/mine/n14.png' },
-    // { title: 'Tech', img: '/images/mine/n15.png' }
   ]
   const categories1 = [
     { title: 'Tech', img: '/images/mine/n15.png' },
@@ -54,24 +44,6 @@ const Creators = () => {
     { title: 'Wellness', img: '/images/mine/o10.png' }
   ]
 
-  // const gradients = [
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(209, 160, 65, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(245, 218, 94, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(132, 57, 9, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(246, 211, 142, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(248, 178, 188, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(149, 183, 183, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(43, 90, 147, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(254, 199, 97, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(111, 202, 184, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(2, 96, 96, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(143, 185, 174, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
-  //   'linear-gradient(179.71deg, rgba(252, 135, 148, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
-
-  // ]
   return (
     <div
       style={{ backgroundImage: "url('/Images/hero.png')" }}
@@ -89,8 +61,7 @@ const Creators = () => {
         <div
           style={{
             backgroundImage: "url('/Images/Creators/createleft.png')",
-           backgroundPosition:"0% 40%"
-            
+            backgroundPosition: '0% 40%'
           }}
           className='bg-no-repeat'
         >
@@ -143,7 +114,16 @@ const Creators = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -192,18 +172,7 @@ const Creators = () => {
             </div>
 
             {/* Grid */}
-            <div
-              className='
-  !grid 
-  grid-cols-1              /* default => <360px */
-  min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
-  md:!grid-cols-3
-  lg:!grid-cols-4
-  xl:!grid-cols-5
-  !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
-'
-            >
+            <div className='!grid grid-cols-1 min-[360px]:!grid-cols-2  md:!grid-cols-3 lg:!grid-cols-4 xl:!grid-cols-5 !gap-2 lg:!gap-6 max-w-[1210px] mx-auto w-full cursor-pointer'>
               {categories1?.map((cat, index) => (
                 <div
                   key={index}
@@ -216,6 +185,13 @@ const Creators = () => {
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(cat.img)}&section=Knowledge`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -275,6 +251,7 @@ const Creators = () => {
   xl:!grid-cols-5
   !gap-2 lg:!gap-6 
   max-w-[1210px] mx-auto w-full
+  cursor-pointer
 '
             >
               {categories3?.map((cat, index) => (
@@ -289,6 +266,13 @@ const Creators = () => {
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(cat.img)}&section=Passion`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
