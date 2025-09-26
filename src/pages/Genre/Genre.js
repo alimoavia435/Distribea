@@ -6,41 +6,35 @@ import React from 'react'
 
 const Genre = () => {
   const categories = [
-    { title: 'Gaming', img: '/images/mine/n1.png' },
-    { title: 'Vlogs', img: '/images/mine/n2.png' },
-    { title: 'Reviews', img: '/Images/Creators/review.png' },
-    { title: 'Animations', img: '/Images/Creators/animation.png' },
-    { title: 'Storytelling', img: '/images/mine/n3.png' },
-    { title: 'Challenges', img: '/images/mine/n4.png' },
-    { title: 'Tutorials', img: '/Images/mine/n5.png' },
-    { title: 'Podcasts', img: '/Images/Creators/pod.png' },
-    { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
-    { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
+    { title: 'Hip-Hop', img: '/images/mine/e1.png' },
+    { title: 'Trap', img: '/images/mine/e2.png' },
+    { title: 'Techno', img: '/Images/mine/e3.png' },
+    { title: 'Pop', img: '/Images/mine/e4.png' },
+    { title: 'House', img: '/images/mine/e5.png' },
+    { title: 'EDM', img: '/images/mine/e6.png' },
+    { title: 'Reggaeton', img: '/Images/mine/e7.png' },
+    { title: 'Lo-fi', img: '/Images/mine/e8.png' },
   ]
   const categories1 = [
-    { title: 'Tech', img: '/images/mine/n15.png' },
-    { title: 'Business', img: '/images/mine/n13.png' },
-    { title: 'Science', img: '/images/mine/b1.png' },
-    { title: 'Finance', img: '/images/mine/b2.png' },
-    { title: 'Productivity', img: '/images/mine/b3.png' },
-    { title: 'History', img: '/images/mine/b4.png' },
-    { title: 'Philosphy', img: '/images/mine/b5.png' },
-    { title: 'Documentaries', img: '/images/mine/b6.png' },
-    { title: 'Enterpreneurship', img: '/images/mine/b7.png' },
-    { title: 'Career', img: '/images/mine/b8.png' }
+    { title: 'Jazz', img: '/images/mine/e9.png' },
+    { title: 'Blues', img: '/images/mine/e10.png' },
+    { title: 'Soul', img: '/images/mine/e11.png' },
+    { title: 'Country', img: '/images/mine/e12.png' },
+    { title: 'Folk', img: '/images/mine/e13.png' },
+    { title: 'Disco', img: '/images/mine/e14.png' },
+    { title: 'Rock', img: '/images/mine/e15.png' },
+    { title: 'Funk', img: '/images/mine/e16.png' },
   ]
 
     const categories3 = [
-    { title: 'Fitness', img: '/images/mine/o1.png' },
-    { title: 'Fashion', img: '/images/mine/o2.png' },
-    { title: 'Pets & Animals', img: '/images/mine/o3.png' },
-    { title: 'Motivation', img: '/images/mine/o4.png' },
-    { title: 'Spirituality', img: '/images/mine/o5.png' },
-    { title: 'Travel', img: '/images/mine/o6.png' },
-    { title: 'Photography & Art', img: '/images/mine/o7.png' },
-    { title: 'Kids & Family', img: '/images/mine/o8.png' },
-    { title: 'Home & Interior', img: '/images/mine/o9.png' },
-    { title: 'Wellness', img: '/images/mine/o10.png' }
+    { title: 'Classical', img: '/images/mine/e17.png' },
+    { title: 'Orchestral', img: '/images/mine/e18.png' },
+    { title: 'Soundtrack', img: '/images/mine/e19.png' },
+    { title: 'Score', img: '/images/mine/e20.png' },
+    { title: 'Ambient', img: '/images/mine/e21.png' },
+    { title: 'Latin', img: '/images/mine/e22.png' },
+    { title: 'Afrobeat', img: '/images/mine/e23.png' },
+    { title: 'Metal', img: '/images/mine/e24.png' },
   ]
 
   return (
@@ -149,9 +143,9 @@ const Genre = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories?.map((cat, index) => (
@@ -203,7 +197,7 @@ const Genre = () => {
             className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            📚 Knowledge & Education
+            🎷 Heritage & Timeless
           </p>
           <p
             className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -221,9 +215,9 @@ const Genre = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories1?.map((cat, index) => (
@@ -276,7 +270,7 @@ const Genre = () => {
             className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            🌟 Passion & Inspiration
+            🎥  Cinematic & Global
           </p>
           <p
             className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -294,9 +288,9 @@ const Genre = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories3?.map((cat, index) => (
