@@ -6,41 +6,35 @@ import React from 'react'
 
 const Lifestyle = () => {
   const categories = [
-    { title: 'Gaming', img: '/images/mine/n1.png' },
-    { title: 'Vlogs', img: '/images/mine/n2.png' },
-    { title: 'Reviews', img: '/Images/Creators/review.png' },
-    { title: 'Animations', img: '/Images/Creators/animation.png' },
-    { title: 'Storytelling', img: '/images/mine/n3.png' },
-    { title: 'Challenges', img: '/images/mine/n4.png' },
-    { title: 'Tutorials', img: '/Images/mine/n5.png' },
-    { title: 'Podcasts', img: '/Images/Creators/pod.png' },
-    { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
-    { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
+    { title: 'Happy', img: '/images/mine/z1.png' },
+    { title: 'Motivational', img: '/images/mine/z2.png' },
+    { title: 'Energetic', img: '/Images/mine/z3.png' },
+    { title: 'Party', img: '/Images/mine/z4.png' },
+    { title: 'Uplifting', img: '/images/mine/z5.png' },
+    { title: 'Upbeat', img: '/images/mine/z6.png' },
+    { title: 'Cheerful', img: '/Images/mine/z7.png' },
+    { title: 'Fun', img: '/Images/mine/z8.png' },
   ]
   const categories1 = [
-    { title: 'Tech', img: '/images/mine/n15.png' },
-    { title: 'Business', img: '/images/mine/n13.png' },
-    { title: 'Science', img: '/images/mine/b1.png' },
-    { title: 'Finance', img: '/images/mine/b2.png' },
-    { title: 'Productivity', img: '/images/mine/b3.png' },
-    { title: 'History', img: '/images/mine/b4.png' },
-    { title: 'Philosphy', img: '/images/mine/b5.png' },
-    { title: 'Documentaries', img: '/images/mine/b6.png' },
-    { title: 'Enterpreneurship', img: '/images/mine/b7.png' },
-    { title: 'Career', img: '/images/mine/b8.png' }
+    { title: 'Romantic', img: '/images/mine/z9.png' },
+    { title: 'Nostalgic', img: '/images/mine/z10.png' },
+    { title: 'Relaxed', img: '/images/mine/z11.png' },
+    { title: 'Peaceful', img: '/images/mine/z12.png' },
+    { title: 'Sentimental', img: '/images/mine/z13.png' },
+    { title: 'Chill', img: '/images/mine/z14.png' },
+    { title: 'Hopeful', img: '/images/mine/z15.png' },
+    { title: 'Dreamy', img: '/images/mine/z16.png' },
   ]
 
     const categories3 = [
-    { title: 'Fitness', img: '/images/mine/o1.png' },
-    { title: 'Fashion', img: '/images/mine/o2.png' },
-    { title: 'Pets & Animals', img: '/images/mine/o3.png' },
-    { title: 'Motivation', img: '/images/mine/o4.png' },
-    { title: 'Spirituality', img: '/images/mine/o5.png' },
-    { title: 'Travel', img: '/images/mine/o6.png' },
-    { title: 'Photography & Art', img: '/images/mine/o7.png' },
-    { title: 'Kids & Family', img: '/images/mine/o8.png' },
-    { title: 'Home & Interior', img: '/images/mine/o9.png' },
-    { title: 'Wellness', img: '/images/mine/o10.png' }
+    { title: 'Powerful', img: '/images/mine/z17.png' },
+    { title: 'Dramatic', img: '/images/mine/z18.png' },
+    { title: 'Serious', img: '/images/mine/z19.png' },
+    { title: 'Epic', img: '/images/mine/z20.png' },
+    { title: 'Mysterious', img: '/images/mine/z21.png' },
+    { title: 'Suspenseful', img: '/images/mine/z22.png' },
+    { title: 'Aggressive', img: '/images/mine/z23.png' },
+    { title: 'Cinematic', img: '/images/mine/z24.png' },
   ]
 
   return (
@@ -132,7 +126,7 @@ by Mood 🎧✨
             className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            🎬 Entertainment & Media
+           ⚡ Happy & Energetic
           </p>
           <p
             className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -150,9 +144,9 @@ by Mood 🎧✨
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories?.map((cat, index) => (
@@ -204,7 +198,7 @@ by Mood 🎧✨
             className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            📚 Knowledge & Education
+            🌙 Calm & Emotional 
           </p>
           <p
             className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -222,9 +216,9 @@ by Mood 🎧✨
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories1?.map((cat, index) => (
@@ -277,7 +271,7 @@ by Mood 🎧✨
             className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
-            🌟 Passion & Inspiration
+           🌌 Dark & Dramatic 
           </p>
           <p
             className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -295,9 +289,9 @@ by Mood 🎧✨
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
         >
           {categories3?.map((cat, index) => (
