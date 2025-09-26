@@ -212,7 +212,7 @@ const Culture = () => {
                 style={{
                   fontFamily: 'Space Grotesk_Medium'
                 }}
-                className='text-[#F9F9F9] flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
+                className='text-[#F9F9F9] opacity-70 flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
               >
                 {cat.name}
               </div>
@@ -446,7 +446,7 @@ const Culture = () => {
                 style={{
                   fontFamily: 'Space Grotesk_Medium'
                 }}
-                className='text-[#F9F9F9] flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
+                className='text-[#F9F9F9] opacity-70 flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
               >
                 {cat.name}
               </div>
@@ -528,7 +528,7 @@ const Culture = () => {
                 style={{
                   fontFamily: 'Space Grotesk_Medium'
                 }}
-                className='text-[#F9F9F9] flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
+                className='text-[#F9F9F9] opacity-70 flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
               >
                 {cat.name}
               </div>
