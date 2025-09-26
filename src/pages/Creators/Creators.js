@@ -47,7 +47,7 @@ const Creators = () => {
   return (
     <div
       style={{ backgroundImage: "url('/Images/hero.png')" }}
-      className='bg-[0_0] bg-no-repeat max-w-[1700px] mx-auto overflow-x-hidden'
+      className='bg-[0_0] bg-no-repeat  mx-auto overflow-x-hidden'
     >
       <Navbar />
       <Hero />

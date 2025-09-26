@@ -87,7 +87,7 @@ const Culture = () => {
   return (
     <div
       style={{ backgroundImage: "url('/Images/hero.png')" }}
-      className='bg-[0_0] bg-no-repeat max-w-[1700px] mx-auto overflow-x-hidden'
+      className='bg-[0_0] bg-no-repeat  mx-auto overflow-x-hidden'
     >
       <Navbar />
       <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[30px] md:gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>

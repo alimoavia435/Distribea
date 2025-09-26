@@ -1,10 +1,9 @@
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
-import Header from '@/Components/trackdetails/Header/Header'
 import React from 'react'
-import Image from 'next/image'
-
+import { useRouter } from 'next/navigation'
 const Individualmusic = () => {
+  const router = useRouter()
   return (
     <div className='bg-[#080808]'>
       <Navbar />
@@ -49,7 +48,7 @@ const Individualmusic = () => {
           </div>
         </div>
       </div>
-      
+
       <div className=' bg-[#010101]  w-full px-[32px] md:px-[25px] pb-[100px] pt-[32px] flex flex-col gap-[20px] lg:gap-[24px]  max-[600px]:gap-[12px]'>
         <div
           className={`flex items-center justify-between pr-[30px] gap-[10px] rounded-lg max-[600px]:flex-none max-[600px]:min-w-full max-[600px]:pr-[15px]
@@ -108,14 +107,16 @@ const Individualmusic = () => {
               <span>Happy, Dreamy</span>
             </div>
             <img
+              onClick={() => router.push('/Signup')}
               src='/Images/Trackdetails/plus.svg'
               alt='pl'
-              className='h-[15px] md:h-[20px]'
+              className='h-[15px] md:h-[20px] cursor-pointer'
             />
             <img
+              onClick={() => router.push('/Signup')}
               src='/Images/Trackdetails/dnl.svg'
               alt='dn'
-              className='h-[15px] md:h-[20px]'
+              className='h-[15px] md:h-[20px] cursor-pointer'
             />
           </div>
         </div>
