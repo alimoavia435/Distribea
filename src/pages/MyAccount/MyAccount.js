@@ -3,6 +3,8 @@ import Download from '@/Components/MyAccount/Download/Download'
 import MyAccountNavbar from '@/Components/MyAccount/MyAccountNavbar/MyAccountNavbar'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import SafeList from '@/Components/SafeList/SafeList'
+import Profile from '@/Components/Profile/Profile'
 const MyAccount = () => {
   const router = useRouter()
   const [activeTab, setActiveTab] = useState('Subscription')
@@ -202,6 +204,8 @@ const MyAccount = () => {
         )}
 
         {activeTab === 'Downloads' && <Download />}
+        {activeTab === 'SafeList' && <SafeList />}
+        {activeTab === 'Profile' && <Profile />}
       </div>
       <Footer />
     </div>
