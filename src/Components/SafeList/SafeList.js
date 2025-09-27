@@ -61,7 +61,7 @@ export default function SafeList() {
   return (
     <div
   className="
-    flex items-center justify-center 
+    flex flex-col items-center justify-center 
     px-6 py-10           /* mobile: smaller padding */
     sm:px-10 sm:pt-12 sm:pb-24 
     md:px-14 md:pt-[60px] md:pb-[160px] 
@@ -510,6 +510,65 @@ export default function SafeList() {
         </div>
       </div>
     </div>
+
+
+<div
+  className="
+    text-white flex flex-col gap-3 w-full max-w-[1328px] 
+    mt-[24px] md:mt-[48px]   /* small = 24px, md↑ = 48px */
+  "
+>
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            {/* YouTube Icon Image */}
+            <img
+              src="/Images/listicon/Twitch.png"
+              alt="youtube"
+              className="w-8 h-8"
+            />
+            <h2
+              className="
+    font-medium 
+    text-[18px] sm:text-[20px] 
+    leading-[24px] 
+    text-white
+  "   style={{ fontFamily: "Space Grotesk_Medium" }}
+            >
+              Twitch{" "}
+              <span
+                className="
+      font-[Space_Grotesk] 
+      font-light 
+      text-[16px] sm:text-[18px] 
+      leading-[24px] 
+      text-gray-400
+    "
+              >
+                (0)
+              </span>
+            </h2>
+          </div>
+        </div>
+
+{/* ....btn */}
+
+  <button
+            className=" bg-[#0C0E12] rounded-[12px] w-[129px] h-[40px] flex items-center justify-center
+    font-normal 
+    text-[14px] sm:text-[16px] 
+    leading-[24px] 
+    text-[#CECFD2] 
+    hover:underline
+    cursor-pointer
+  "  style={{ fontFamily: "Space Grotesk" }}
+          >
+            + Add new
+          </button>
+
+
+      </div>
+
     </div>
   );
 }
