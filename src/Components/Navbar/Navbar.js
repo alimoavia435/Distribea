@@ -60,8 +60,6 @@ const Navbar = () => {
                   }}
                 >
                   <option value="features" className='bg-black text-white'>Features</option>
-                  <option value="features" className='bg-black text-white'>option 2</option>
-                  <option value="features" className='bg-black text-white'>option 3</option>
                 </select>
               ) : (
                 <button
