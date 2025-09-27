@@ -3,8 +3,9 @@ import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import Image from 'next/image'
 import React from 'react'
-
+import { useRouter } from 'next/navigation'
 const Lifestyle = () => {
+  const router = useRouter()
   const categories = [
     { title: 'Home', img: '/images/mine/y1.png' },
     { title: 'Mind', img: '/images/mine/y2.png' },
@@ -174,7 +175,16 @@ const Lifestyle = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                 onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -246,7 +256,16 @@ const Lifestyle = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                 onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -319,7 +338,16 @@ const Lifestyle = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                 onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image

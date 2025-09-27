@@ -3,7 +3,7 @@
 import React from 'react'
 import './Categories.css'
 import Image from 'next/image'
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation'
 
 export default function Categories () {
   const router = useRouter()
@@ -45,13 +45,12 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
         {/* Categories */}
         <div className='relative z-1 w-full overflow-x-auto scrollbar-hide '>
-          <div className='flex  gap-6  mx-auto  md:px-0 lg:justify-center'>
+          <div className='flex  gap-6  mx-auto  md:px-0 xl:justify-center'>
             {/* Card 1 - Genres */}
             <div
-                      onClick={() => router.push('/Genre')}
-  role="button"
-  tabIndex={0}
-  
+              onClick={() => router.push('/Genre')}
+              role='button'
+              tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -60,7 +59,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[220px] sm:h-[293.58px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform'
+                 overflow-hidden hover:scale-105 transition-transform cursor-pointer' 
             >
               <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
@@ -83,9 +82,9 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 2 - Moods */}
             <div
-                 onClick={() => router.push('/Moods')}
-  role="button"
-  tabIndex={0}
+              onClick={() => router.push('/Moods')}
+              role='button'
+              tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
@@ -94,7 +93,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[260px] sm:h-[346.96px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform'
+                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
             >
               <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
@@ -123,7 +122,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               style={{
                 borderRadius: '17.93px',
                 background:
-                  'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
+                  ' linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
               }}
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[290px] sm:h-[387px] 
@@ -152,17 +151,17 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             {/* Card 4 - Culture */}
             <div
               onClick={() => router.push('/Culture')}
-  role="button"
-  tabIndex={0}
+              role='button'
+              tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
-                  'linear-gradient(179.71deg, rgba(208, 136, 128, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
+                  ' linear-gradient(179.71deg, rgba(208, 136, 128, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
               }}
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[260px] sm:h-[346.96px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform'
+                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
             >
               <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
@@ -185,19 +184,18 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
             {/* Card 5 - Lifestyle */}
             <div
-                      onClick={() => router.push('/Lifestyle')}
-  role="button"
-  tabIndex={0}
-  
+              onClick={() => router.push('/Lifestyle')}
+              role='button'
+              tabIndex={0}
               style={{
                 borderRadius: '17.93px',
                 background:
-                  'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
+                  ' linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)'
               }}
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[220px] sm:h-[293.58px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform'
+                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
             >
               <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
                 <Image

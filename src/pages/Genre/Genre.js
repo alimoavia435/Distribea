@@ -2,9 +2,11 @@ import Hero from '@/Components/Creators/Hero/Hero'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Genre = () => {
+  const router = useRouter()
   const categories = [
     { title: 'Hip-Hop', img: '/images/mine/e1.png' },
     { title: 'Trap', img: '/images/mine/e2.png' },
@@ -13,7 +15,7 @@ const Genre = () => {
     { title: 'House', img: '/images/mine/e5.png' },
     { title: 'EDM', img: '/images/mine/e6.png' },
     { title: 'Reggaeton', img: '/Images/mine/e7.png' },
-    { title: 'Lo-fi', img: '/Images/mine/e8.png' },
+    { title: 'Lo-fi', img: '/Images/mine/e8.png' }
   ]
   const categories1 = [
     { title: 'Jazz', img: '/images/mine/e9.png' },
@@ -23,10 +25,10 @@ const Genre = () => {
     { title: 'Folk', img: '/images/mine/e13.png' },
     { title: 'Disco', img: '/images/mine/e14.png' },
     { title: 'Rock', img: '/images/mine/e15.png' },
-    { title: 'Funk', img: '/images/mine/e16.png' },
+    { title: 'Funk', img: '/images/mine/e16.png' }
   ]
 
-    const categories3 = [
+  const categories3 = [
     { title: 'Classical', img: '/images/mine/e17.png' },
     { title: 'Orchestral', img: '/images/mine/e18.png' },
     { title: 'Soundtrack', img: '/images/mine/e19.png' },
@@ -36,7 +38,6 @@ const Genre = () => {
     { title: 'Afrobeat', img: '/images/mine/e23.png' },
     { title: 'Metal', img: '/images/mine/e24.png' }
   ]
-
 
   return (
     <div
@@ -173,7 +174,16 @@ const Genre = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -245,7 +255,16 @@ const Genre = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
@@ -284,7 +303,7 @@ const Genre = () => {
                 className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
-                🎥  Cinematic & Global
+                🎥 Cinematic & Global
               </p>
               <p
                 className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -318,7 +337,16 @@ const Genre = () => {
                   className='flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[272.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
                 >
                   <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
                     <Image
