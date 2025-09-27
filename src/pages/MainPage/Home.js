@@ -9,7 +9,6 @@ import Hero from '@/Components/Hero/Hero'
 import Money from '@/Components/Money/Money'
 import Navbar from '@/Components/Navbar/Navbar'
 import Pricing from '@/Components/Pricing/Pricing'
-import SafeList from '@/Components/SafeList/SafeList'
 import React from 'react'
 
 const Home = () => {
@@ -35,7 +34,6 @@ const Home = () => {
         <CardCategories />
         <Carousel />
       </div>
-      <SafeList/>
       <Footer />
     </div>
   )
