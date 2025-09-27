@@ -77,3 +77,8 @@ body {
 
 
 /* ..... */
+@media screen and (min-width: 750px) {
+  .custom-height {
+    height: -webkit-fill-available;
+  }
+}
