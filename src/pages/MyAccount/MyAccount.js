@@ -57,7 +57,7 @@ const MyAccount = () => {
         {activeTab === 'Subscription' && (
           <div className='flex items-center max-[768px]:flex-col gap-6 w-full'>
             {/* Subscription Card */}
-            <div className='flex w-full px-[15px] py-[25px] sm:px-[36px] sm:py-[36px] flex-col gap-[48px] items-start bg-[#0C0E12] rounded-[20px]'>
+            <div className='custom-height flex w-full px-[15px] py-[25px] sm:px-[36px] sm:py-[36px] flex-col gap-[48px] items-start bg-[#0C0E12] rounded-[20px] '>
               <p
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
                 className='text-[#ffffff] text-[26px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-[100%]'
@@ -168,7 +168,7 @@ const MyAccount = () => {
                 backgroundImage: "url('/Images/el.png')",
                 backgroundRepeat: 'no-repeat'
               }}
-              className='bg-[#0C0E12] px-[15px] sm:px-[20px] py-[24px] rounded-[16px] flex flex-col items-center justify-center text-center w-full max-w-[311px] max-[768px]:max-w-full'
+              className='bg-[#0C0E12] px-[15px] sm:px-[20px] py-[24px] rounded-[16px] flex flex-col items-center justify-center text-center w-full max-w-[311px] max-[768px]:max-w-full custom-height'
             >
               <img
                 src='/Images/Myaccount/grd.png'
