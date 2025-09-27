@@ -70,7 +70,7 @@ const getPriorityClass = (priority) => {
 
 export default function SupportTicketsTable() {
   return (
-    <div className="flex justify-center p-4 ">
+    <div className="flex justify-center  ">
     <div className="flex justify-center w-full">
   <TableContainer
     component={Paper}
