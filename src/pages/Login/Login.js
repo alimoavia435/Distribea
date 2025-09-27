@@ -95,8 +95,9 @@ const Login = () => {
               </div>
               {/* button */}
               <button
+                onClick={() => router.push('/MyAccount')}
                 style={{ fontFamily: 'Space Grotesk_Bold' }}
-                className='bg-[#175CD3] border-2 border-[#FFFFFF1F] rounded-[999px] w-full max-[768px]:py-[9px] py-[14px] text-[14px] lg:text-[15px] xl:text-[17px] text-[#FFFFFF] text-center mt-[4px]'
+                className=' cursor-pointer bg-[#175CD3] border-2 border-[#FFFFFF1F] rounded-[999px] w-full max-[768px]:py-[9px] py-[14px] text-[14px] lg:text-[15px] xl:text-[17px] text-[#FFFFFF] text-center mt-[4px]'
               >
                 Sign in
               </button>

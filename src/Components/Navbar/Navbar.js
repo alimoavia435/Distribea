@@ -20,6 +20,13 @@ const Navbar = () => {
     setDrawerOpen(open)
   }
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const navLinks = ['Home', 'Get Started', 'Features', 'Pricing', 'About']
 
   return (
@@ -35,23 +42,45 @@ const Navbar = () => {
             <img
               src='/Images/logo.svg'
               alt='logo'
-              className='max-[768px]:w-[120px]'
+              className='max-[768px]:w-[120px] cursor-pointer'
             />
           </div>
 
           {/* Center - Nav links (Desktop only) */}
           <div className='hidden md:flex max-[1000px]:space-x-[18px] space-x-[24px]  text-[rgba(247,247,247,1)]'>
             {navLinks.map(link => (
-              <button
-                key={link}
-                className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize'
-                style={{
-                  fontFamily: 'Space Grotesk_Medium',
-                  textTransform: 'capitalize'
-                }}
-              >
-                {link}
-              </button>
+              link === 'Features' ? (
+                <select
+                  key={link}
+                  className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize bg-transparent border-none outline-none cursor-pointer'
+                  style={{
+                    fontFamily: 'Space Grotesk_Medium',
+                    textTransform: 'capitalize',
+                    color: 'rgba(247,247,247,1)'
+                  }}
+                >
+                  <option value="features" className='bg-black text-white'>Features</option>
+                  <option value="features" className='bg-black text-white'>option 2</option>
+                  <option value="features" className='bg-black text-white'>option 3</option>
+                </select>
+              ) : (
+                <button
+                  key={link}
+                  className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize cursor-pointer'
+                  style={{
+                    fontFamily: 'Space Grotesk_Medium',
+                    textTransform: 'capitalize'
+                  }}
+                  onClick={() => {
+                    if (link === 'Home') scrollToSection('hero')
+                    else if (link === 'Get Started') scrollToSection('essential-features')
+                    else if (link === 'Pricing') scrollToSection('pricing')
+                    else if (link === 'About') scrollToSection('card-categories')
+                  }}
+                >
+                  {link}
+                </button>
+              )
             ))}
           </div>
 
@@ -75,7 +104,7 @@ const Navbar = () => {
 
           {/* Hamburger Menu (Mobile only) */}
           <div className='md:hidden'>
-            <IconButton onClick={toggleDrawer(true)} className='text-white'>
+            <IconButton onClick={toggleDrawer(true)} className='text-white cursor-pointer'>
               {/* <MenuIcon /> */}
               <img src='/Images/menu.svg' alt='menu' />
             </IconButton>
@@ -89,15 +118,35 @@ const Navbar = () => {
           <List>
             {navLinks?.map(text => (
               <ListItem key={text}>
-                <p
-                  className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize'
-                  style={{
-                    fontFamily: 'Space Grotesk_Medium',
-                    textTransform: 'capitalize'
-                  }}
-                >
-                  {text}
-                </p>
+                {text === 'Features' ? (
+                  <select
+                    className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize bg-transparent border-none outline-none cursor-pointer'
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium',
+                      textTransform: 'capitalize',
+                      color: 'rgba(247,247,247,1)'
+                    }}
+                  >
+                    <option value="features" className='bg-black text-white'>Features</option>
+                  </select>
+                ) : (
+                  <p
+                    className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize cursor-pointer'
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium',
+                      textTransform: 'capitalize'
+                    }}
+                    onClick={() => {
+                      if (text === 'Home') scrollToSection('hero')
+                      else if (text === 'Get Started') scrollToSection('essential-features')
+                      else if (text === 'Pricing') scrollToSection('pricing')
+                      else if (text === 'About') scrollToSection('card-categories')
+                      setDrawerOpen(false)
+                    }}
+                  >
+                    {text}
+                  </p>
+                )}
               </ListItem>
             ))}
           </List>

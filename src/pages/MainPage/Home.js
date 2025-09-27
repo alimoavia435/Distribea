@@ -18,20 +18,28 @@ const Home = () => {
       className='bg-[0_0] bg-no-repeat  mx-auto overflow-x-hidden'
     >
       <Navbar />
-      <Hero />
-      <EssentialFeatures />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="essential-features">
+        <EssentialFeatures />
+      </div>
       <Categories />
       <Feature2 />
       <Everything />
       <Money />
-      <Pricing />
+      <div id="pricing">
+        <Pricing />
+      </div>
       <div className='relative'>
         <img
           src='/Images/pricing/shadpricing.png'
           alt='pricing-bg'
           className='h-[700px] w-[700px] absolute bottom-[500px] left-[-250px] 2xl:left-[-250px] max-[768px]:bottom-[200px]'
         />
-        <CardCategories />
+        <div id="card-categories">
+          <CardCategories />
+        </div>
         <Carousel />
       </div>
       <Footer />
