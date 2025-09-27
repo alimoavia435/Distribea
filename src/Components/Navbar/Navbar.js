@@ -3,31 +3,42 @@ import {
   AppBar,
   Toolbar,
   IconButton,
-  Button,
   Drawer,
   List,
   ListItem,
-  ListItemText,
   Divider
 } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
   const router = useRouter()
+  const pathname = usePathname()
+
   const toggleDrawer = open => () => {
     setDrawerOpen(open)
   }
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+  // Hybrid navigation (scroll if on home, else push with hash)
+  const handleNavClick = (sectionId) => {
+    if (pathname === '/') {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      router.push(`/#${sectionId}`)
     }
+    setDrawerOpen(false)
   }
 
-  const navLinks = ['Home', 'Get Started', 'Features', 'Pricing', 'About']
+  const navLinks = [
+    { label: 'Home', id: 'hero' },
+    { label: 'Get Started', id: 'essential-features' },
+    { label: 'Features', id: 'features' }, // dropdown later
+    { label: 'Pricing', id: 'pricing' },
+    { label: 'About', id: 'card-categories' }
+  ]
 
   return (
     <>
@@ -43,15 +54,16 @@ const Navbar = () => {
               src='/Images/logo.svg'
               alt='logo'
               className='max-[768px]:w-[120px] cursor-pointer'
+              onClick={() => router.push('/')}
             />
           </div>
 
           {/* Center - Nav links (Desktop only) */}
-          <div className='hidden md:flex max-[1000px]:space-x-[18px] space-x-[24px]  text-[rgba(247,247,247,1)]'>
-            {navLinks.map(link => (
-              link === 'Features' ? (
+          <div className='hidden md:flex max-[1000px]:space-x-[18px] space-x-[24px] text-[rgba(247,247,247,1)]'>
+            {navLinks.map(link =>
+              link.label === 'Features' ? (
                 <select
-                  key={link}
+                  key={link.label}
                   className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize bg-transparent border-none outline-none cursor-pointer'
                   style={{
                     fontFamily: 'Space Grotesk_Medium',
@@ -63,36 +75,31 @@ const Navbar = () => {
                 </select>
               ) : (
                 <button
-                  key={link}
+                  key={link.label}
                   className='max-[1000px]:text-[14px] text-[16px] font-[500] capitalize cursor-pointer'
                   style={{
                     fontFamily: 'Space Grotesk_Medium',
                     textTransform: 'capitalize'
                   }}
-                  onClick={() => {
-                    if (link === 'Home') scrollToSection('hero')
-                    else if (link === 'Get Started') scrollToSection('essential-features')
-                    else if (link === 'Pricing') scrollToSection('pricing')
-                    else if (link === 'About') scrollToSection('card-categories')
-                  }}
+                  onClick={() => handleNavClick(link.id)}
                 >
-                  {link}
+                  {link.label}
                 </button>
               )
-            ))}
+            )}
           </div>
 
           {/* Right - Buttons (Desktop) */}
           <div className='hidden md:flex space-x-[12px]'>
             <button
-              className='cursor-pointer text-white border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] max-[1000px]:text-[14px] text-[15px] font-[700]'
+              className='cursor-pointer text-white border border-[rgba(55,58,65,1)] shadow rounded-full px-[16px] py-[10px] max-[1000px]:text-[14px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
               onClick={() => router.push('/Login')}
             >
               Log in
             </button>
             <button
-              className='cursor-pointer bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer bg-[rgba(23,92,211,1)] shadow rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
               onClick={() => router.push('/Signup')}
             >
@@ -103,7 +110,6 @@ const Navbar = () => {
           {/* Hamburger Menu (Mobile only) */}
           <div className='md:hidden'>
             <IconButton onClick={toggleDrawer(true)} className='text-white cursor-pointer'>
-              {/* <MenuIcon /> */}
               <img src='/Images/menu.svg' alt='menu' />
             </IconButton>
           </div>
@@ -114,9 +120,9 @@ const Navbar = () => {
       <Drawer anchor='right' open={drawerOpen} onClose={toggleDrawer(false)}>
         <div className='w-64 bg-black h-full text-white flex flex-col'>
           <List>
-            {navLinks?.map(text => (
-              <ListItem key={text}>
-                {text === 'Features' ? (
+            {navLinks?.map(link => (
+              <ListItem key={link.label}>
+                {link.label === 'Features' ? (
                   <select
                     className='text-[16px] text-[rgba(247,247,247,1)] font-[500] capitalize bg-transparent border-none outline-none cursor-pointer'
                     style={{
@@ -134,15 +140,9 @@ const Navbar = () => {
                       fontFamily: 'Space Grotesk_Medium',
                       textTransform: 'capitalize'
                     }}
-                    onClick={() => {
-                      if (text === 'Home') scrollToSection('hero')
-                      else if (text === 'Get Started') scrollToSection('essential-features')
-                      else if (text === 'Pricing') scrollToSection('pricing')
-                      else if (text === 'About') scrollToSection('card-categories')
-                      setDrawerOpen(false)
-                    }}
+                    onClick={() => handleNavClick(link.id)}
                   >
-                    {text}
+                    {link.label}
                   </p>
                 )}
               </ListItem>
@@ -151,14 +151,14 @@ const Navbar = () => {
           <Divider className='bg-[rgba(55,58,65,1)]' />
           <div className='flex flex-col space-y-3 p-4'>
             <button
-              className='cursor-pointer text-[rgba(247,247,247,1)] border border-[rgba(55,58,65,1)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer text-[rgba(247,247,247,1)] border border-[rgba(55,58,65,1)] shadow rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
               onClick={() => router.push('/Login')}
             >
               Log in
             </button>
             <button
-              className='cursor-pointer text-[rgba(247,247,247,1)] bg-[var(--Colors-Blue-700,rgba(23,92,211,1))] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
+              className='cursor-pointer text-[rgba(247,247,247,1)] bg-[rgba(23,92,211,1)] shadow rounded-full px-[16px] py-[10px] text-[15px] font-[700]'
               style={{ fontFamily: 'Space Grotesk_Bold' }}
               onClick={() => router.push('/Signup')}
             >
