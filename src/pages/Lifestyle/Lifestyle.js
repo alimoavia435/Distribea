@@ -212,7 +212,7 @@ const Lifestyle = () => {
                 className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
-                📚 Knowledge & Education
+                🤝 People & Society
               </p>
               <p
                 className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
