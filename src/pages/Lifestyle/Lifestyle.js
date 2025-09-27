@@ -6,41 +6,36 @@ import React from 'react'
 
 const Lifestyle = () => {
   const categories = [
-    { title: 'Gaming', img: '/images/mine/n1.png' },
-    { title: 'Vlogs', img: '/images/mine/n2.png' },
-    { title: 'Reviews', img: '/Images/Creators/review.png' },
-    { title: 'Animations', img: '/Images/Creators/animation.png' },
-    { title: 'Storytelling', img: '/images/mine/n3.png' },
-    { title: 'Challenges', img: '/images/mine/n4.png' },
-    { title: 'Tutorials', img: '/Images/mine/n5.png' },
-    { title: 'Podcasts', img: '/Images/Creators/pod.png' },
-    { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
-    { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
+    { title: 'Home', img: '/images/mine/y1.png' },
+    { title: 'Mind', img: '/images/mine/y2.png' },
+    { title: 'Nature', img: '/Images/mine/y3.png' },
+    { title: 'Family', img: '/Images/mine/y4.png' },
+    { title: 'Pets', img: '/images/mine/y5.png' },
+    { title: 'Balance', img: '/images/mine/y6.png' },
+    { title: 'Food', img: '/Images/mine/y7.png' },
+    { title: 'Body', img: '/Images/mine/y8.png' },
   ]
   const categories1 = [
-    { title: 'Tech', img: '/images/mine/n15.png' },
-    { title: 'Business', img: '/images/mine/n13.png' },
-    { title: 'Science', img: '/images/mine/b1.png' },
-    { title: 'Finance', img: '/images/mine/b2.png' },
-    { title: 'Productivity', img: '/images/mine/b3.png' },
-    { title: 'History', img: '/images/mine/b4.png' },
-    { title: 'Philosphy', img: '/images/mine/b5.png' },
-    { title: 'Documentaries', img: '/images/mine/b6.png' },
-    { title: 'Enterpreneurship', img: '/images/mine/b7.png' },
-    { title: 'Career', img: '/images/mine/b8.png' }
+    { title: 'Celebration', img: '/images/mine/y9.png' },
+    { title: 'Community', img: '/images/mine/y10.png' },
+    { title: 'Fights', img: '/images/mine/y11.png' },
+    { title: 'Love', img: '/images/mine/y12.png' },
+    { title: 'Friends', img: '/images/mine/y13.png' },
+    { title: 'Moments', img: '/images/mine/y14.png' },
+    { title: 'Together', img: '/images/mine/y15.png' },
+    { title: 'Relationships', img: '/images/mine/y16.png' },
   ]
 
-  const categories3 = [
-    { title: 'Fitness', img: '/images/mine/o1.png' },
-    { title: 'Fashion', img: '/images/mine/o2.png' },
-    { title: 'Pets & Animals', img: '/images/mine/o3.png' },
-    { title: 'Motivation', img: '/images/mine/o4.png' },
-    { title: 'Spirituality', img: '/images/mine/o5.png' },
-    { title: 'Travel', img: '/images/mine/o6.png' },
-    { title: 'Photography & Art', img: '/images/mine/o7.png' },
-    { title: 'Kids & Family', img: '/images/mine/o8.png' },
-    { title: 'Home & Interior', img: '/images/mine/o9.png' },
-    { title: 'Wellness', img: '/images/mine/o10.png' }
+    const categories3 = [
+    { title: 'Art', img: '/images/mine/y17.png' },
+    { title: 'Design', img: '/images/mine/y18.png' },
+    { title: 'Style', img: '/images/mine/y19.png' },
+    { title: 'Dance', img: '/images/mine/y20.png' },
+    { title: 'Writing', img: '/images/mine/y21.png' },
+    { title: 'Creativity', img: '/images/mine/y22.png' },
+    { title: 'Performance', img: '/images/mine/y23.png' },
+    { title: 'Innovation', img: '/images/mine/y24.png' },
+
   ]
 
   return (
@@ -145,7 +140,7 @@ const Lifestyle = () => {
                 className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
-                🎬 Entertainment & Media
+                🌍 Life & Essence
               </p>
               <p
                 className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -163,9 +158,9 @@ const Lifestyle = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
             >
               {categories?.map((cat, index) => (
@@ -235,9 +230,9 @@ const Lifestyle = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
             >
               {categories1?.map((cat, index) => (
@@ -290,7 +285,7 @@ const Lifestyle = () => {
                 className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
-                🌟 Passion & Inspiration
+                🎥 Art & Expression
               </p>
               <p
                 className='text-sm mt-3  text-center text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-[400] text-[#94979C] tracking-0 leading-[140%]'
@@ -308,9 +303,9 @@ const Lifestyle = () => {
   min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-4
   !gap-2 lg:!gap-6 
-  max-w-[1210px] mx-auto w-full
+  max-w-[1080px] mx-auto w-full
 '
             >
               {categories3?.map((cat, index) => (
