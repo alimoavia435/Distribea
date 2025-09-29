@@ -1,5 +1,5 @@
 import Navbar from '@/Components/Navbar/Navbar'
-// import Image from 'next/image'
+import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 const Login = () => {
@@ -26,10 +26,13 @@ const Login = () => {
           {/* welcome note */}
           <div className='flex flex-col items-center  max-[768px]:gap-[30px] gap-[64px]  max-[768px]:py-[70px] py-[129px]'>
             <div className='flex flex-col items-center w-full max-w-[360px]'>
-              <img
+              <Image
                 src='/Images/Login/logo.svg'
-                alt=''
+                alt='Distribea Logo'
+                width={80}
+                height={80}
                 className='mb-[24px]  max-[768px]:h-[80px] w-[80px]'
+                priority
               />
               <p
                 className=' text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[25px] xl:text-[30px] leading-[105%] mb-[12px] text-[#F7F7F7]'

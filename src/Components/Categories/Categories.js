@@ -9,10 +9,13 @@ export default function Categories () {
   const router = useRouter()
   return (
     <div className='relative overflow-x-hidden'>
-      <img
+      <Image
         src='/Images/pricing/shadpricing.png'
         alt='pricing-bg'
+        width={663}
+        height={589}
         className='h-[589px] w-[663px] absolute top-[-38px] left-[-150px] 2xl:left-[-90px]'
+        priority
       />
       <section className='relative bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]'>
         {/* Heading */}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Everything = () => {
   return (
@@ -6,7 +7,14 @@ const Everything = () => {
       className='px-[25px] pt-[160px] pb-[96px] flex flex-col items-center gap-[48px] bg-no-repeat max-[768px]:pt-[70px] max-[768px]:pb-[50px] max-[768px]:gap-[28px]'
       style={{ backgroundImage: "url('/Images/shadevery.png')",backgroundPosition:"center" }}
     >
-      <img src='/Images/logomiddle.svg' alt='' className='max-[768px]:h-[130px]' />
+      <Image 
+        src='/Images/logomiddle.svg' 
+        alt='Distribea Logo' 
+        width={200}
+        height={130}
+        className='max-[768px]:h-[130px]'
+        priority
+      />
 
       <h2
         style={{
