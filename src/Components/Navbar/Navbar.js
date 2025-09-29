@@ -108,7 +108,7 @@ const Navbar = () => {
           <div className='md:hidden'>
             <IconButton onClick={toggleDrawer(true)} className='text-white cursor-pointer'>
               {/* <MenuIcon /> */}
-              <img src='/Images/menu.svg' alt='menu' />
+              <Image src='/Images/menu.svg' alt='menu' width={24} height={24} />
             </IconButton>
           </div>
         </Toolbar>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -80,9 +81,12 @@ const Carousel = () => {
         {/* Customer Profile */}
         <div className='flex items-center justify-center space-x-4 mb-12'>
           {/* Profile Image */}
-          <img
+          <Image
             src={currentTestimonial.image}
             alt={currentTestimonial.name}
+            width={60}
+            height={60}
+            className="rounded-full"
             onError={e => {
               e.target.style.display = 'none'
               e.target.nextSibling.style.display = 'flex'
@@ -113,14 +117,14 @@ const Carousel = () => {
           onClick={prevTestimonial}
           className='w-12 h-12 rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
         >
-          <img src='/Images/left.svg' alt='' />
+          <Image src='/Images/left.svg' alt='Previous' width={24} height={24} />
         </button>
 
         <button
           onClick={nextTestimonial}
           className='w-12 h-12 rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
         >
-          <img src='/Images/right.svg' alt='' />
+          <Image src='/Images/right.svg' alt='Next' width={24} height={24} />
         </button>
       </div>
     </div>
