@@ -7,41 +7,41 @@ import { useRouter } from 'next/navigation'
 const Creators = () => {
   const router = useRouter()
   const categories = [
-    { title: 'Gaming', img: '/images/mine/n1.png' },
-    { title: 'Vlogs', img: '/images/mine/n2.png' },
+    { title: 'Gaming', img: '/Images/mine/n1.png' },
+    { title: 'Vlogs', img: '/Images/mine/n2.png' },
     { title: 'Reviews', img: '/Images/Creators/review.png' },
     { title: 'Animations', img: '/Images/Creators/animation.png' },
-    { title: 'Storytelling', img: '/images/mine/n3.png' },
-    { title: 'Challenges', img: '/images/mine/n4.png' },
+    { title: 'Storytelling', img: '/Images/mine/n3.png' },
+    { title: 'Challenges', img: '/Images/mine/n4.png' },
     { title: 'Tutorials', img: '/Images/mine/n5.png' },
     { title: 'Podcasts', img: '/Images/Creators/pod.png' },
     { title: 'Short Films', img: '/Images/Creators/shortfilms.png' },
     { title: 'Live Streaming', img: '/Images/Creators/livestreaming.png' }
   ]
   const categories1 = [
-    { title: 'Tech', img: '/images/mine/n15.png' },
-    { title: 'Business', img: '/images/mine/n13.png' },
-    { title: 'Science', img: '/images/mine/b1.png' },
-    { title: 'Finance', img: '/images/mine/b2.png' },
-    { title: 'Productivity', img: '/images/mine/b3.png' },
-    { title: 'History', img: '/images/mine/b4.png' },
-    { title: 'Philosphy', img: '/images/mine/b5.png' },
-    { title: 'Documentaries', img: '/images/mine/b6.png' },
-    { title: 'Enterpreneurship', img: '/images/mine/b7.png' },
-    { title: 'Career', img: '/images/mine/b8.png' }
+    { title: 'Tech', img: '/Images/mine/n15.png' },
+    { title: 'Business', img: '/Images/mine/n13.png' },
+    { title: 'Science', img: '/Images/mine/b1.png' },
+    { title: 'Finance', img: '/Images/mine/b2.png' },
+    { title: 'Productivity', img: '/Images/mine/b3.png' },
+    { title: 'History', img: '/Images/mine/b4.png' },
+    { title: 'Philosphy', img: '/Images/mine/b5.png' },
+    { title: 'Documentaries', img: '/Images/mine/b6.png' },
+    { title: 'Enterpreneurship', img: '/Images/mine/b7.png' },
+    { title: 'Career', img: '/Images/mine/b8.png' }
   ]
 
   const categories3 = [
-    { title: 'Fitness', img: '/images/mine/o1.png' },
-    { title: 'Fashion', img: '/images/mine/o2.png' },
-    { title: 'Pets & Animals', img: '/images/mine/o3.png' },
-    { title: 'Motivation', img: '/images/mine/o4.png' },
-    { title: 'Spirituality', img: '/images/mine/o5.png' },
-    { title: 'Travel', img: '/images/mine/o6.png' },
-    { title: 'Photography & Art', img: '/images/mine/o7.png' },
-    { title: 'Kids & Family', img: '/images/mine/o8.png' },
-    { title: 'Home & Interior', img: '/images/mine/o9.png' },
-    { title: 'Wellness', img: '/images/mine/o10.png' }
+    { title: 'Fitness', img: '/Images/mine/o1.png' },
+    { title: 'Fashion', img: '/Images/mine/o2.png' },
+    { title: 'Pets & Animals', img: '/Images/mine/o3.png' },
+    { title: 'Motivation', img: '/Images/mine/o4.png' },
+    { title: 'Spirituality', img: '/Images/mine/o5.png' },
+    { title: 'Travel', img: '/Images/mine/o6.png' },
+    { title: 'Photography & Art', img: '/Images/mine/o7.png' },
+    { title: 'Kids & Family', img: '/Images/mine/o8.png' },
+    { title: 'Home & Interior', img: '/Images/mine/o9.png' },
+    { title: 'Wellness', img: '/Images/mine/o10.png' }
   ]
 
   return (

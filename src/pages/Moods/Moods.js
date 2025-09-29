@@ -7,35 +7,35 @@ import { useRouter } from 'next/navigation'
 const Lifestyle = () => {
   const router = useRouter()
   const categories = [
-    { title: 'Happy', img: '/images/mine/z1.png' },
-    { title: 'Motivational', img: '/images/mine/z2.png' },
+    { title: 'Happy', img: '/Images/mine/z1.png' },
+    { title: 'Motivational', img: '/Images/mine/z2.png' },
     { title: 'Energetic', img: '/Images/mine/z3.png' },
     { title: 'Party', img: '/Images/mine/z4.png' },
-    { title: 'Uplifting', img: '/images/mine/z5.png' },
-    { title: 'Upbeat', img: '/images/mine/z6.png' },
+    { title: 'Uplifting', img: '/Images/mine/z5.png' },
+    { title: 'Upbeat', img: '/Images/mine/z6.png' },
     { title: 'Cheerful', img: '/Images/mine/z7.png' },
     { title: 'Fun', img: '/Images/mine/z8.png' },
   ]
   const categories1 = [
-    { title: 'Romantic', img: '/images/mine/z9.png' },
-    { title: 'Nostalgic', img: '/images/mine/z10.png' },
-    { title: 'Relaxed', img: '/images/mine/z11.png' },
-    { title: 'Peaceful', img: '/images/mine/z12.png' },
-    { title: 'Sentimental', img: '/images/mine/z13.png' },
-    { title: 'Chill', img: '/images/mine/z14.png' },
-    { title: 'Hopeful', img: '/images/mine/z15.png' },
-    { title: 'Dreamy', img: '/images/mine/z16.png' },
+    { title: 'Romantic', img: '/Images/mine/z9.png' },
+    { title: 'Nostalgic', img: '/Images/mine/z10.png' },
+    { title: 'Relaxed', img: '/Images/mine/z11.png' },
+    { title: 'Peaceful', img: '/Images/mine/z12.png' },
+    { title: 'Sentimental', img: '/Images/mine/z13.png' },
+    { title: 'Chill', img: '/Images/mine/z14.png' },
+    { title: 'Hopeful', img: '/Images/mine/z15.png' },
+    { title: 'Dreamy', img: '/Images/mine/z16.png' },
   ]
 
     const categories3 = [
-    { title: 'Powerful', img: '/images/mine/z17.png' },
-    { title: 'Dramatic', img: '/images/mine/z18.png' },
-    { title: 'Serious', img: '/images/mine/z19.png' },
-    { title: 'Epic', img: '/images/mine/z20.png' },
-    { title: 'Mysterious', img: '/images/mine/z21.png' },
-    { title: 'Suspenseful', img: '/images/mine/z22.png' },
-    { title: 'Aggressive', img: '/images/mine/z23.png' },
-    { title: 'Cinematic', img: '/images/mine/z24.png' },
+    { title: 'Powerful', img: '/Images/mine/z17.png' },
+    { title: 'Dramatic', img: '/Images/mine/z18.png' },
+    { title: 'Serious', img: '/Images/mine/z19.png' },
+    { title: 'Epic', img: '/Images/mine/z20.png' },
+    { title: 'Mysterious', img: '/Images/mine/z21.png' },
+    { title: 'Suspenseful', img: '/Images/mine/z22.png' },
+    { title: 'Aggressive', img: '/Images/mine/z23.png' },
+    { title: 'Cinematic', img: '/Images/mine/z24.png' },
   ]
 
   return (

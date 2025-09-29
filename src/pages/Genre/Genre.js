@@ -8,35 +8,35 @@ import React from 'react'
 const Genre = () => {
   const router = useRouter()
   const categories = [
-    { title: 'Hip-Hop', img: '/images/mine/e1.png' },
-    { title: 'Trap', img: '/images/mine/e2.png' },
+    { title: 'Hip-Hop', img: '/Images/mine/e1.png' },
+    { title: 'Trap', img: '/Images/mine/e2.png' },
     { title: 'Techno', img: '/Images/mine/e3.png' },
     { title: 'Pop', img: '/Images/mine/e4.png' },
-    { title: 'House', img: '/images/mine/e5.png' },
-    { title: 'EDM', img: '/images/mine/e6.png' },
+    { title: 'House', img: '/Images/mine/e5.png' },
+    { title: 'EDM', img: '/Images/mine/e6.png' },
     { title: 'Reggaeton', img: '/Images/mine/e7.png' },
     { title: 'Lo-fi', img: '/Images/mine/e8.png' }
   ]
   const categories1 = [
-    { title: 'Jazz', img: '/images/mine/e9.png' },
-    { title: 'Blues', img: '/images/mine/e10.png' },
-    { title: 'Soul', img: '/images/mine/e11.png' },
-    { title: 'Country', img: '/images/mine/e12.png' },
-    { title: 'Folk', img: '/images/mine/e13.png' },
-    { title: 'Disco', img: '/images/mine/e14.png' },
-    { title: 'Rock', img: '/images/mine/e15.png' },
-    { title: 'Funk', img: '/images/mine/e16.png' }
+    { title: 'Jazz', img: '/Images/mine/e9.png' },
+    { title: 'Blues', img: '/Images/mine/e10.png' },
+    { title: 'Soul', img: '/Images/mine/e11.png' },
+    { title: 'Country', img: '/Images/mine/e12.png' },
+    { title: 'Folk', img: '/Images/mine/e13.png' },
+    { title: 'Disco', img: '/Images/mine/e14.png' },
+    { title: 'Rock', img: '/Images/mine/e15.png' },
+    { title: 'Funk', img: '/Images/mine/e16.png' }
   ]
 
   const categories3 = [
-    { title: 'Classical', img: '/images/mine/e17.png' },
-    { title: 'Orchestral', img: '/images/mine/e18.png' },
-    { title: 'Soundtrack', img: '/images/mine/e19.png' },
-    { title: 'Score', img: '/images/mine/e20.png' },
-    { title: 'Ambient', img: '/images/mine/e21.png' },
-    { title: 'Latin', img: '/images/mine/e22.png' },
-    { title: 'Afrobeat', img: '/images/mine/e23.png' },
-    { title: 'Metal', img: '/images/mine/e24.png' }
+    { title: 'Classical', img: '/Images/mine/e17.png' },
+    { title: 'Orchestral', img: '/Images/mine/e18.png' },
+    { title: 'Soundtrack', img: '/Images/mine/e19.png' },
+    { title: 'Score', img: '/Images/mine/e20.png' },
+    { title: 'Ambient', img: '/Images/mine/e21.png' },
+    { title: 'Latin', img: '/Images/mine/e22.png' },
+    { title: 'Afrobeat', img: '/Images/mine/e23.png' },
+    { title: 'Metal', img: '/Images/mine/e24.png' }
   ]
 
   return (

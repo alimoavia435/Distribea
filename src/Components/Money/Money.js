@@ -27,7 +27,7 @@ export default function Money() {
 //         </div>
 //   <div className="flex-shrink-0 w-full max-w-[576px] mx-auto">
 //   <Image
-//     src="/images/mine/i1.png"
+//     src="/Images/mine/i1.png"
 //     alt="Handshake"
 //     width={576}
 //     height={512}
@@ -39,7 +39,7 @@ export default function Money() {
 //         {/* Block 2 */}
 //       <div className="flex-shrink-0 w-full max-w-[576px] mx-auto">
 //   <Image
-//     src="/images/mine/i2.png"
+//     src="/Images/mine/i2.png"
 //     alt="Handshake"
 //     width={576}
 //     height={512}
@@ -88,7 +88,7 @@ export default function Money() {
 //         </div>
 //        <div className="flex-shrink-0 w-full max-w-[576px] mx-auto">
 //   <Image
-//     src="/images/mine/i3.png"
+//     src="/Images/mine/i3.png"
 //     alt="Handshake"
 //     width={576}
 //     height={512}
