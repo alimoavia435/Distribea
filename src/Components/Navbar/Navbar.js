@@ -9,7 +9,7 @@ import {
   Divider
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import { useRouter } from 'next/navigation'
+import { useRouter , usePathname } from 'next/navigation'
 import Image from 'next/image'
 
 const Navbar = () => {
