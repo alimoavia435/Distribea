@@ -12,6 +12,7 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 const MyAccountNavbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -32,10 +33,13 @@ const MyAccountNavbar = () => {
         <Toolbar className='flex justify-between py-[16px]'>
           {/* Left - Logo */}
           <div className='flex items-center space-x-2'>
-            <img
+            <Image
               src='/Images/Myaccount/logo.svg'
               alt='logo'
+              width={150}
+              height={40}
               className='max-[768px]:w-[120px]'
+              priority
             />
           </div>
 

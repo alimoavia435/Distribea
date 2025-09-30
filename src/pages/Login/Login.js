@@ -1,5 +1,5 @@
 import Navbar from '@/Components/Navbar/Navbar'
-// import Image from 'next/image'
+import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation'
 const Login = () => {
@@ -16,20 +16,26 @@ const Login = () => {
       <Navbar />
       <div className='flex flex-row items-center'>
         {/* left section */}
-        <img
+        <Image
           src='/Images/Login/Section.png'
-          alt=''
+          alt='Login Section'
+          width={600}
+          height={1000}
           className='w-[55%] h-[100vh] max-[1000px]:hidden'
+          priority
         />
         {/* right section  */}
         <div className='w-[55%] max-[1000px]:w-full h-[100vh] scrollbar-hide overflow-y-auto px-[25px] '>
           {/* welcome note */}
           <div className='flex flex-col items-center  max-[768px]:gap-[30px] gap-[64px]  max-[768px]:py-[70px] py-[129px]'>
             <div className='flex flex-col items-center w-full max-w-[360px]'>
-              <img
+              <Image
                 src='/Images/Login/logo.svg'
-                alt=''
+                alt='Distribea Logo'
+                width={80}
+                height={80}
                 className='mb-[24px]  max-[768px]:h-[80px] w-[80px]'
+                priority
               />
               <p
                 className=' text-center text-[18px] sm:text-[20px] md:text-[22px] lg:text-[25px] xl:text-[30px] leading-[105%] mb-[12px] text-[#F7F7F7]'
@@ -78,7 +84,7 @@ const Login = () => {
               {/* check and forgot passowrd */}
               <div className='flex items-center justify-between w-full mt-[4px]'>
                 <div className='flex items-center gap-[8px]'>
-                  <img src='/Images/Login/uncheck.svg' alt='' />
+                  <Image src='/Images/Login/uncheck.svg' alt='uncheck' width={16} height={16} />
                   <p
                     className='text-[11px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[105%] text-[#CECFD2]'
                     style={{ fontFamily: 'Space Grotesk_Medium' }}
@@ -105,29 +111,39 @@ const Login = () => {
               {/* social icons */}
 
               <div className='flex items-center max-[768px]:gap-[6px] gap-[12px] justify-center mt-[4px]'>
-                <img
+                <Image
                   src='/Images/Login/apple.svg'
                   alt='Apple'
+                  width={45}
+                  height={45}
                   className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
                 />
-                <img
+                <Image
                   src='/Images/Login/cord.svg'
                   alt='Discord'
+                  width={45}
+                  height={45}
                   className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
                 />
-                <img
+                <Image
                   src='/Images/Login/fb.svg'
                   alt='FB'
+                  width={45}
+                  height={45}
                   className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
                 />
-                <img
+                <Image
                   src='/Images/Login/google.svg'
                   alt='G'
+                  width={45}
+                  height={45}
                   className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
                 />
-                <img
+                <Image
                   src='/Images/Login/microsoft.svg'
                   alt='Microsoft'
+                  width={45}
+                  height={45}
                   className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
                 />
               </div>

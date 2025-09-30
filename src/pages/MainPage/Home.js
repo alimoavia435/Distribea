@@ -10,6 +10,7 @@ import Money from '@/Components/Money/Money'
 import Navbar from '@/Components/Navbar/Navbar'
 import Pricing from '@/Components/Pricing/Pricing'
 import React from 'react'
+import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -32,10 +33,13 @@ const Home = () => {
         <Pricing />
       </div>
       <div className='relative'>
-        <img
+        <Image
           src='/Images/pricing/shadpricing.png'
           alt='pricing-bg'
+          width={700}
+          height={700}
           className='h-[700px] w-[700px] absolute bottom-[500px] left-[-250px] 2xl:left-[-250px] max-[768px]:bottom-[200px]'
+          priority
         />
         <div id="card-categories">
           <CardCategories />

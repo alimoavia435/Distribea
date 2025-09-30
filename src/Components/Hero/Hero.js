@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
         <div className='mb-[16px] lg:mb-[20px] xl:mb-[24px] flex max-[600px]:justify-center'>
           <div className='flex space-x-[4px] items-center bg-[rgba(12,14,18,0.4)] border border-[rgba(55,58,65,0.3)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-[10px] py-[4px] pl-[4px] pr-[10px] max-w-fit'>
             <div className='flex space-x-[6px] items-center bg-[rgba(12,14,18,0.4)] border border-[rgba(55,58,65,0.3)] shadow-[0px_1px_2px_0px_var(--ColorsEffectsShadowsshadow-xs)] rounded-[6px] py-[2px] px-[4px]'>
-              <img src='/Images/bluebutton.svg' alt='free trial' />
+              <Image src='/Images/bluebutton.svg' alt='free trial' width={20} height={20} />
               <p
                 className='text-[10px] md:text-[11px] lg:text-[12px] xl:text-[14px] font-[500] '
                 style={{
@@ -28,7 +29,7 @@ const Hero = () => {
               }}
             >
               <p>Unlock Premium for 7 days for Free!</p>
-              <img src='/Images/arrow.svg' alt='arrow' />
+              <Image src='/Images/arrow.svg' alt='arrow' width={16} height={16} />
             </div>
           </div>
         </div>
@@ -106,10 +107,13 @@ const Hero = () => {
 
       {/* Right Section - Music Player */}
       {}
-      <img
+      <Image
         src='/Images/hero_img.png'
-        className='w-full max-h-[684px] xl:max-w-[512px]  lg:max-w-[450px] max-w-[400px]  max-[900px]:max-w-[550px] self-end '
         alt='hero'
+        width={512}
+        height={684}
+        className='w-full max-h-[684px] xl:max-w-[512px]  lg:max-w-[450px] max-w-[400px]  max-[900px]:max-w-[550px] self-end'
+        priority
       />
     </div>
   )

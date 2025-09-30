@@ -7,35 +7,35 @@ import { useRouter } from 'next/navigation'
 const Lifestyle = () => {
   const router = useRouter()
   const categories = [
-    { title: 'Home', img: '/images/mine/y1.png' },
-    { title: 'Mind', img: '/images/mine/y2.png' },
+    { title: 'Home', img: '/Images/mine/y1.png' },
+    { title: 'Mind', img: '/Images/mine/y2.png' },
     { title: 'Nature', img: '/Images/mine/y3.png' },
     { title: 'Family', img: '/Images/mine/y4.png' },
-    { title: 'Pets', img: '/images/mine/y5.png' },
-    { title: 'Balance', img: '/images/mine/y6.png' },
+    { title: 'Pets', img: '/Images/mine/y5.png' },
+    { title: 'Balance', img: '/Images/mine/y6.png' },
     { title: 'Food', img: '/Images/mine/y7.png' },
     { title: 'Body', img: '/Images/mine/y8.png' },
   ]
   const categories1 = [
-    { title: 'Celebration', img: '/images/mine/y9.png' },
-    { title: 'Community', img: '/images/mine/y10.png' },
-    { title: 'Fights', img: '/images/mine/y11.png' },
-    { title: 'Love', img: '/images/mine/y12.png' },
-    { title: 'Friends', img: '/images/mine/y13.png' },
-    { title: 'Moments', img: '/images/mine/y14.png' },
-    { title: 'Together', img: '/images/mine/y15.png' },
-    { title: 'Relationships', img: '/images/mine/y16.png' },
+    { title: 'Celebration', img: '/Images/mine/y9.png' },
+    { title: 'Community', img: '/Images/mine/y10.png' },
+    { title: 'Fights', img: '/Images/mine/y11.png' },
+    { title: 'Love', img: '/Images/mine/y12.png' },
+    { title: 'Friends', img: '/Images/mine/y13.png' },
+    { title: 'Moments', img: '/Images/mine/y14.png' },
+    { title: 'Together', img: '/Images/mine/y15.png' },
+    { title: 'Relationships', img: '/Images/mine/y16.png' },
   ]
 
     const categories3 = [
-    { title: 'Art', img: '/images/mine/y17.png' },
-    { title: 'Design', img: '/images/mine/y18.png' },
-    { title: 'Style', img: '/images/mine/y19.png' },
-    { title: 'Dance', img: '/images/mine/y20.png' },
-    { title: 'Writing', img: '/images/mine/y21.png' },
-    { title: 'Creativity', img: '/images/mine/y22.png' },
-    { title: 'Performance', img: '/images/mine/y23.png' },
-    { title: 'Innovation', img: '/images/mine/y24.png' },
+    { title: 'Art', img: '/Images/mine/y17.png' },
+    { title: 'Design', img: '/Images/mine/y18.png' },
+    { title: 'Style', img: '/Images/mine/y19.png' },
+    { title: 'Dance', img: '/Images/mine/y20.png' },
+    { title: 'Writing', img: '/Images/mine/y21.png' },
+    { title: 'Creativity', img: '/Images/mine/y22.png' },
+    { title: 'Performance', img: '/Images/mine/y23.png' },
+    { title: 'Innovation', img: '/Images/mine/y24.png' },
 
   ]
 

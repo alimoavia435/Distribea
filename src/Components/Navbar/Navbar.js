@@ -8,7 +8,9 @@ import {
   ListItem,
   Divider
 } from '@mui/material'
-import { useRouter, usePathname } from 'next/navigation'
+import MenuIcon from '@mui/icons-material/Menu'
+import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -50,11 +52,13 @@ const Navbar = () => {
         <Toolbar className='flex justify-between py-[16px]'>
           {/* Left - Logo */}
           <div className='flex items-center space-x-2'>
-            <img
+            <Image
               src='/Images/logo.svg'
               alt='logo'
+              width={150}
+              height={40}
               className='max-[768px]:w-[120px] cursor-pointer'
-              onClick={() => router.push('/')}
+              priority
             />
           </div>
 
@@ -110,7 +114,8 @@ const Navbar = () => {
           {/* Hamburger Menu (Mobile only) */}
           <div className='md:hidden'>
             <IconButton onClick={toggleDrawer(true)} className='text-white cursor-pointer'>
-              <img src='/Images/menu.svg' alt='menu' />
+              {/* <MenuIcon /> */}
+              <Image src='/Images/menu.svg' alt='menu' width={24} height={24} />
             </IconButton>
           </div>
         </Toolbar>

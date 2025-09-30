@@ -8,12 +8,12 @@ import { useRouter } from 'next/navigation'
 const Culture = () => {
   const router = useRouter()
   const categories = [
-    { title: 'Salsa', name: 'Salsa', img: '/images/mine/l1.png' },
-    { title: 'Tango', name: 'Argentina', img: '/images/mine/l2.png' },
+    { title: 'Salsa', name: 'Salsa', img: '/Images/mine/l1.png' },
+    { title: 'Tango', name: 'Argentina', img: '/Images/mine/l2.png' },
     { title: 'Latin Pop', name: 'America Latina', img: '/Images/mine/l3.png' },
     { title: 'Reggaeton', name: 'Puerto Rico', img: '/Images/mine/l4.png' },
-    { title: 'Cumbia', name: 'Colombia', img: '/images/mine/l5.png' },
-    { title: 'Reggea', name: 'Jamaica', img: '/images/mine/l6.png' },
+    { title: 'Cumbia', name: 'Colombia', img: '/Images/mine/l5.png' },
+    { title: 'Reggea', name: 'Jamaica', img: '/Images/mine/l6.png' },
     { title: 'Mariachi', name: 'Mexico', img: '/Images/mine/l7.png' },
     { title: 'Rumba', name: 'Cuba', img: '/Images/mine/l8.png' },
     {
@@ -24,8 +24,8 @@ const Culture = () => {
     { title: 'Bosso Nova', name: 'Brazil', img: '/Images/mine/l10.png' }
   ]
   const categories1 = [
-    { title: 'K-Pop', name: 'South Korea', img: '/images/mine/ll1.png' },
-    { title: 'J-Pop', name: 'Japan', img: '/images/mine/ll2.png' },
+    { title: 'K-Pop', name: 'South Korea', img: '/Images/mine/ll1.png' },
+    { title: 'J-Pop', name: 'Japan', img: '/Images/mine/ll2.png' },
     { title: 'Bollywood', name: 'India', img: '/Images/mine/ll3.png' },
     {
       title: 'Chinese Traditional',
@@ -35,30 +35,30 @@ const Culture = () => {
     {
       title: 'Thai Traditional Music',
       name: 'Thailand',
-      img: '/images/mine/ll5.png'
+      img: '/Images/mine/ll5.png'
     }
   ]
 
   const categories3 = [
-    { title: 'Jazz', img: '/images/mine/oo1.png' },
-    { title: 'Blues', img: '/images/mine/oo2.png' },
-    { title: 'Hip-Hop', img: '/images/mine/oo3.png' },
-    { title: 'Country', img: '/images/mine/oo4.png' },
-    { title: 'Gospel', img: '/images/mine/oo5.png' },
-    { title: 'West Coast', img: '/images/mine/oo6.png' },
-    { title: 'R&B', img: '/images/mine/oo7.png' },
-    { title: 'Soul', img: '/images/mine/oo8.png' },
-    { title: 'Funk', img: '/images/mine/oo9.png' },
-    { title: 'East-Coast', img: '/images/mine/oo10.png' }
+    { title: 'Jazz', img: '/Images/mine/oo1.png' },
+    { title: 'Blues', img: '/Images/mine/oo2.png' },
+    { title: 'Hip-Hop', img: '/Images/mine/oo3.png' },
+    { title: 'Country', img: '/Images/mine/oo4.png' },
+    { title: 'Gospel', img: '/Images/mine/oo5.png' },
+    { title: 'West Coast', img: '/Images/mine/oo6.png' },
+    { title: 'R&B', img: '/Images/mine/oo7.png' },
+    { title: 'Soul', img: '/Images/mine/oo8.png' },
+    { title: 'Funk', img: '/Images/mine/oo9.png' },
+    { title: 'East-Coast', img: '/Images/mine/oo10.png' }
   ]
 
   const categories4 = [
-    { title: 'Classical', name: 'French', img: '/images/mine/lll1.png' },
-    { title: 'Gregorian', name: 'Georgia', img: '/images/mine/lll2.png' },
+    { title: 'Classical', name: 'French', img: '/Images/mine/lll1.png' },
+    { title: 'Gregorian', name: 'Georgia', img: '/Images/mine/lll2.png' },
     { title: 'German Folk', name: 'Germany', img: '/Images/mine/lll3.png' },
     { title: 'Fado', name: 'Portugal', img: '/Images/mine/lll4.png' },
-    { title: 'Polka', name: 'Europe', img: '/images/mine/lll5.png' },
-    { title: 'Flamenco', name: 'Spain', img: '/images/mine/lll6.png' },
+    { title: 'Polka', name: 'Europe', img: '/Images/mine/lll5.png' },
+    { title: 'Flamenco', name: 'Spain', img: '/Images/mine/lll6.png' },
     { title: 'Medieval ', name: 'European', img: '/Images/mine/lll7.png' },
     { title: 'Opera', name: 'Italy', img: '/Images/mine/lll8.png' },
     { title: 'Techno', name: 'Germany', img: '/Images/mine/lll9.png' },
@@ -70,12 +70,12 @@ const Culture = () => {
   ]
 
   const categories5 = [
-    { title: 'Afro-Beat', name: 'Nigeria', img: '/images/mine/llll1.png' },
-    { title: 'Amapiano', name: 'South Africa', img: '/images/mine/llll2.png' },
+    { title: 'Afro-Beat', name: 'Nigeria', img: '/Images/mine/llll1.png' },
+    { title: 'Amapiano', name: 'South Africa', img: '/Images/mine/llll2.png' },
     { title: 'Highlife', name: 'Ghana', img: '/Images/mine/llll3.png' },
     { title: 'Gqom', name: 'South Africa', img: '/Images/mine/llll4.png' },
-    { title: 'Gnawa', name: 'Morocco', img: '/images/mine/llll5.png' },
-    { title: 'Rai', name: 'Algeria', img: '/images/mine/llll6.png' },
+    { title: 'Gnawa', name: 'Morocco', img: '/Images/mine/llll5.png' },
+    { title: 'Rai', name: 'Algeria', img: '/Images/mine/llll6.png' },
     { title: 'Turkish Folk ', name: 'Turkey', img: '/Images/mine/llll7.png' },
     { title: 'Oud Music', name: 'Middle East', img: '/Images/mine/llll8.png' },
     {

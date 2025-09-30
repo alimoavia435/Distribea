@@ -9,10 +9,13 @@ export default function Categories () {
   const router = useRouter()
   return (
     <div className='relative overflow-x-hidden'>
-      <img
+      <Image
         src='/Images/pricing/shadpricing.png'
         alt='pricing-bg'
+        width={663}
+        height={589}
         className='h-[589px] w-[663px] absolute top-[-38px] left-[-150px] 2xl:left-[-90px]'
+        priority
       />
       <section className='relative bg-no-repeat text-white px-[18px] py-16 lg:px-[56px] lg:pt-[96px] lg:pb-[240px]'>
         {/* Heading */}
@@ -63,7 +66,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             >
               <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
-                  src='/images/c1.png'
+                  src='/Images/c1.png'
                   alt='Genres'
                   width={220}
                   height={227}
@@ -97,7 +100,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             >
               <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
-                  src='/images/c2.png'
+                  src='/Images/c2.png'
                   alt='Moods'
                   width={260}
                   height={280}
@@ -131,7 +134,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             >
               <div className='w-full h-[227px] sm:h-[320px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
-                  src='/images/c3.png'
+                  src='/Images/c3.png'
                   alt='Creators'
                   width={290}
                   height={320}
@@ -165,7 +168,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             >
               <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
-                  src='/images/c2.png'
+                  src='/Images/c2.png'
                   alt='Culture'
                   width={260}
                   height={280}
@@ -199,7 +202,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             >
               <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
-                  src='/images/c4.png'
+                  src='/Images/c4.png'
                   alt='Lifestyle'
                   width={220}
                   height={227}
