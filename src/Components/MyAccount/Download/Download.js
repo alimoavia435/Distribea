@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Download = () => {
@@ -126,9 +127,9 @@ const Download = () => {
   ]
 
   return (
-    <div className='px-[15px] py-[30px]'>
+    <div className='py-[35px] md:py-[40px]'>
       {/* Header Section */}
-      <div className='flex justify-between items-center mb-8'>
+      <div className='flex justify-between items-center mb-4 md:mb-8'>
         <h2
           style={{ fontFamily: 'Space Grotesk_Medium' }}
           className='text-[#ffffff] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%]'
@@ -136,20 +137,25 @@ const Download = () => {
           354 Tracks found!
         </h2>
         <div className='relative'>
-          <select
-            style={{ fontFamily: 'Space Grotesk_Medium' }}
-            className='text-[#ffffff] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%] focus:outline-none'
-          >
-            <option value='latest' className='bg-black text-white'>
-              Latest
-            </option>
-            <option value='oldest' className='bg-black text-white'>
-              Oldest
-            </option>
-            <option value='popular' className='bg-black text-white'>
-              Popular
-            </option>
-          </select>
+          <div className='relative flex items-center'>
+            <select
+              style={{ fontFamily: 'Space Grotesk_Medium' }}
+              className='appearance-none bg-transparent text-[#ffffff] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%] focus:outline-none pr-[35px]'
+            >
+              <option value='latest' className='bg-black text-white'>
+                Latest
+              </option>
+              <option value='oldest' className='bg-black text-white'>
+                Oldest
+              </option>
+              <option value='popular' className='bg-black text-white'>
+                Popular
+              </option>
+            </select>
+            {/* Custom down arrow icon */}
+            <Image height={16} width={16} src='/Images/arowdnn.svg' alt='' className='ml-[-25px]' />
+          </div>
+
           {/* <div className='absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none'>
             <svg
               className='w-4 h-4 text-white'
@@ -173,7 +179,7 @@ const Download = () => {
         {tracks.map(track => (
           <div
             key={track.id}
-            className='flex items-center  rounded-lg md:px-4 py-4  transition-colors justify-between gap-[10px]'
+            className='flex items-center  rounded-lg  py-4  transition-colors justify-between gap-[10px]'
           >
             <div className='flex items-start gap-[8px] sm:gap-[10px] md:gap-[20px]'>
               <img

@@ -377,6 +377,7 @@ const Lifestyle = () => {
         className='
     relative w-full flex justify-center 
     pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-[64px]
+     px-[25] md:px-[40px]
   '
       >
         {/* Background Image */}

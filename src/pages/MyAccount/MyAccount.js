@@ -19,13 +19,13 @@ const MyAccount = () => {
         {/* Title */}
         <h1
           style={{ fontFamily: 'Space Grotesk_Medium' }}
-          className='text-[23px] sm:text-[30px] md:text-[34px] lg:text-[40px] xl:text-[48px] tracking-[-2.5px] mb-[60px] text-[#FFFFFF]'
+          className='text-[30px] sm:text-[35px] md:text-[40px] lg:text-[44px] xl:text-[48px] tracking-[-2.5px] mb-[30px] md:mb-[60px] text-[#FFFFFF]'
         >
           My Account
         </h1>
 
         {/* Tabs */}
-        <div className='flex flex-wrap max-[500px]:gap-[15px] gap-6 mb-[40px]'>
+        <div className='flex overflow-x-auto scrollbar-hide max-[500px]:gap-[15px] gap-6 whitespace-nowrap'>
           {[
             'Subscription',
             'Downloads',
@@ -42,7 +42,7 @@ const MyAccount = () => {
                   : setActiveTab(tab)
               }
               style={{ fontFamily: 'Space Grotesk' }}
-              className={`pb-3 text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] ${
+              className={`pb-3 text-[14px] xl:text-[16px] flex-shrink-0 ${
                 activeTab === tab
                   ? 'text-[#FFFFFF] border-b-2 border-[#FFFFFF]'
                   : 'text-[#94979C] hover:text-[#FFFFFF]'
@@ -55,12 +55,12 @@ const MyAccount = () => {
 
         {/* Tab Content */}
         {activeTab === 'Subscription' && (
-          <div className='flex items-center max-[768px]:flex-col gap-6 w-full'>
+          <div className='flex items-center max-[768px]:flex-col gap-6 w-full mt-[30px] md:mt-[40px]'>
             {/* Subscription Card */}
-            <div className='custom-height flex w-full px-[15px] py-[25px] sm:px-[36px] sm:py-[36px] flex-col gap-[48px] items-start bg-[#0C0E12] rounded-[20px] '>
+            <div className='custom-height flex w-full px-[25px] py-[25px] sm:px-[36px] sm:py-[36px] flex-col md:gap-[48px] gap-[20px] items-start bg-[#0C0E12] rounded-[20px] '>
               <p
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
-                className='text-[#ffffff] text-[26px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] leading-[100%]'
+                className='text-[#ffffff] text-[20px] lg:text-[22px] xl:text-[24px] leading-[100%]'
               >
                 Creator Subscription
               </p>
@@ -93,7 +93,7 @@ const MyAccount = () => {
                     <img src='/Images/Myaccount/visa.svg' alt='' />
                     <p
                       style={{ fontFamily: 'Space Grotesk_Light' }}
-                      className='mb-4 text-[10px] lg:text-[12px] text-[#ffffff]'
+                      className='text-[10px] lg:text-[12px] text-[#ffffff]'
                     >
                       **** **** *** 1234
                     </p>
