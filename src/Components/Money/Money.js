@@ -103,7 +103,7 @@ export default function Money() {
     {/* Block 1 */}
 <div className="flex flex-col-reverse   xl:flex-row-reverse items-center gap-8 lg:gap-20">
         <div className="flex-1 w-full max-w-[576px] mx-auto">
-        <Image src="/Images/mine/i1.png" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"
+        <Image src="/Images/mine/i1.webp" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"
         />
       </div>
        <div className="flex flex-col items-center justify-center space-y-4 md:space-y-[40px] text-center w-full max-w-[650px] mx-auto">
@@ -146,7 +146,7 @@ export default function Money() {
         </button>
       </div>
       <div className="flex-1 w-full max-w-[576px] mx-auto">
-        <Image src="/Images/mine/i2.png" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"/>
+        <Image src="/Images/mine/i2.webp" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"/>
       </div>
     </div>
 
@@ -170,7 +170,7 @@ export default function Money() {
         </button>
       </div>
       <div className="flex-1 w-full max-w-[576px] mx-auto">
-        <Image src="/Images/mine/i3.png" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"/>
+        <Image src="/Images/mine/i3.webp" alt="Handshake" width={576} height={512} className="rounded-[12px] object-cover w-full h-auto"/>
       </div>
     </div>
 
