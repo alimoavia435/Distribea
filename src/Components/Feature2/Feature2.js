@@ -4,7 +4,7 @@ const Feature2 = () => {
   return (
     <div
       className=' flex flex-col px-[86px] py-[128px] bg-no-repeat bg-[length:100%_100%] gap-[80px] max-[768px]:px-[25px] max-[768px]:py-[50px] max-[768px]:gap-[50px] max-[575px]:gap-[35px] max-[768px]:bg-cover max-[768px]:bg-center'
-      style={{ backgroundImage: "url('/Images/fbg.png')" }}
+      style={{ backgroundImage: "url('/Images/fbg.webp')" }}
     >
       <div className='flex flex-col gap-[20px] max-w-[512px]'>
         <h2
