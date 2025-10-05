@@ -15,7 +15,7 @@ import Image from 'next/image'
 const Home = () => {
   return (
     <div
-      style={{ backgroundImage: "url('/Images/hero.png')" }}
+      style={{ backgroundImage: "url('/Images/hero11.webp')" }}
       className='bg-[0_0] bg-no-repeat  mx-auto overflow-x-hidden'
     >
       <Navbar />

@@ -14,7 +14,7 @@ const Feature2 = () => {
           }}
           className='font-Space Grotesk_Bold 
   font-bold 
-text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
+text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px] 
   leading-[110%] 
   tracking-[-1px] 
   text-left 
@@ -23,7 +23,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           Royalty Free Music Designed for Content Creators
         </h2>
         <p
-          className=' mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[20px] lg:text-[18px]  font-normal leading-[28px] text-left m-0 max-[600px]:text-center '
+          className=' mx-auto max-w-[900px]  text-[#CECFD2] text-[16px] md:text-[17px] lg:text-[18px]  font-normal leading-[28px] text-left m-0 max-[600px]:text-center '
           style={{ fontFamily: 'Space Grotesk', textTransform: 'capitalize' }}
         >
           The freedom to create, the security to grow.
@@ -34,7 +34,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           <img src='/Images/feature/d.svg' alt='' />
           <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px] max-[600px]:items-center max-[600px]:pt-0'>
             <p
-              className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+              className='max-[600px]:text-center text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
             >
               Download the perfect music
@@ -53,7 +53,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           <img src='/Images/feature/m.svg' alt='' />
           <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px]  max-[600px]:items-center max-[600px]:pt-0'>
             <p
-              className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+              className='max-[600px]:text-center text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
             >
               Create your video without limits
@@ -72,7 +72,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
           <img src='/Images/feature/mn.svg' alt='' />
           <div className='flex flex-col gap-[20px] items-start pt-[8px] max-[768px]:gap-[15px] max-[600px]:items-center max-[600px]:pt-0'>
             <p
-              className='max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+              className='max-[600px]:text-center text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
               style={{ fontFamily: 'Space Grotesk_Medium' }}
             >
               Monetize it Safely

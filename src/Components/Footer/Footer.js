@@ -12,9 +12,9 @@ export default function Footer () {
     >
       <div className='mx-0 w-full '>
         {/* Top Section */}
-        <div className='flex !flex-col !md:flex-row !md:items-start !md:justify-between !gap-5 !md:gap-[48px] max-w-[1328px]'>
+        <div className='flex !flex-col !md:flex-row !md:items-start !md:justify-between gap-[24px] md:gap-[48px] max-w-[1328px]'>
           {/* Logo + tagline */}
-          <div className='flex flex-col space-y-4 max-w-sm'>
+          <div className='flex flex-col space-y-4 max-w-sm '>
             {/* Logo */}
             <div className='flex items-center space-x-1 lg:space-x-3'>
               <Image
@@ -51,44 +51,52 @@ export default function Footer () {
             {/* Social Icons */}
             <div className='flex space-x-6 '>
               <div>
-                <Image
-                  src='/Images/mine/x.svg'
-                  alt='X'
-                  width={20}
-                  height={20}
-                />
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/mine/x.svg'
+                    alt='X'
+                    width={20}
+                    height={20}
+                  />
+                </a>
               </div>
               <div>
-                <Image
-                  src='/Images/mine/instagram.svg'
-                  alt='Instagram'
-                  width={20}
-                  height={20}
-                />
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/mine/instagram.svg'
+                    alt='Instagram'
+                    width={20}
+                    height={20}
+                  />
+                </a>
               </div>
               <div>
-                <Image
-                  src='/Images/mine/linkedin.svg'
-                  alt='LinkedIn'
-                  width={20}
-                  height={20}
-                />
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/mine/linkedin.svg'
+                    alt='LinkedIn'
+                    width={20}
+                    height={20}
+                  />
+                </a>
               </div>
               <div>
-                <Image
-                  src='/Images/mine/youtube.svg'
-                  alt='YouTube'
-                  width={20}
-                  height={20}
-                />
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/mine/youtube.svg'
+                    alt='YouTube'
+                    width={20}
+                    height={20}
+                  />
+                </a>
               </div>
             </div>
           </div>
 
           <div className='w-full max-w-[1328px]  border-b border-[#0B1425] opacity-100 mx-auto'></div>
 
-          {/* Links */}
-          <div className='grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-12 lg:gap-24 text-sm'>
+          {/* pages*/}
+          <div className='grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-12 lg:gap-24 pt-[15px] lg:pt-[32px] text-sm'>
             {/* Pages */}
             <div>
               <h3

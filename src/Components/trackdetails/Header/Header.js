@@ -10,7 +10,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-const navItems = ["GENRES", "MOODS", "VOCAL", "DURATION", "BFM", "KEY", "INSTRUMENT"];
+const navItems = ["GENRES", "MOODS", "DURATION", "BFM"];
 const rightItems = ["POPULAR TRACKS", "(ADD FILTER)"];
 
 export default function Header() {

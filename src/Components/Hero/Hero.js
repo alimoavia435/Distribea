@@ -37,7 +37,7 @@ const Hero = () => {
         {/* Main Headline */}
         <div className='mb-[30px] lg:mb-[40px] xl:mb-[48px]'>
           <h1
-            className='max-[600px]:text-center text-[25px] sm:text-[35px] md:text-[45px] lg:text-[56px] xl:text-[64px] font-[700] text-[rgba(247, 247, 247, 1)] tracking-[-0.64px] leading-[110%]'
+            className='max-[600px]:text-center text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[64px] font-[700] text-[rgba(247, 247, 247, 1)] tracking-[-0.64px] leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Bold' }}
           >
             The First Royalty-Free

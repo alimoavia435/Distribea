@@ -2,6 +2,7 @@ import Navbar from '@/Components/Navbar/Navbar'
 // import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 const Signup = () => {
   const router = useRouter()
   return (
@@ -116,31 +117,51 @@ const Signup = () => {
               {/* social icons */}
 
               <div className='flex items-center max-[768px]:gap-[6px] gap-[12px] justify-center mt-[4px]'>
-                <img
-                  src='/Images/Login/apple.svg'
-                  alt='Apple'
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
-                />
-                <img
-                  src='/Images/Login/cord.svg'
-                  alt='Discord'
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
-                />
-                <img
-                  src='/Images/Login/fb.svg'
-                  alt='FB'
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
-                />
-                <img
-                  src='/Images/Login/google.svg'
-                  alt='G'
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
-                />
-                <img
-                  src='/Images/Login/microsoft.svg'
-                  alt='Microsoft'
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
-                />
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/Login/apple.svg'
+                    alt='Apple'
+                    width={52}
+                    height={52}
+                    className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
+                  />
+                </a>
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/Login/cord.svg'
+                    alt='Discord'
+                    width={52}
+                    height={52}
+                    className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  />
+                </a>
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/Login/fb.svg'
+                    alt='FB'
+                    width={52}
+                    height={52}
+                    className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
+                  />
+                </a>
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/Login/google.svg'
+                    alt='G'
+                    width={52}
+                    height={52}
+                    className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
+                  />
+                </a>
+                <a href='https://distribea.shwanix.com/' target='_blank' rel='noopener noreferrer'>
+                  <Image
+                    src='/Images/Login/microsoft.svg'
+                    alt='Microsoft'
+                    width={52}
+                    height={52}
+                    className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
+                  />
+                </a>
               </div>
 
               <p

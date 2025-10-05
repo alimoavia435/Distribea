@@ -1,8 +1,20 @@
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const inactivityTimerRef = useRef(null)
+  const [isAnimating, setIsAnimating] = useState(false)
+  const [direction, setDirection] = useState('next')
+  const [prevIndex, setPrevIndex] = useState(0)
+  const [showEnter, setShowEnter] = useState(false)
+
+  const clearInactivityTimer = () => {
+    if (inactivityTimerRef.current) {
+      clearTimeout(inactivityTimerRef.current)
+      inactivityTimerRef.current = null
+    }
+  }
 
   const testimonials = [
     {
@@ -24,7 +36,7 @@ const Carousel = () => {
     ,
     {
       quote:
-        '"I used to spend so much time searching for the right music, but not anymore. The platform is clear, well-designed, and always delivers relevant results. Exactly what I’ve been waiting for!"',
+        'I used to spend so much time searching for the right music, but not anymore. The platform is clear, well-designed, and always delivers relevant results. Exactly what I’ve been waiting for!',
       name: 'John Doe',
       title: 'American Singer',
       image: '/Images/prof.svg', // You'll need to add this image to your public folder
@@ -33,20 +45,53 @@ const Carousel = () => {
     // Add more testimonials here as needed
   ]
 
-  const nextTestimonial = () => {
+  const goNext = useCallback(() => {
+    setDirection('next')
+    setPrevIndex(currentIndex)
+    setIsAnimating(true)
+    setShowEnter(false)
     setCurrentIndex(prevIndex => (prevIndex + 1) % testimonials.length)
+    requestAnimationFrame(() => setShowEnter(true))
+    setTimeout(() => setIsAnimating(false), 300)
+  }, [currentIndex, testimonials.length])
+
+  const goPrev = useCallback(() => {
+    setDirection('prev')
+    setPrevIndex(currentIndex)
+    setIsAnimating(true)
+    setShowEnter(false)
+    setCurrentIndex(prevIndex => (prevIndex - 1 + testimonials.length) % testimonials.length)
+    requestAnimationFrame(() => setShowEnter(true))
+    setTimeout(() => setIsAnimating(false), 300)
+  }, [currentIndex, testimonials.length])
+
+  const registerInteraction = () => {
+    clearInactivityTimer()
+    inactivityTimerRef.current = setTimeout(() => {
+      goNext()
+    }, 5000)
   }
 
-  const prevTestimonial = () => {
-    setCurrentIndex(
-      prevIndex => (prevIndex - 1 + testimonials.length) % testimonials.length
-    )
-  }
+  useEffect(() => {
+    // Start timer on mount and whenever the current index changes (fresh 5s to next)
+    clearInactivityTimer()
+    inactivityTimerRef.current = setTimeout(() => {
+      goNext()
+    }, 5000)
+    return () => {
+      clearInactivityTimer()
+    }
+  }, [currentIndex, testimonials.length, goNext])
 
   const currentTestimonial = testimonials[currentIndex]
 
   return (
-    <div className='bg-transparent flex flex-col items-center justify-center px-4 py-[100px]'>
+    <div
+      className='bg-transparent flex flex-col items-center justify-center px-4 py-[100px]'
+      onMouseMove={registerInteraction}
+      onTouchStart={registerInteraction}
+      onKeyDown={registerInteraction}
+    >
       {/* 5-Star Rating */}
       <div className='flex justify-center mb-8'>
         {[...Array(5)].map((_, index) => (
@@ -70,43 +115,84 @@ const Carousel = () => {
         />
         <img src='/Images/“.png' className='absolute  right-[-100px] bottom-[100px] max-[1300px]:right-[-50px] max-[768px]:right-[-20px] max-[768px]:right-[10px] max-[768px]:h-[40px] max-[475px]:h-[30px]' alt='' />
 
-        {/* Testimonial Quote */}
-        <blockquote
-          className=' text-white xl:text-[36px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[16px] leading-[140%] mb-[25px] lg:mb-[40px] xl:mb-[48px]   px-[25px] max-w-[300px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[750px] xl:max-w-[980px]'
-          style={{ fontFamily: 'Space Grotesk_Medium' }}
-        >
-          {`"${currentTestimonial.quote}"`}
-        </blockquote>
-
-        {/* Customer Profile */}
-        <div className='flex items-center justify-center space-x-4 mb-12'>
-          {/* Profile Image */}
-          <Image
-            src={currentTestimonial.image}
-            alt={currentTestimonial.name}
-            width={60}
-            height={60}
-            className="rounded-full"
-            onError={e => {
-              e.target.style.display = 'none'
-              e.target.nextSibling.style.display = 'flex'
-            }}
-          />
-
-          {/* Name and Title */}
-          <div className='text-left'>
-            <h3
-              className='text-white xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold'
-              style={{ fontFamily: 'Space Grotesk_Bold' }}
+        {/* Animated Cards */}
+        <div className='relative overflow-hidden min-h-[220px] flex items-center justify-center'>
+          {isAnimating && (
+            <div
+              className={`absolute inset-0 transition-all duration-300 ease-out ${direction === 'next' ? '-translate-x-10' : 'translate-x-10'} opacity-0 flex flex-col items-center justify-center`}
             >
-              {currentTestimonial.name}
-            </h3>
-            <p
-              className='text-[#94979C] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[11px] text-[11px]'
-              style={{ fontFamily: 'Space Grotesk' }}
+              <blockquote
+                className=' text-white xl:text-[36px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[16px] leading-[140%] mb-[25px] lg:mb-[40px] xl:mb-[48px]   px-[25px] max-w-[300px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[750px] xl:max-w-[980px]'
+                style={{ fontFamily: 'Space Grotesk_Medium' }}
+              >
+                {`"${testimonials[prevIndex].quote}"`}
+              </blockquote>
+              <div className='flex items-center justify-center space-x-4 mb-12'>
+                <Image
+                  src={testimonials[prevIndex].image}
+                  alt={testimonials[prevIndex].name}
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                  onError={e => {
+                    e.target.style.display = 'none'
+                    e.target.nextSibling.style.display = 'flex'
+                  }}
+                />
+                <div className='text-left'>
+                  <h3
+                    className='text-white xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold'
+                    style={{ fontFamily: 'Space Grotesk_Bold' }}
+                  >
+                    {testimonials[prevIndex].name}
+                  </h3>
+                  <p
+                    className='text-[#94979C] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[11px] text-[11px]'
+                    style={{ fontFamily: 'Space Grotesk' }}
+                  >
+                    {testimonials[prevIndex].title}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div
+            className={`transition-all duration-300 ease-out ${showEnter ? 'translate-x-0 opacity-100' : direction === 'next' ? 'translate-x-10 opacity-0' : '-translate-x-10 opacity-0'}`}
+          >
+            <blockquote
+              className=' text-white xl:text-[36px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[16px] leading-[140%] mb-[25px] lg:mb-[40px] xl:mb-[48px]   px-[25px] max-w-[300px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[750px] xl:max-w-[980px]'
+              style={{ fontFamily: 'Space Grotesk_Medium' }}
             >
-              {currentTestimonial.title}
-            </p>
+              {`"${currentTestimonial.quote}"`}
+            </blockquote>
+            <div className='flex items-center justify-center space-x-4 mb-12'>
+              <Image
+                src={currentTestimonial.image}
+                alt={currentTestimonial.name}
+                width={60}
+                height={60}
+                className="rounded-full"
+                onError={e => {
+                  e.target.style.display = 'none'
+                  e.target.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className='text-left'>
+                <h3
+                  className='text-white xl:text-[18px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold'
+                  style={{ fontFamily: 'Space Grotesk_Bold' }}
+                >
+                  {currentTestimonial.name}
+                </h3>
+                <p
+                  className='text-[#94979C] xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[11px] text-[11px]'
+                  style={{ fontFamily: 'Space Grotesk' }}
+                >
+                  {currentTestimonial.title}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -114,15 +200,15 @@ const Carousel = () => {
       {/* Navigation Arrows */}
       <div className='flex justify-center space-x-4'>
         <button
-          onClick={prevTestimonial}
-          className='w-12 h-12 rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
+          onClick={() => { goPrev(); registerInteraction() }}
+          className='w-[56px] h-[56px] cursor-pointer rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
         >
           <Image src='/Images/left.svg' alt='Previous' width={24} height={24} />
         </button>
 
         <button
-          onClick={nextTestimonial}
-          className='w-12 h-12 rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
+          onClick={() => { goNext(); registerInteraction() }}
+          className='w-[56px] h-[56px] cursor-pointer rounded-full bg-black border border-gray-600 flex items-center justify-center hover:bg-gray-800 transition-colors'
         >
           <Image src='/Images/right.svg' alt='Next' width={24} height={24} />
         </button>

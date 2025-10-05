@@ -97,7 +97,7 @@ export default function Money() {
 // </div>
 //       </div>
 //     </section>
-<section className="bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] py-16 lg:pt-[128px] lg:pb-[96px]">
+<section className="bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[96px]">
   <div className="mx-auto max-w-[1328px] flex flex-col gap-[28px] md:gap-20">
 
     {/* Block 1 */}

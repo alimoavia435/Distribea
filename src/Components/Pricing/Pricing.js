@@ -43,7 +43,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] cursor-pointer transition-colors ${
               !isYearly ? 'text-white' : 'text-[#9AA4B2]'
             }`}
-            style={{ fontFamily: 'Space Grotesk' }}
+            style={{ fontFamily: isYearly? 'Space Grotesk': 'Space Grotesk_Semibold' }}
           >
             Monthly
           </button>
@@ -78,7 +78,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             className={`text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px] cursor-pointer transition-colors ${
               isYearly ? 'text-white' : 'text-[#9AA4B2]'
             }`}
-            style={{ fontFamily: 'Space Grotesk' }}
+            style={{ fontFamily: isYearly? 'Space Grotesk_Semibold': 'Space Grotesk' }}
           >
             Annually
           </button>
@@ -87,7 +87,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
         <div className='mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center xl:grid-cols-3 gap-[18px] md:gap-[22px] lg:gap-[28px] max-w-[1200px]'>
           {/* Free */}
           <div
-            className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] hover:border-[4px] hover:border-[#175cd3] hover:shadow-[0px_15px_25px_0px_#175CD326]'
+            className=' relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] '
             style={{
               background:
                 'linear-gradient(195.05deg, rgba(18, 81, 179, 0.1) 0%, rgba(18, 81, 179, 0.4) 50%, rgba(18, 81, 179, 0.06) 100%)'
@@ -190,7 +190,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
           {/* Creator - highlighted */}
           <div
-            className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] hover:border-[4px] hover:border-[#175cd3] hover:shadow-[0px_15px_25px_0px_#175CD326]'
+            className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px]  border-[4px] border-[#175cd3] shadow-[0px_15px_25px_0px_#175CD326]'
             style={{
               background:
                 'linear-gradient(195.05deg, rgba(18, 81, 179, 0.1) 0%, rgba(18, 81, 179, 0.4) 50%, rgba(18, 81, 179, 0.06) 100%)'
@@ -313,7 +313,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
 
           {/* Enterprise */}
           <div
-            className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px] hover:border-[4px] hover:border-[#175cd3] hover:shadow-[0px_15px_25px_0px_#175CD326] md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto xl:col-span-1 xl:justify-self-auto  col-span-1 justify-self-auto'
+            className='relative rounded-[22px] px-[22px] sm:px-[26px] py-[26px] md:py-[30px] min-h-[640px] flex flex-col backdrop-blur-[36px] border-[0px]   md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto xl:col-span-1 xl:justify-self-auto  col-span-1 justify-self-auto'
             style={{
               background:
                 'linear-gradient(195.05deg, rgba(18, 81, 179, 0.1) 0%, rgba(18, 81, 179, 0.4) 50%, rgba(18, 81, 179, 0.06) 100%)'

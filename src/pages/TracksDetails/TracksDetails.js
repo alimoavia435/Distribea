@@ -19,7 +19,9 @@ const TracksDetails = () => {
       title: 'Sleep in Ocean',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Soul',
+      f2: 'Reggea',
+      // genre: 'POP, 2020s',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg', // placeholder for waveform
@@ -30,7 +32,8 @@ const TracksDetails = () => {
       title: 'Blue Night',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Jazz',
+      f2: 'Love',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -41,7 +44,8 @@ const TracksDetails = () => {
       title: 'Closed Door',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Soul',
+      f2: 'Reggea',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -53,7 +57,8 @@ const TracksDetails = () => {
       title: 'Vintage Moment',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Jazz',
+      f2: 'Love',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -64,7 +69,8 @@ const TracksDetails = () => {
       title: 'I Feel Good!',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Soul',
+      f2: 'Reggea',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -75,7 +81,8 @@ const TracksDetails = () => {
       title: 'Pinky Mind',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Jazz',
+      f2: 'Love',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -86,7 +93,8 @@ const TracksDetails = () => {
       title: 'Orange World',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Soul',
+      f2: 'Reggea',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -97,7 +105,8 @@ const TracksDetails = () => {
       title: 'Culture Sound',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Jazz',
+      f2: 'Love',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -108,7 +117,8 @@ const TracksDetails = () => {
       title: 'Our Dreams',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Soul',
+      f2: 'Reggea',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -119,7 +129,44 @@ const TracksDetails = () => {
       title: 'New Generation',
       duration: '02:30',
       bpm: '40 BPM',
-      genre: 'POP, 2020s',
+      f1: 'Jazz',
+      f2: 'Love',
+      mood: 'Happy, Dreamy',
+      image: '/Images/Trackdetails/Rectangle 3 (1).png',
+      waveform: '/Images/Trackdetails/wave.svg',
+      active: false
+    },
+    {
+      id: 9,
+      title: 'Our Dreams',
+      duration: '02:30',
+      bpm: '40 BPM',
+      f1: 'Soul',
+      f2: 'Reggea',
+      mood: 'Happy, Dreamy',
+      image: '/Images/Trackdetails/Rectangle 3 (1).png',
+      waveform: '/Images/Trackdetails/wave.svg',
+      active: false
+    },
+    {
+      id: 9,
+      title: 'Our Dreams',
+      duration: '02:30',
+      bpm: '40 BPM',
+      f1: 'Soul',
+      f2: 'Reggea',
+      mood: 'Happy, Dreamy',
+      image: '/Images/Trackdetails/Rectangle 3 (1).png',
+      waveform: '/Images/Trackdetails/wave.svg',
+      active: false
+    },
+    {
+      id: 10,
+      title: 'New Generation',
+      duration: '02:30',
+      bpm: '40 BPM',
+      f1: 'Jazz',
+      f2: 'Love',
       mood: 'Happy, Dreamy',
       image: '/Images/Trackdetails/Rectangle 3 (1).png',
       waveform: '/Images/Trackdetails/wave.svg',
@@ -151,6 +198,11 @@ const TracksDetails = () => {
       title: 'Dance with Me',
       name: '39 Tracks',
       img: '/Images/Trackdetails/track5.png'
+    },
+    {
+      title: 'Dance with Me',
+      name: '39 Tracks',
+      img: '/Images/Trackdetails/track5.png'
     }
   ]
 
@@ -158,10 +210,10 @@ const TracksDetails = () => {
     <div className='bg-[#080808]'>
       <Navbar />
       {/* hero */}
-      <div className='pt-[40px] lg:pt-[64px] pb-[50px]  lg:pb-[96px] flex flex-col px-[15px] lg:px-[30px] items-center gap-[30px] lg:gap-[48px]'>
+      <div className='pt-[40px] lg:pt-[64px] pb-[50px]  lg:pb-[96px] flex flex-col px-[15px] lg:px-[30px]  gap-[30px] lg:gap-[48px]'>
         <p
           style={{ fontFamily: 'IBM_Plex_Mono', textTransform: 'uppercase' }}
-          className='text-[#FAFAFA80] text-[11px] md:text-[12px] lg:text-[14px] tracking-[-0.28px] leading-[100%]'
+          className='text-[#FAFAFA80] text-left text-[11px] md:text-[12px] lg:text-[14px] tracking-[-0.28px] leading-[100%]'
         >
           CREATOR /{' '}
           <span className='text-[#F9F9F9]'>{section || 'Entertainment'}</span> /{' '}
@@ -219,10 +271,10 @@ const TracksDetails = () => {
       {/* music header se nechy  */}
       <div className='flex flex-col items-center gap-[30px] lg:gap-[48px] px-[0px]'>
         <Header />
-        <div className='max-w-[1320px] w-full px-[15px] md:px-[25px] flex flex-col gap-[20px] lg:gap-[24px]  max-[600px]:gap-[12px]'>
-          {tracks?.map(track => (
+        <div className=' w-full px-[15px] md:px-[25px] flex flex-col gap-[20px] lg:gap-[24px]  max-[600px]:gap-[12px]'>
+          {tracks?.map((track, index) => (
             <div
-              key={track.id}
+              key={`${track.id}-${index}`}
               className={`flex items-center justify-between pr-[30px] gap-[10px] rounded-lg max-[600px]:flex-none max-[600px]:min-w-full max-[600px]:pr-[15px] cursor-pointer ${
                 track.active ? 'bg-[#FAFAFA1A]' : 'bg-transparent'
               }`}
@@ -275,14 +327,50 @@ const TracksDetails = () => {
                   style={{ fontFamily: 'Space Grotesk' }}
                   className=' text-[#F9F9F9] text-[9px] sm:text-[10px] md:text-[11px] lg:text-[13px] opacity-70'
                 >
-                  <span>{track.genre}</span>
-                  <br />
-                  <span>{track.mood}</span>
+                  <div className='flex items-center gap-[4px]'>
+                    <p
+                      style={{
+                        backgroundColor:
+                          track.f1 === 'Soul'
+                            ? '#1B1E30'
+                            : track.f1 === 'Reggea'
+                            ? '#1A311C'
+                            : track.f1 === 'Jazz'
+                            ? '#504A2B'
+                            : track.f1 === 'Love'
+                            ? '#562636'
+                            : '#1A311C',
+                        fontFamily: 'Space Grotesk_Medium'
+                      }}
+                      className='text-[13px] text-[#CECFD2]  px-[8.73px] py-[2.18px] rounded-[99999px] leading-[19.21px]'
+                    >
+                      {track.f1}
+                    </p>
+                    <p
+                      style={{
+                        backgroundColor:
+                          track.f2 === 'Soul'
+                            ? '#1B1E30'
+                            : track.f2 === 'Reggea'
+                            ? '#1A311C'
+                            : track.f2 === 'Jazz'
+                            ? '#504A2B'
+                            : track.f2 === 'Love'
+                            ? '#562636'
+                            : '#1A311C',
+                        fontFamily: 'Space Grotesk_Medium'
+                      }}
+                      className='text-[13px] text-[#CECFD2]  px-[8.73px] py-[2.18px] rounded-[99999px] leading-[19.21px]'
+                    >
+                      {track.f2}
+                    </p>
+                  </div>
+                  <p className='mt-[5px]'>{track.mood}</p>
                 </div>
                 <img
                   src='/Images/Trackdetails/plus.svg'
                   alt='pl'
-                  className='h-[15px] md:h-[20px]'
+                  className='h-[15px] md:h-[20px] '
                 />
                 <img
                   src='/Images/Trackdetails/dnl.svg'
@@ -293,20 +381,36 @@ const TracksDetails = () => {
             </div>
           ))}
         </div>
-        <button
-          className='text-[#FCFCFC] text-[12px] xl:text-[14px] bg-transparent rounded-[999px] py-[10px] px-[14px] border-[0.8px] border-[#E9EAEB33]'
-          style={{ fontFamily: 'Space Grotesk' }}
-        >
-          Loading more..
+           {/* Pagination */}
+      <div className='flex justify-center items-center space-x-2'>
+        <button className='bg-white text-black px-4 py-2 rounded-lg font-medium'>
+          1
         </button>
+        <button className='text-white hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors'>
+          2
+        </button>
+        <button className='text-white hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors'>
+          3
+        </button>
+        <span className='text-white px-2'>...</span>
+        <button className='text-white hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors'>
+          8
+        </button>
+        <button className='text-white hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors'>
+          9
+        </button>
+        <button className='text-white hover:bg-gray-800 px-3 py-2 rounded-lg transition-colors'>
+          10
+        </button>
+      </div>
       </div>
 
       <section
         className='bg-no-repeat text-white 
     px-[25px] pt-[32px]       
-    md:px-[40px] md:pt-[40]    
-    lg:px-[62px] lg:pt-[60]  
-    xl:px-[80px] xl:pt-[80px] xl:pb-[32px]
+    md:px-[38px] md:pt-[40]    
+    lg:px-[45px] lg:pt-[60]  
+    xl:px-[56px] xl:pt-[80px] xl:pb-[32px]
     flex justify-center flex-col gap-5 lg:gap-[64px]'
       >
         {/* Heading */}
@@ -329,13 +433,13 @@ const TracksDetails = () => {
         <div
           className='
   !grid 
-  grid-cols-1              /* default => <360px */
-  min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
+  grid-cols-1             
+  min-[360px]:!grid-cols-2
   md:!grid-cols-3
   lg:!grid-cols-4
-  xl:!grid-cols-5
+  xl:!grid-cols-6
   !gap-2 lg:!gap-6 
-  max-w-[1210px] m-auto w-full
+  max-w-[1328px] w-full
 '
         >
           {categories?.map((cat, index) => (
@@ -344,9 +448,9 @@ const TracksDetails = () => {
               style={{
                 borderRadius: '17.93px',
                 // background: gradients[index % gradients.length] // cycle through gradients
-                background: '#1C1B1B'
+                background:'#1C1B1B'
               }}
-              className='flex !flex-col !w-auto !h-[250.58px] 
+              className='flex !flex-col !w-auto !h-[279.58px] 
                  w-[100%] sm:!h-[303.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
