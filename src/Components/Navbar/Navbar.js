@@ -53,7 +53,7 @@ const Navbar = () => {
           {/* Left - Logo */}
           <div className='flex items-center space-x-2'>
             <Image
-              src='/Images/logo.svg'
+              src='/Images/logo.webp'
               alt='logo'
               width={150}
               height={40}
