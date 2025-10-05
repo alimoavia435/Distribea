@@ -92,11 +92,11 @@ const Culture = () => {
       className='bg-[0_0] bg-no-repeat  mx-auto overflow-x-hidden'
     >
       <Navbar />
-      <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[30px] md:gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>
+      <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto'>
         <div className=' flex flex-col items-center gap-[18px] xl:gap-[24px]'>
           <p
-            className='text-[30px] sm:text-[35px] md:text-[50px] lg:text-[60px] xl:text-[72px] leading-[140%] tracking-[-1.44px] text-[#ffffff] text-center'
-            style={{ fontFamily: 'Space Grotesk_Bold' }}
+           className='text-[35px] sm:text-[45px] md:text-[50px] lg:text-[60px] xl:text-[72px] leading-[140%] tracking-[-1.44px] text-[#ffffff] text-center'
+           style={{ fontFamily: 'Space Grotesk_Bold' }}
           >
             Global Sounds, Endless Inspiration 🌍
           </p>
@@ -107,7 +107,7 @@ const Culture = () => {
             Discover the best music, carefully crafted for creators.
           </p>
         </div>
-        <div className='flex flex-wrap items-center justify-center gap-[32px]'>
+        <div className='flex flex-wrap items-center justify-center gap-[15px] md:gap-[32px]'>
           <div className='flex items-center gap-[4px]'>
             <img
               src='/Images/pricing/tick.svg'
@@ -186,7 +186,7 @@ const Culture = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-center text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 💃 Latin Passion
@@ -275,7 +275,7 @@ const Culture = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-center text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 🎎 Asian Harmony
@@ -365,7 +365,7 @@ const Culture = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-center text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 🎷 American Spirit

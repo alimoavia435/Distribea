@@ -65,7 +65,7 @@ export default function CardCategories () {
             }}
             className='font-Space Grotesk_Bold 
   font-bold 
-text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
+text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px] 
   leading-[110%] 
   tracking-[-1px] 
   text-center 
@@ -74,7 +74,7 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
             Browse through 100+ exclusive styles
           </h2>
           <p
-            className='flex items-center justify-center gap-2  max-[600px]:text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+            className='flex items-center justify-center gap-2  max-[600px]:text-center text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
             style={{ fontFamily: 'Space Grotesk_Medium' }}
           >
             🎬 Get the right music for your creation
@@ -108,10 +108,10 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
                 borderRadius: '17.93px',
                 background: gradients[index % gradients.length] // cycle through gradients
               }}
-              className='flex !flex-col !w-auto !h-[250.58px] 
+              className='relative flex !flex-col !w-auto !h-[250.58px] 
                  w-[100%] sm:!h-[293.58px] 
                  !min-w-[150px] sm:!min-w-[150px] 
-                 !overflow-hidden !hover:scale-105 !transition-transform '
+                 !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer '
                   onClick={() =>
                     router.push(
                       `/TracksDetails?title=${encodeURIComponent(

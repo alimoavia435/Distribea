@@ -271,7 +271,7 @@ const TracksDetails = () => {
       {/* music header se nechy  */}
       <div className='flex flex-col items-center gap-[30px] lg:gap-[48px] px-[0px]'>
         <Header />
-        <div className='max-w-[1320px] w-full px-[15px] md:px-[25px] flex flex-col gap-[20px] lg:gap-[24px]  max-[600px]:gap-[12px]'>
+        <div className=' w-full px-[15px] md:px-[25px] flex flex-col gap-[20px] lg:gap-[24px]  max-[600px]:gap-[12px]'>
           {tracks?.map((track, index) => (
             <div
               key={`${track.id}-${index}`}

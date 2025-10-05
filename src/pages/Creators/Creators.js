@@ -77,7 +77,7 @@ const Creators = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-center text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 🎬 Entertainment & Media
@@ -158,7 +158,7 @@ const Creators = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-center text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 📚 Knowledge & Education
@@ -214,7 +214,6 @@ const Creators = () => {
               ))}
             </div>
           </section>
-          {/* .... */}
           <section
             className='bg-no-repeat text-white 
     px-4 py-8              /* mobile (default) */
@@ -227,7 +226,7 @@ const Creators = () => {
             {/* Heading */}
             <div className='text-center max-w-3xl  w-auto mx-auto '>
               <p
-                className='flex items-center justify-center gap-2  text-center text-[20px] sm:text-[22px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
+                className='flex items-center justify-center gap-2  text-[26px] md:text-[30px] lg:text-[38px] xl:text-[48px] font-[500] text-[#F7F7F7] tracking-0 leading-[110%]'
                 style={{ fontFamily: 'Space Grotesk_Medium' }}
               >
                 🌟 Passion & Inspiration
@@ -295,7 +294,7 @@ const Creators = () => {
               ))}
             </div>
           </section>
-          {/* ...... */}
+          
         </div>
       </div>
       <section
