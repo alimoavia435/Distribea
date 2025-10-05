@@ -62,15 +62,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[220px] sm:h-[293.58px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform cursor-pointer' 
+                 overflow-hidden cursor-pointer' 
             >
-              <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
+              <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px] group'>
                 <Image
                   src='/Images/c1.png'
                   alt='Genres'
                   width={220}
                   height={227}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
               <div
@@ -96,15 +96,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[260px] sm:h-[346.96px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
+                 overflow-hidden cursor-pointer'
             >
-              <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
+              <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px] group'>
                 <Image
                   src='/Images/c2.png'
                   alt='Moods'
                   width={260}
                   height={280}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover  transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
               <div
@@ -130,15 +130,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[290px] sm:h-[387px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
+                 overflow-hidden  cursor-pointer'
             >
-              <div className='w-full h-[227px] sm:h-[320px] overflow-hidden rounded-t-[17.93px]'>
+              <div className='w-full h-[227px] sm:h-[320px] overflow-hidden rounded-t-[17.93px] group'>
                 <Image
                   src='/Images/c3.png'
                   alt='Creators'
                   width={290}
                   height={320}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover  transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
               <div
@@ -164,15 +164,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[260px] sm:h-[346.96px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
+                 overflow-hidden  cursor-pointer'
             >
-              <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px]'>
+              <div className='w-full h-[227px] sm:h-[280px] overflow-hidden rounded-t-[17.93px] group'>
                 <Image
                   src='/Images/c2.png'
                   alt='Culture'
                   width={260}
                   height={280}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover  transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
               <div
@@ -198,15 +198,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
               className='flex flex-col w-[220px] h-[293.58px] 
                  sm:w-[220px] sm:h-[293.58px] 
                  min-w-[180px] sm:min-w-[220px] 
-                 overflow-hidden hover:scale-105 transition-transform cursor-pointer'
+                 overflow-hidden  cursor-pointer'
             >
-              <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
+              <div className='w-full h-[227px] sm:h-[227px] overflow-hidden rounded-t-[17.93px] group'>
                 <Image
                   src='/Images/c4.png'
                   alt='Lifestyle'
                   width={220}
                   height={227}
-                  className='w-full h-full object-cover'
+                  className='w-full h-full object-cover  transition-transform duration-300 group-hover:scale-110'
                 />
               </div>
               <div
@@ -218,6 +218,8 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
                 Lifestyle
               </div>
             </div>
+
+
           </div>
         </div>
       </section>
