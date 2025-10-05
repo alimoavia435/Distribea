@@ -30,7 +30,7 @@ const Login = () => {
           <div className='flex flex-col items-center  max-[768px]:gap-[30px] gap-[64px]  max-[768px]:py-[70px] py-[129px]'>
             <div className='flex flex-col items-center w-full max-w-[360px]'>
               <Image
-                src='/Images/Login/logo.svg'
+                src='/Images/loginlogo.webp'
                 alt='Distribea Logo'
                 width={80}
                 height={80}

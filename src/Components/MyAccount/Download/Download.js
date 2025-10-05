@@ -132,7 +132,7 @@ const Download = () => {
       <div className='flex justify-between items-center mb-4 md:mb-8'>
         <h2
           style={{ fontFamily: 'Space Grotesk_Medium' }}
-          className='text-[#ffffff] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%]'
+          className='text-[#ffffff] text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%]'
         >
           354 Tracks found!
         </h2>
@@ -140,7 +140,7 @@ const Download = () => {
           <div className='relative flex items-center'>
             <select
               style={{ fontFamily: 'Space Grotesk_Medium' }}
-              className='appearance-none bg-transparent text-[#ffffff] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%] focus:outline-none pr-[35px]'
+              className='appearance-none bg-transparent text-[#ffffff] text-[12px] lg:text-[13px] xl:text-[14px] leading-[100%] focus:outline-none pr-[35px]'
             >
               <option value='latest' className='bg-black text-white'>
                 Latest
@@ -185,11 +185,11 @@ const Download = () => {
               <img
                 src={track.thumbnail}
                 alt={track.title}
-                className='w-[30px] h-[30px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-md object-cover'
+                className='w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] rounded-md object-cover'
               />
               <div>
                 <h3
-                  className='text-[#F9F9F9] text-[10px] sm:text-[11px] md:text-[13px] lg:text-[16px]'
+                  className='text-[#F9F9F9] text-[13px] lg:text-[16px]'
                   style={{ fontFamily: 'Space Grotesk_Medium' }}
                 >
                   {/* {track.title.length > 8

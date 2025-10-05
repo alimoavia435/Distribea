@@ -34,11 +34,11 @@ const MyAccountNavbar = () => {
           {/* Left - Logo */}
           <div className='flex items-center space-x-2'>
             <Image
-              src='/Images/Myaccount/logo.svg'
+              src='/Images/aclogo.webp'
               alt='logo'
               width={150}
               height={40}
-              className='max-[768px]:w-[120px]'
+              className='max-[768px]:w-[130px] max-[768px]:h-[37px] w-[160px] h-[44px]'
               priority
             />
           </div>
