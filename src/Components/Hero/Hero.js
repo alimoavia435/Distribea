@@ -108,7 +108,7 @@ const Hero = () => {
       {/* Right Section - Music Player */}
       {}
       <Image
-        src='/Images/hero_img.png'
+        src='/Images/hero_img.webp'
         alt='hero'
         width={512}
         height={684}

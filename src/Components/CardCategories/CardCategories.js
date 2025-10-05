@@ -1,4 +1,6 @@
 // app/components/Categories.tsx (or inside your pages folder if using /pages)
+import { useRouter } from 'next/navigation'
+import React from 'react'
 import Image from 'next/image'
 
 const categories = [
@@ -37,6 +39,7 @@ const gradients = [
 ]
 
 export default function CardCategories () {
+    const router = useRouter()
   return (
     <div className='relative overflow-hidden'>
       <img
@@ -109,6 +112,15 @@ text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px]
                  w-[100%] sm:!h-[293.58px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden !hover:scale-105 !transition-transform '
+                  onClick={() =>
+                    router.push(
+                      `/TracksDetails?title=${encodeURIComponent(
+                        cat.title
+                      )}&image=${encodeURIComponent(
+                        cat.img
+                      )}&section=Entertainment`
+                    )
+                  }
             >
               <div className='w-full h-[200px] sm:h-[227px] overflow-hidden rounded-t-[17.93px]'>
                 <Image
