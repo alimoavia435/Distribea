@@ -4,21 +4,21 @@ import React from 'react'
 import Image from 'next/image'
 
 const categories = [
-  { title: 'Gaming', img: '/Images/mine/n1.png' },
-  { title: 'Vlogs', img: '/Images/mine/n2.png' },
-  { title: 'Storytelling', img: '/Images/mine/n3.png' },
-  { title: 'Challenges', img: '/Images/mine/n4.png' },
-  { title: 'Tutorials', img: '/Images/mine/n5.png' },
-  { title: 'Hip-Hop', img: '/Images/mine/n6.png' },
-  { title: 'Trap', img: '/Images/mine/n7.png' },
-  { title: 'Techno', img: '/Images/mine/n8.png' },
-  { title: 'Jazz', img: '/Images/mine/n9.png' },
-  { title: 'Ambient', img: '/Images/mine/n10.png' },
-  { title: 'Home', img: '/Images/mine/n11.png' },
-  { title: 'Pets', img: '/Images/mine/n12.png' },
-  { title: 'Business', img: '/Images/mine/n13.png' },
-  { title: 'Fitness', img: '/Images/mine/n14.png' },
-  { title: 'Tech', img: '/Images/mine/n15.png' }
+  { title: 'Gaming', img: '/Images/mine/n1.webp' },
+  { title: 'Vlogs', img: '/Images/mine/n2.webp' },
+  { title: 'Storytelling', img: '/Images/mine/n3.webp' },
+  { title: 'Challenges', img: '/Images/mine/n4.webp' },
+  { title: 'Tutorials', img: '/Images/mine/n5.webp' },
+  { title: 'Hip-Hop', img: '/Images/mine/n6.webp' },
+  { title: 'Trap', img: '/Images/mine/n7.webp' },
+  { title: 'Techno', img: '/Images/mine/n8.webp' },
+  { title: 'Jazz', img: '/Images/mine/n9.webp' },
+  { title: 'Ambient', img: '/Images/mine/n10.webp' },
+  { title: 'Home', img: '/Images/mine/n11.webp' },
+  { title: 'Pets', img: '/Images/mine/n12.webp' },
+  { title: 'Business', img: '/Images/mine/n13.webp' },
+  { title: 'Fitness', img: '/Images/mine/n14.webp' },
+  { title: 'Tech', img: '/Images/mine/n15.webp' }
 ]
 const gradients = [
   'linear-gradient(179.71deg, rgba(42, 136, 168, 0.4) 70.23%, rgba(28, 27, 27, 0.4) 108.54%)',
