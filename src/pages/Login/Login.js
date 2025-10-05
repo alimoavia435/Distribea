@@ -114,37 +114,37 @@ const Login = () => {
                 <Image
                   src='/Images/Login/apple.svg'
                   alt='Apple'
-                  width={45}
-                  height={45}
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  width={52}
+                  height={52}
+                  className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
                 />
                 <Image
                   src='/Images/Login/cord.svg'
                   alt='Discord'
-                  width={45}
-                  height={45}
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  width={52}
+                  height={52}
+                  className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
                 />
                 <Image
                   src='/Images/Login/fb.svg'
                   alt='FB'
-                  width={45}
-                  height={45}
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  width={52}
+                  height={52}
+                  className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
                 />
                 <Image
                   src='/Images/Login/google.svg'
                   alt='G'
-                  width={45}
-                  height={45}
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  width={52}
+                  height={52}
+                  className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
                 />
                 <Image
                   src='/Images/Login/microsoft.svg'
                   alt='Microsoft'
-                  width={45}
-                  height={45}
-                  className='max-[768px]:h-[45px] max-[768px]:w-[45px]'
+                  width={52}
+                height={52}
+                  className='max-[768px]:h-[45px] max-[768px]:w-[45px] cursor-pointer'
                 />
               </div>
               {/* already  */}
