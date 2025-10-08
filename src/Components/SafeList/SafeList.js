@@ -144,13 +144,13 @@ export default function SafeList () {
     {
       key: 'tiktok',
       name: 'TikTok',
-      icon: '/Images/listicon/TikTok.png',
+      icon: '/Images/listicon/tiktok.png',
       alt: 'tiktok'
     },
     {
       key: 'instagram',
       name: 'Instagram',
-      icon: '/Images/listicon/Instagram.png',
+      icon: '/Images/listicon/instagram.png',
       alt: 'instagram'
     },
     {
@@ -162,7 +162,7 @@ export default function SafeList () {
     {
       key: 'twitch',
       name: 'Twitch',
-      icon: '/Images/listicon/Twitch.png',
+      icon: '/Images/listicon/twitch.png',
       alt: 'twitch'
     }
   ]
