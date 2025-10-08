@@ -19,7 +19,7 @@ const Pricing = () => {
             }}
             className='font-Space Grotesk_Bold 
   font-bold 
-text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] text-[22px] 
+text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]  
   leading-[110%] 
   tracking-[-1px] 
   text-center 
