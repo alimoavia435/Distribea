@@ -226,7 +226,7 @@ export default function SafeList () {
                 flex flex-col sm:flex-row items-center sm:items-center justify-between 
                 bg-[#0C0E12] 
                 rounded-[12px] 
-                p-3 sm:p-4 md:p-5 
+                p-3 sm:p-4 md:px-4 md:py-5  
                 gap-5
               '
             >
@@ -270,7 +270,7 @@ export default function SafeList () {
                   <img
                     src='/Images/listicon/edit.png'
                     alt='edit'
-                    className='w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]'
+                    className='w-[18px] h-[18px] sm:w-[18px] sm:h-[18px] min-h-[18px] min-w-[18px]'
                   />
                 </button>
                 <button
@@ -280,7 +280,7 @@ export default function SafeList () {
                   <img
                     src='/Images/listicon/trash.png'
                     alt='trash'
-                    className='w-[16px] h-[16px] sm:w-[18px] sm:h-[18px]'
+                    className='w-[18px] h-[18px] sm:w-[18px] sm:h-[18px] min-h-[18px] min-w-[18px]'
                   />
                 </button>
               </div>
@@ -297,7 +297,7 @@ export default function SafeList () {
         py-[25px] sm:pb-24 md:pt-[60px] md:pb-[160px] 
       '
     >
-      <div className='max-w-[1328px] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-8 sm:gap-y-[48px] gap-x-4 sm:gap-x-[108px]'>
+      <div className='max-w-[1328px] w-full grid grid-cols-1 lg:grid-cols-2 gap-y-8 sm:gap-y-[48px] gap-x-4  xl:gap-x-[70px] sm:gap-x-[10px]'>
         {/* Render first 4 platforms in 2x2 grid */}
         {platforms.slice(0, 4).map(renderPlatformSection)}
       </div>
