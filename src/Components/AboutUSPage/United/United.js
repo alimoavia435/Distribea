@@ -185,7 +185,7 @@ const United = () => {
         {/* .......... */}
 
 
-           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[124px]'>
+           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px]  lg:pt-[128px] '>
               <div className='mx-auto max-w-[1328px] flex flex-col gap-[60px] md:gap-46'>
                 {/* Block 1 */}
                 <div className='flex flex-col-reverse   xl:flex-row-reverse  gap-6 lg:gap-20'>
@@ -267,12 +267,12 @@ const United = () => {
                <div
   className="
     px-[25px] 
-    pt-[90px] sm:pt-[120px] md:pt-[160px] 
-    pb-[60px] sm:pb-[80px] md:pb-[124px]
+    pt-[90px] sm:pt-[120px] md:pt-[284px] 
+    pb-[60px] sm:pb-[120px] md:pb-[252px]
     flex items-center justify-center 
     bg-no-repeat bg-center bg-cover
   "
-          style={{ backgroundImage: "url('/Images/bluebrand/gradient_1x.webp')",backgroundPosition:"center" }}
+          style={{ backgroundImage: "url('/Images/bluebrand/gradient.png')",backgroundPosition:"center" }}
         >
 <div
   className="
@@ -386,7 +386,7 @@ const United = () => {
 
 
         {/* ....... */}
-           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[200px]'>
+           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px]  pb-[70px]  lg:pb-[200px]'>
   <div className='mx-auto max-w-[1328px] flex flex-col gap-[30px] md:gap-16'>
      <h2
             style={{
