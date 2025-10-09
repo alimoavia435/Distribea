@@ -2,11 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 const United = () => {
       const categories = [
-    { title: 'Marc Lefevre', name: 'CEO & Founder', img: '/Images/mine/l1.png' },
-    { title: 'Alice Tremblay', name: 'CTO & Co-Founder', img: '/Images/mine/l2.png' },
-    { title: 'Lucas Bernard', name: 'Marketing Director', img: '/Images/mine/l3.png' },
-    { title: 'Sophie Martin', name: 'Lead Designer', img: '/Images/mine/l4.png' },
-    { title: 'Julien Dubois', name: 'Product Manager', img: '/Images/mine/l5.png' },
+    { title: 'Marc Lefevre', name: 'CEO & Founder', img: '/Images/bluebrand/person1.webp' },
+    { title: 'Alice Tremblay', name: 'CTO & Co-Founder', img: '/Images/bluebrand/person2.webp' },
+    { title: 'Lucas Bernard', name: 'Marketing Director', img: '/Images/bluebrand/person3.webp' },
+    { title: 'Sophie Martin', name: 'Lead Designer',img: '/Images/bluebrand/person4.webp' },
+    { title: 'Julien Dubois', name: 'Product Manager', img: '/Images/bluebrand/person5.webp' },
   ]
   return (
     <div>
@@ -426,12 +426,12 @@ text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]
                     // background: gradients[index % gradients.length] // cycle through gradients
                     background: '#0C0E12'
                   }}
-                  className='flex !flex-col !w-auto !h-[250.58px] 
+                  className='flex !flex-col !w-auto !h-[280.58px] 
                  sm:!h-[350.38px] 
                  !min-w-[150px] sm:!min-w-[150px] 
                  !overflow-hidden px-4 pt-4  '
                 >
-               <div className='!w-full !h-[160px] sm:!h-[240px] overflow-hidden rounded-[12px] mb-2 sm:mb-6 '>
+               <div className='!w-full !h-[240px] sm:!h-[240px] overflow-hidden rounded-[12px] mb-2 sm:mb-6 '>
                     <Image
                       src={cat.img}
                       alt={cat.title}
@@ -452,7 +452,7 @@ text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]
                     style={{
                       fontFamily: 'Space Grotesk_Medium'
                     }}
-                    className='text-[#F9F9F9] opacity-70 flex-1 flex items-center   font-medium text-[11px] lg:text-[12px] mb-[24px]  '
+                    className='text-[#F9F9F9] opacity-70 flex-1 flex items-center   font-medium text-[11px] lg:text-[12px] mb-[8px] sm:mb-6  '
                   >
                     {cat.name}
                   </div>
