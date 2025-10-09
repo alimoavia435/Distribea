@@ -185,8 +185,17 @@ const United = () => {
         {/* .......... */}
 
 
-           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px]  lg:pt-[128px] '>
-              <div className='mx-auto max-w-[1328px] flex flex-col gap-[60px] md:gap-46'>
+           <section className='relative bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px]  lg:pt-[128px]  '   style={{
+         
+          }}
+       >
+   {/* Background image (absolute for precision) */}
+  <img
+    src="/Images/Creators/createleft.png"
+    alt="bg"
+    className="absolute -left-[4%] -top-[17%] w-auto max-w-none pointer-events-none select-none"
+  />
+              <div className='relative z-0 mx-auto max-w-[1328px] flex flex-col gap-[60px] md:gap-46'>
                 {/* Block 1 */}
                 <div className='flex flex-col-reverse   xl:flex-row-reverse  gap-6 lg:gap-20'>
                   <div className='flex-1 w-full max-w-[576px] mx-auto'>
@@ -198,8 +207,8 @@ const United = () => {
                       className='rounded-[12px] object-cover w-full h-auto'
                     />
                   </div>
-                  <div className='mb-[20px] md-mb-[0px] flex flex-col items-center justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
-               <div className="flex flex-col items-center justify-center gap-[12px]">
+                  <div className='mb-[20px] md-mb-[0px] flex flex-col items-start justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
+               <div className="flex flex-col !items-start justify-center gap-[12px]">
                      <p
     className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ]  tracking-[0.5px]"
     style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
@@ -226,8 +235,8 @@ const United = () => {
         
                 {/* Block 2 */}
                 <div className='flex flex-col xl:flex-row-reverse items-center gap-6 md:gap-20'>
-                    <div className='mb-[20px] md-mb-[0px] flex flex-col items-center justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
-               <div className="flex flex-col items-center justify-center gap-[12px]">
+                    <div className='mb-[20px] md-mb-[0px] flex flex-col !items-start justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
+               <div className="flex flex-col !items-start justify-center gap-[12px]">
                      <p
     className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ]  tracking-[0.5px]"
     style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
@@ -270,7 +279,8 @@ const United = () => {
     pt-[90px] sm:pt-[120px] md:pt-[284px] 
     pb-[60px] sm:pb-[120px] md:pb-[252px]
     flex items-center justify-center 
-    bg-no-repeat bg-center bg-cover
+   bg-no-repeat bg-center bg-cover
+    [@media(min-width:1440px)]:bg-contain
   "
           style={{ backgroundImage: "url('/Images/bluebrand/gradient.png')",backgroundPosition:"center" }}
         >
