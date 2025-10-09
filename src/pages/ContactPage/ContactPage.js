@@ -1,3 +1,4 @@
+import CustomEnterprise from '@/Components/ContactusPage/CustomEnterprise/CustomEnterprise'
 import GetIntouch from '@/Components/ContactusPage/GetIntouch/GetIntouch'
 import Footer from '@/Components/Footer/Footer'
 import Navbar from '@/Components/Navbar/Navbar'
@@ -9,6 +10,7 @@ const ContactPage = () => {
     <div>
       <Navbar />
       <GetIntouch/>
+      <CustomEnterprise/>
       <div className='pt-[50px] mx-auto max-w-[1364px] flex flex-wrap justify-center items-center gap-3  md:gap-8 mb-[30px] px-4'>
         {[1, 2, 3, 4, 5, 6, 7].map(num => (
           <div
