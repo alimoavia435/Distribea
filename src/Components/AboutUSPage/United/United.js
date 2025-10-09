@@ -1,6 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 const United = () => {
+      const categories = [
+    { title: 'Marc Lefevre', name: 'CEO & Founder', img: '/Images/mine/l1.png' },
+    { title: 'Alice Tremblay', name: 'CTO & Co-Founder', img: '/Images/mine/l2.png' },
+    { title: 'Lucas Bernard', name: 'Marketing Director', img: '/Images/mine/l3.png' },
+    { title: 'Sophie Martin', name: 'Lead Designer', img: '/Images/mine/l4.png' },
+    { title: 'Julien Dubois', name: 'Product Manager', img: '/Images/mine/l5.png' },
+  ]
   return (
     <div>
     <div className='py-[50px] md:py-[80px] lg:py-[100px] xl:py-[96px]  flex flex-col items-center gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[820px] mx-auto'>
@@ -396,9 +403,64 @@ text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]
           >
             Our Teams
           </h2>
+{/* .... */}
 
+     {/* Grid */}
+            <div
+              className='
+  !grid 
+  grid-cols-1              /* default => <360px */
+  min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
+  md:!grid-cols-3
+  lg:!grid-cols-4
+  xl:!grid-cols-5
+  !gap-2 lg:!gap-5 
+  max-w-[1328px] mx-auto w-full
+'
+            >
+              {categories?.map((cat, index) => (
+                <div
+                  key={index}
+                  style={{
+                    borderRadius: '24px',
+                    // background: gradients[index % gradients.length] // cycle through gradients
+                    background: '#0C0E12'
+                  }}
+                  className='flex !flex-col !w-auto !h-[250.58px] 
+                 sm:!h-[350.38px] 
+                 !min-w-[150px] sm:!min-w-[150px] 
+                 !overflow-hidden px-4 pt-4  '
+                >
+               <div className='!w-full !h-[160px] sm:!h-[240px] overflow-hidden rounded-[12px] mb-2 sm:mb-6 '>
+                    <Image
+                      src={cat.img}
+                      alt={cat.title}
+                      width={216}
+                      height={240}
+                      className='w-full h-full object-cover rounded-[12px]'
+                    />
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium'
+                    }}
+                    className='!flex-1 !flex !items-center   !font-medium !text-[18px] lg:!text-[20px] !pb-[2px] sm:pb-6  '
+                  >
+                    {cat.title}
+                  </div>
+                  <div
+                    style={{
+                      fontFamily: 'Space Grotesk_Medium'
+                    }}
+                    className='text-[#F9F9F9] opacity-70 flex-1 flex items-center   font-medium text-[11px] lg:text-[12px] mb-[24px]  '
+                  >
+                    {cat.name}
+                  </div>
+                </div>
+              ))}
+            </div>
 
-
+{/* .... */}
   </div>
 
            </section>
