@@ -112,7 +112,69 @@ const United = () => {
 
 </div>
 {/* ....... */}
+       <div
+          className='px-[25px] pt-[90px] sm:pt-[120px] md:pt-[160px] pb-[60px] sm:pb-[80px] md:pb-[96px]   flex flex-col items-center gap-[48px] bg-no-repeat max-[768px]:pt-[90px] max-[768px]:pb-[60px] max-[768px]:gap-[28px]'
+          style={{ backgroundImage: "url('/Images/shadevery.png')",backgroundPosition:"center" }}
+        >
+       <Image 
+  src="/Images/bluebrand/circle.webp" 
+  alt="Distribea Logo" 
+  width={336}
+  height={340}
+  className="
+    w-[180px] sm:w-[240px] md:w-[300px] lg:w-[336px] 
+    h-auto 
+    object-contain
+  "
+  priority
+/>
+
     
+          <h2
+            style={{
+              fontFamily: 'Space Grotesk_Bold',
+              textTransform: 'capitalize'
+            }}
+            className='font-Space Grotesk_Bold 
+      font-bold 
+    text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px] 
+      leading-[110%] 
+      tracking-[-1px] 
+      text-center 
+      text-[#F7F7F7] 
+      mb-5 '
+          >
+            Empowering Creators, <br /> Everywhere
+          </h2>
+<div
+  className="
+    flex flex-col items-center justify-center 
+    w-full max-w-[834px]
+    gap-[16px] sm:gap-[24px] md:gap-[40px]
+  "
+>
+  {/* Your content here */}
+   <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px]"
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+    We are more than a music distribution company — we are a creative partner. Our mission is to provide creators with high-quality, accessible music that inspires, elevates, and connects audiences worldwide. 
+  </p>
+   <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px]"
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+    Whether you’re sharing on YouTube, Instagram, TikTok, or producing professional projects, our platform ensures you have the right soundtrack to amplify your vision.
+  </p>
+</div>
+
+
+
+
+
+        </div>
     </div>
   )
 }
