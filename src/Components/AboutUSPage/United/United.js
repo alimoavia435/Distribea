@@ -175,6 +175,86 @@ const United = () => {
 
 
         </div>
+        {/* .......... */}
+
+
+           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[160px]'>
+              <div className='mx-auto max-w-[1328px] flex flex-col gap-[60px] md:gap-46'>
+                {/* Block 1 */}
+                <div className='flex flex-col-reverse   xl:flex-row-reverse  gap-6 lg:gap-20'>
+                  <div className='flex-1 w-full max-w-[576px] mx-auto'>
+                    <Image
+                      src='/Images/bluebrand/girl1.webp'
+                      alt='Handshake'
+                      width={576}
+                      height={512}
+                      className='rounded-[12px] object-cover w-full h-auto'
+                    />
+                  </div>
+                  <div className='mb-[20px] md-mb-[0px] flex flex-col items-center justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
+               <div className="flex flex-col items-center justify-center gap-[12px]">
+                     <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ]  tracking-[0.5px]"
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+    Our Mission
+  </p>
+                    <h2
+                      style={{ fontFamily: 'Space Grotesk_Bold' }}
+                      className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-snug sm:leading-snug md:leading-[44px] text-[#F7F7F7] tracking-[-0.02em] '
+                    >
+                      Empower Creators <br/> efficiently
+                    </h2>
+                    </div>
+                    <p
+                      className='mt-4 text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7  md:text-left'
+                      style={{ fontFamily: 'Space Grotesk' }}
+                    >
+                    Our mission is to empower creators by giving them unlimited access to high-quality, royalty-free music that elevates their work. We believe that every idea deserves the right soundtrack, whether it’s a short social video, a professional production, or a global campaign. By simplifying access to inspiring music, we help creators save time, focus on their craft, and connect with their audiences in meaningful ways.
+                    </p>
+             
+                  </div>
+                </div>
+        
+                {/* Block 2 */}
+                <div className='flex flex-col xl:flex-row-reverse items-center gap-6 md:gap-20'>
+                    <div className='mb-[20px] md-mb-[0px] flex flex-col items-center justify-center space-y-[0px] md:space-y-[40px]  w-full max-w-[650px] mx-auto'>
+               <div className="flex flex-col items-center justify-center gap-[12px]">
+                     <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ]  tracking-[0.5px]"
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+    Our Vision
+  </p>
+                    <h2
+                      style={{ fontFamily: 'Space Grotesk_Bold' }}
+                      className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-snug sm:leading-snug md:leading-[44px] text-[#F7F7F7] tracking-[-0.02em] '
+                    >
+                      Impact Through Music
+                    </h2>
+                    </div>
+                    <p
+                      className='mt-4 text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7  md:text-left'
+                      style={{ fontFamily: 'Space Grotesk' }}
+                    >
+                  Our vision is a world where music is not a barrier but a bridge. We aim to create a global platform where creators from every background can find the sounds they need to share their stories, inspire communities, and leave a lasting mark. By making music accessible, versatile, and tailored to modern creators, we aspire to shape a future where creativity knows no borders.</p>
+             
+                  </div>
+                  <div className='flex-1 w-full max-w-[576px] mx-auto'>
+                    <Image
+                   src='/Images/bluebrand/girl2.webp'
+                      alt='Handshake'
+                      width={576}
+                      height={512}
+                      className='rounded-[12px] object-cover w-full h-auto'
+                    />
+                  </div>
+                </div>
+    
+              </div>
+            </section>
     </div>
   )
 }
