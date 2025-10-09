@@ -376,6 +376,33 @@ const United = () => {
 </div>
 </div>
         </div>
+
+
+        {/* ....... */}
+           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[200px]'>
+  <div className='mx-auto max-w-[1328px] flex flex-col gap-[30px] md:gap-16'>
+     <h2
+            style={{
+              fontFamily: 'Space Grotesk_Bold',
+              textTransform: 'capitalize'
+            }}
+            className='font-Space Grotesk_Bold 
+  font-bold 
+text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]  
+  leading-[110%] 
+  tracking-[-1px] 
+  text-center 
+  text-[#F7F7F7] m-0'
+          >
+            Our Teams
+          </h2>
+
+
+
+  </div>
+
+           </section>
+
     </div>
   )
 }
