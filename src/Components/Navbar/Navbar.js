@@ -23,15 +23,18 @@ const Navbar = () => {
 
   // Hybrid navigation (scroll if on home, else push with hash)
   const handleNavClick = (sectionId) => {
-    if (pathname === '/') {
-      const element = document.getElementById(sectionId)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
-    } else {
-      router.push(`/#${sectionId}`)
+    if(sectionId==="pricing"){
+      router.push(`/Pricing`)
     }
-    setDrawerOpen(false)
+    // if (pathname === '/') {
+    //   const element = document.getElementById(sectionId)
+    //   if (element) {
+    //     element.scrollIntoView({ behavior: 'smooth' })
+    //   }
+    // } else {
+    //   router.push(`/#${sectionId}`)
+    // }
+    // setDrawerOpen(false)
   }
 
   const navLinks = [
