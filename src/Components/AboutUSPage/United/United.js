@@ -178,7 +178,7 @@ const United = () => {
         {/* .......... */}
 
 
-           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[160px]'>
+           <section className='bg-no-repeat text-white px-4 sm:px-6 lg:px-[56px] pt-[90px] pb-[70px] lg:pt-[128px] lg:pb-[124px]'>
               <div className='mx-auto max-w-[1328px] flex flex-col gap-[60px] md:gap-46'>
                 {/* Block 1 */}
                 <div className='flex flex-col-reverse   xl:flex-row-reverse  gap-6 lg:gap-20'>
@@ -255,6 +255,127 @@ const United = () => {
     
               </div>
             </section>
+
+            {/* ........ */}
+               <div
+  className="
+    px-[25px] 
+    pt-[90px] sm:pt-[120px] md:pt-[160px] 
+    pb-[60px] sm:pb-[80px] md:pb-[124px]
+    flex items-center justify-center 
+    bg-no-repeat bg-center bg-cover
+  "
+          style={{ backgroundImage: "url('/Images/bluebrand/gradient_1x.webp')",backgroundPosition:"center" }}
+        >
+<div
+  className="
+    flex flex-wrap justify-center items-center
+    w-full max-w-[1280px] mx-auto
+    gap-[24px] sm:gap-[32px]
+  "
+>
+    {/* .....div 1 */}
+  <div
+  className="
+    flex flex-col items-center justify-center 
+    gap-[12px] 
+    w-[240px] h-[112px] min-w-[240px]
+  "
+>
+  {/* Your content here */}
+     <h2
+            style={{
+              fontFamily: 'Space Grotesk_Medium',
+              textTransform: 'capitalize'
+            }}
+            className='Space Grotesk_Medium
+      font-bold 
+    text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px] 
+      leading-[110%] 
+      tracking-[-1px] 
+      text-center 
+      text-[#F7F7F7]  '
+          >
+            +1M
+          </h2>
+           <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px] "
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+   Track Availlable
+  </p>
+</div>
+    {/* .....div 2 */}
+ <div
+  className="
+    flex flex-col items-center justify-center 
+    gap-[12px] 
+    w-[240px] h-[112px] min-w-[240px]
+  "
+>
+  {/* Your content here */}
+     <h2
+            style={{
+              fontFamily: 'Space Grotesk_Medium',
+              textTransform: 'capitalize'
+            }}
+            className='Space Grotesk_Medium
+      font-bold 
+    text-[31px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px] 
+      leading-[110%] 
+      tracking-[-1px] 
+      text-center 
+      text-[#F7F7F7]  '
+          >
+           +217
+          </h2>
+           <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px] "
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+   Creators Subscribed
+  </p>
+</div>
+  {/* .....div 3 */}
+   <div
+  className="
+    flex flex-col items-center justify-center 
+    gap-[12px] 
+    w-[240px] h-[112px] min-w-[240px]
+  "
+>
+  {/* Your content here */}
+   <Image src="/Images/bluebrand/8.svg" alt='Distribea Logo' width={56} height={56} className='w-[56px] h-[56px] ' />
+           <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px] "
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+   Unlimited Downloads
+  </p>
+</div>
+ {/* .....div 4 */}
+   <div
+  className="
+    flex flex-col items-center justify-center 
+    gap-[12px] 
+    w-[240px] h-[112px] min-w-[240px]
+  "
+>
+  {/* Your content here */}
+   <Image src="/Images/bluebrand/8.svg" alt='Distribea Logo' width={56} height={56} className='w-[56px] h-[56px] ' />
+           <p
+    className="text-[14px] lg:text-[16px] xl:text-[18px] leading-[140%] ] text-center tracking-[0.5px] "
+    style={{ fontFamily: 'Space Grotesk_Medium' , color: 'var(--colors-text-text-tertiary-600, #94979C)' }}
+
+  >
+   Lifetime License
+  </p>
+</div>
+</div>
+        </div>
     </div>
   )
 }
