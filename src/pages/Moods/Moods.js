@@ -412,7 +412,7 @@ const Lifestyle = () => {
               <div className='h-[48px]' />
 
               {/* Buttons */}
-              <div className='flex gap-3 '>
+             <div className='flex gap-3  max-[400px]:flex-col'>
                 <button
                   style={{
                     fontFamily: 'Space Grotesk_Bold',

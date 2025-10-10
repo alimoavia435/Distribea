@@ -192,7 +192,12 @@ export default function Profile () {
 
       {/* Edit Modal */}
       {showEditModal && (
-        <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
+        <div
+         style={{
+            backdropFilter: 'blur(5px)',
+            WebkitBackdropFilter:'blur(5px)'
+          }}
+        className='fixed inset-0 bg-opacity-50 flex items-center justify-center z-50'>
           <div className='bg-[#1a1a1a] rounded-[12px] p-6 w-full max-w-md mx-4'>
             <h3
               className='text-white text-xl font-medium mb-4'
