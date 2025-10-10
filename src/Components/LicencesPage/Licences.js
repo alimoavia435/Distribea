@@ -226,6 +226,106 @@ Distribea is the ideal solution for independent creators, businesses, and agenci
 
     </div>
 </div>
+{/* ..... */}
+
+<section
+  className="
+    text-white 
+    px-4 sm:px-6 lg:px-[56px] 
+    pt-1 sm:pt-36 lg:pt-[128px] 
+    pb-10 sm:pb-28 lg:pb-[96px]
+  "
+>
+  <div className="mx-auto max-w-[1328px] flex flex-col xl:flex-row justify-between  gap-[0px] md:gap-[20px] lg:gap-[100px]  [@media(max-width:1280px)]:items-center ">
+
+
+
+    {/* Heading and Image */}
+    <div className="flex-1 w-full max-w-[576px] flex flex-col items-center xl:items-start">
+      <h2
+        style={{ fontFamily: "Space Grotesk_Bold" }}
+        className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-snug sm:leading-snug md:leading-[44px] text-[#F7F7F7] tracking-[-0.02em]"
+      >
+        <span
+          style={{
+            background: "linear-gradient(90deg, #175CD3 0%, #366FD0 100%)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          Key Benefits 
+        </span> of Distribea’s Global License
+      </h2>
+
+      <Image
+        src="/Images/bluebrand/loading.svg"
+        alt="Handshake"
+        width={92}
+        height={48}
+        className="w-[92px] h-auto mt-8"
+      />
+    </div>
+    {/* Text and Buttons */}
+    <div className="mt-[30px]  md:mt-[50px] lg:mt-[90px]      mb-[20px] md:mb-0 flex flex-col items-start justify-end space-y-[0px] md:space-y-[40px] w-full max-w-[525px]">
+      
+      <div className="flex flex-col items-start justify-center gap-[12px]">
+        {/* Optional subheading */}
+      </div>
+
+      <div className="mt-4 flex flex-col gap-4">
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7 md:text-left"
+          style={{ fontFamily: "Space Grotesk" }}
+        >
+          One license, unlimited commercial use
+        </p>
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7 md:text-left"
+          style={{ fontFamily: "Space Grotesk" }}
+        >
+          Fully royalty-free, forever.
+        </p>
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7 md:text-left"
+          style={{ fontFamily: "Space Grotesk" }}
+        >
+          Works worldwide, across all platforms
+        </p>
+        <p
+          className="text-sm sm:text-base md:text-lg lg:text-lg text-[#F9F9F9] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7 md:text-left"
+          style={{ fontFamily: "Space Grotesk" }}
+        >
+          Secures your revenue against copyright strikes.
+        </p>
+      </div>
+
+      <div className="mt-5 flex items-center justify-center gap-3 w-full max-w-[344px] flex-wrap [@media(min-width:401px)]:flex-nowrap">
+        <button
+          className="w-full md:max-w-[139px] h-[56px] text-white font-bold px-[24px] py-[16px] rounded-full relative"
+          style={{
+            fontFamily: "Space Grotesk_Bold",
+            background:
+              "linear-gradient(#13171E, #13171E) padding-box, linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%) border-box",
+            border: "2px solid transparent",
+            borderRadius: "999px",
+            boxSizing: "border-box",
+          }}
+        >
+          Learn more
+        </button>
+
+        <button
+          className="w-full md:w-[193px] h-[56px] rounded-full bg-[#175CD3] text-white font-bold hover:bg-[#154ab8]"
+          style={{ fontFamily: "Space Grotesk_Bold" }}
+        >
+          Start for Free now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
