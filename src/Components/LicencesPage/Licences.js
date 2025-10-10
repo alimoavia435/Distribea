@@ -187,6 +187,45 @@ const LicencesPage = () => {
           </div>
         </div>
       </section>
+
+      {/* .... */}
+      <div className="
+  flex flex-col items-center justify-center w-full
+  px-4 sm:px-6 md:px-[34px] 
+  pt-[46px] sm:pt-40 md:pt-[216px] 
+  pb-24 sm:pb-28 md:pb-[120px]
+">
+
+    <div className="flex flex-col items-center justify-center w-full max-w-[710px] gap-8 mx-auto">
+          <Image
+    src="/Images/bluebrand/tick.webp"
+    alt="YourImage"
+    width={152}
+    height={92}
+    className="rounded-[120px] object-cover sm:w-[120px] sm:h-[72px] md:w-[152px] md:h-[92px]"
+  />
+
+ <h2
+                  style={{ fontFamily: "Space Grotesk_Bold" }}
+                  className="font-bold text-center text-2xl sm:text-3xl md:text-4xl lg:text-[36px] leading-snug sm:leading-snug md:leading-[44px] text-[#F7F7F7] tracking-[-0.02em] "
+                >
+                  Guaranteed Legal Protection
+                </h2>
+ <p
+                  className="text-sm text-center sm:text-base md:text-lg lg:text-lg text-[#FFFFFF] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7  "
+                  style={{ fontFamily: "Space Grotesk" }}
+                >
+                 Your content remains visible worldwide, without restrictions or legal uncertainty. You keep <span className="text-[#CECFD2] "  style={{ fontFamily: "Space Grotesk_Bold" }}>100% of your ad and sponsorship revenue</span> and publish with confidence across all major platforms. 
+                </p>
+                 <p
+                  className="text-sm text-center sm:text-base md:text-lg lg:text-lg text-[#FFFFFF] leading-relaxed sm:leading-relaxed md:leading-7 lg:leading-7  "
+                  style={{ fontFamily: "Space Grotesk" }}
+                >
+Distribea is the ideal solution for independent creators, businesses, and agencies who want to <span className="text-[#CECFD2] "  style={{ fontFamily: "Space Grotesk_Bold" }}>monetize videos without copyright risks.</span>
+                </p>
+
+    </div>
+</div>
     </div>
   );
 };
