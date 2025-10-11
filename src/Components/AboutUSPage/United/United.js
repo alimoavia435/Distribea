@@ -450,6 +450,8 @@ text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]
                       className='w-full h-full object-cover rounded-[12px]'
                     />
                   </div>
+         
+
                   <div
                     style={{
                       fontFamily: 'Space Grotesk_Medium'
@@ -466,6 +468,8 @@ text-[32px] sm:text-[35px] md:text-[40px] lg:text-[48px] xl:text-[56px]
                   >
                     {cat.name}
                   </div>
+
+        
                 </div>
               ))}
             </div>

@@ -3,10 +3,10 @@ import Image from "next/image";
 const PublicPlaylist = () => {
 
    const categories = [
-    { title: 'Dance with Me', name: '39 Tracks', img: '/Images/mine/lll1.png' },
-    { title: 'Elysian Vibes', name: '12 Tracks', img: '/Images/mine/lll2.png' },
-    { title: 'Mindful Clouds', name: '16 Tracks', img: '/Images/mine/lll3.png' },
-    { title: 'Adventure Awaits', name: '48 Tracks', img: '/Images/mine/lll4.png' },
+    { title: 'RapCaviar', name: 'Where top hits meet underground vibes — pure rap energy', img: '/Images/mine/lll1.png' },
+    { title: 'Mint', name: 'A refreshing journey through playful rhythms and bright melodies.', img: '/Images/mine/lll2.png' },
+    { title: 'Like A Queen', name: 'Hard Life tells stories of pain, hustle, and resilience.”', img: '/Images/mine/lll3.png' },
+    { title: 'Lost', name: 'Hard Life tells stories of pain, hustle, and resilience.”', img: '/Images/mine/lll4.png' },
   
   ]
     const categories1 = [
@@ -114,7 +114,7 @@ const PublicPlaylist = () => {
        min-[360px]:!grid-cols-2 /* >=360px => 2 cards */
        md:!grid-cols-3
        lg:!grid-cols-4
-       xl:!grid-cols-5
+       xl:!grid-cols-4
        !gap-2 lg:!gap-6 
        max-w-[1210px] mx-auto w-full
      '
@@ -127,12 +127,12 @@ const PublicPlaylist = () => {
                          // background: gradients[index % gradients.length] // cycle through gradients
                          background: '#1C1B1B'
                        }}
-                       className='flex !flex-col !w-auto !h-[250.58px] 
-                      w-[100%] sm:!h-[303.38px] 
-                      !min-w-[150px] sm:!min-w-[150px] 
+                       className='flex !flex-col !w-auto !h-[300.58px] 
+                      w-[100%] sm:!h-[458.38px] 
+                      !min-w-[150px] sm:!min-w-[287px] 
                       !overflow-hidden !hover:scale-105 !transition-transform cursor-pointer'
                      >
-                       <div className='w-full h-[200px] sm:h-[220px] overflow-hidden rounded-t-[17.93px]'>
+                       <div className='w-full h-[200px] sm:h-[287px] overflow-hidden rounded-t-[17.93px]'>
                          <Image
                            src={cat.img}
                            alt={cat.title}
@@ -145,7 +145,7 @@ const PublicPlaylist = () => {
                          style={{
                            fontFamily: 'Space Grotesk_Medium'
                          }}
-                         className='flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px] pt-[5px]'
+                         className='flex-1 flex items-center   font-medium text-[18px] lg:text-[20px] pt-[5px]'
                        >
                          {cat.title}
                        </div>
@@ -153,7 +153,7 @@ const PublicPlaylist = () => {
                          style={{
                            fontFamily: 'Space Grotesk_Medium'
                          }}
-                         className='text-[#F9F9F9] opacity-70 flex-1 flex items-center justify-center text-center font-medium text-[11px] lg:text-[12px] pb-[5px]'
+                         className='text-[#F9F9F9] opacity-70 flex-1 flex items-center   font-medium text-[12px] lg:text-[14px] pb-[5px]'
                        >
                          {cat.name}
                        </div>
