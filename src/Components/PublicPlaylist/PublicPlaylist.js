@@ -5,14 +5,14 @@ const PublicPlaylist = () => {
     {
       title: "RapCaviar",
       name: "Where top hits meet underground vibes — pure rap energy",
-      img: "/Images/mine/lll1.png",
+      img: "/Images/bluebrand/list1.webp",
       track: "38 Tracks",
       play: "39M Plays",
     },
     {
       title: "Mint",
       name: "A refreshing journey through playful rhythms and bright melodies.",
-      img: "/Images/mine/lll2.png",
+       img: "/Images/bluebrand/list2.webp",
             track: "19 Tracks",
       play: "25M Plays",
 
@@ -20,95 +20,101 @@ const PublicPlaylist = () => {
     {
       title: "Like A Queen",
       name: "Hard Life tells stories of pain, hustle, and resilience.”",
-      img: "/Images/mine/lll3.png",
+   img: "/Images/bluebrand/list3.webp",
             track: "15 Tracks",
       play: "15M Plays",
     },
     {
       title: "Lost",
       name: "Hard Life tells stories of pain, hustle, and resilience.”",
-      img: "/Images/mine/lll4.png",
+    img: "/Images/bluebrand/list4.webp",
             track: "38 Tracks",
       play: "3M Plays",
     },
   ];
   const categories1 = [
-    { title: "Dance with Me", name: "39 Tracks", img: "/Images/mine/lll1.png" },
-    { title: "Elysian Vibes", name: "12 Tracks", img: "/Images/mine/lll2.png" },
+    { title: "Dance with Me", name: "39 Tracks",    img: "/Images/bluebrand/list5.webp",},
+    { title: "Elysian Vibes", name: "12 Tracks",    img: "/Images/bluebrand/list6.webp", },
     {
       title: "Mindful Clouds",
       name: "16 Tracks",
-      img: "/Images/mine/lll3.png",
+       img: "/Images/bluebrand/list7.webp",
     },
     {
       title: "Adventure Awaits",
       name: "48 Tracks",
-      img: "/Images/mine/lll4.png",
+      img: "/Images/bluebrand/list8.webp",
     },
     {
       title: "Sunny DayDreams",
       name: "44 Tracks",
-      img: "/Images/mine/lll5.png",
+         img: "/Images/bluebrand/list9.webp",
     },
   ];
   const categories2 = [
-    { title: "Dance with Me", name: "39 Tracks", img: "/Images/mine/lll1.png" },
-    { title: "Elysian Vibes", name: "12 Tracks", img: "/Images/mine/lll2.png" },
+    { title: "Chill Pop Beats", name: "12 Tracks",    img: "/Images/bluebrand/list10.webp", },
+    { title: "Relaxing Jazz Vibes", name: "16 Tracks",    img: "/Images/bluebrand/list11.webp",},
     {
-      title: "Mindful Clouds",
-      name: "16 Tracks",
-      img: "/Images/mine/lll3.png",
+      title: "Epic Adventure Tunes",
+      name: "46 Tracks",
+        img: "/Images/bluebrand/list12.webp",
     },
     {
-      title: "Adventure Awaits",
+      title: "Hi",
       name: "48 Tracks",
-      img: "/Images/mine/lll4.png",
+       img: "/Images/bluebrand/list13.webp",
     },
     {
-      title: "Sunny DayDreams",
-      name: "44 Tracks",
-      img: "/Images/mine/lll5.png",
+      title: "Feel-Good Dance Hits",
+      name: "29 Tracks",
+       img: "/Images/bluebrand/list14.webp",
     },
   ];
   const categories3 = [
-    { title: "Dance with Me", name: "39 Tracks", img: "/Images/mine/lll1.png" },
-    { title: "Elysian Vibes", name: "12 Tracks", img: "/Images/mine/lll2.png" },
+    { title: "Jazz for Unwinding", name: "16 Tracks",    img: "/Images/bluebrand/list15.webp", },
+    { title: "Life's Highlights", name: "12 Tracks",    img: "/Images/bluebrand/list16.webp", },
     {
-      title: "Mindful Clouds",
-      name: "16 Tracks",
-      img: "/Images/mine/lll3.png",
-    },
-    {
-      title: "Adventure Awaits",
+      title: "Tunes for Epic Journe..",
       name: "48 Tracks",
-      img: "/Images/mine/lll4.png",
+      img: "/Images/bluebrand/list17.webp",
     },
     {
-      title: "Sunny DayDreams",
+      title: "Serene Nights",
       name: "44 Tracks",
-      img: "/Images/mine/lll5.png",
+   img: "/Images/bluebrand/list18.webp",
+    },
+    {
+      title: "Feel-Good Dance Trac..",
+      name: "39 Tracks",
+        img: "/Images/bluebrand/list19.webp",
     },
   ];
   const categories4 = [
-    { title: "Dance with Me", name: "39 Tracks", img: "/Images/mine/lll1.png" },
-    { title: "Elysian Vibes", name: "12 Tracks", img: "/Images/mine/lll2.png" },
+    { title: "Life's Highlights", name: "39 Tracks",   img: "/Images/bluebrand/list20.webp",},
+    { title: "Jazz for Unwinding", name: "12 Tracks",    img: "/Images/bluebrand/list21.webp", },
     {
-      title: "Mindful Clouds",
+      title: "Tunes for Epic Journe..",
       name: "16 Tracks",
-      img: "/Images/mine/lll3.png",
+   img: "/Images/bluebrand/list22.webp",
     },
     {
-      title: "Adventure Awaits",
+      title: "Serene Nights",
       name: "48 Tracks",
-      img: "/Images/mine/lll4.png",
+        img: "/Images/bluebrand/list23.webp",
     },
     {
-      title: "Sunny DayDreams",
+      title: "Feel-Good Dance Trac..",
       name: "44 Tracks",
-      img: "/Images/mine/lll5.png",
+       img: "/Images/bluebrand/list24.webp",
     },
   ];
-
+const gradients = [
+  ' linear-gradient(180deg, #B04987 0%, #6136A1 100%)',
+  'linear-gradient(180deg, #2DD83D 0%, #187220 100%)',
+  'linear-gradient(180deg, #D9BA3A 0%, #9D841C 100%)',
+  'linear-gradient(180deg, #FF6138 0%, #993A22 100%)',
+ 
+]
   return (
     <div>
       <div className="py-[50px] md:py-[80px] lg:py-[100px] xl:py-[128px]  flex flex-col items-center gap-[40] lg:gap-[60] xl:gap-[80px] max-w-[768px] mx-auto">
@@ -195,8 +201,7 @@ const PublicPlaylist = () => {
               key={index}
               style={{
                 borderRadius: "17.93px",
-                // background: gradients[index % gradients.length] // cycle through gradients
-                background: "#1C1B1B",
+                background: gradients[index % gradients.length] 
               }}
               className="flex !flex-col !w-auto !h-[300.58px] 
                       w-[100%] sm:!h-[458.38px] 
@@ -217,14 +222,14 @@ const PublicPlaylist = () => {
                 <div>
                   <div
                     style={{ fontFamily: "Space Grotesk_Medium" }}
-                    className="flex-1 flex items-center font-medium text-[18px] lg:text-[20px] pb-[2px] sm:pb-[8.83px]"
+                    className="flex-1 flex items-center font-medium text-[18px] lg:text-[18px] pb-[2px] sm:pb-[8.83px]"
                   >
                     {cat.title}
                   </div>
 
                   <div
                     style={{ fontFamily: "Space Grotesk_Medium" }}
-                    className="text-[#F9F9F9] opacity-70 flex-1 flex items-center font-medium text-[11px] lg:text-[12px] "
+                    className="text-[#F9F9F9] opacity-70 flex-1 flex items-center font-medium text-[11px] lg:text-[14px] "
                   >
                     {cat.name}
                   </div>
@@ -354,7 +359,7 @@ const PublicPlaylist = () => {
                 style={{
                   fontFamily: "Space Grotesk_Medium",
                 }}
-                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px] pt-[5px]"
+                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[18px] pt-[5px]"
               >
                 {cat.title}
               </div>
@@ -444,7 +449,7 @@ const PublicPlaylist = () => {
                 style={{
                   fontFamily: "Space Grotesk_Medium",
                 }}
-                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px] pt-[5px]"
+                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[18px] pt-[5px]"
               >
                 {cat.title}
               </div>
@@ -534,7 +539,7 @@ const PublicPlaylist = () => {
                 style={{
                   fontFamily: "Space Grotesk_Medium",
                 }}
-                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px] pt-[5px]"
+                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[18px] pt-[5px]"
               >
                 {cat.title}
               </div>
@@ -624,7 +629,7 @@ const PublicPlaylist = () => {
                 style={{
                   fontFamily: "Space Grotesk_Medium",
                 }}
-                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[20px] pt-[5px]"
+                className="flex-1 flex items-center justify-center text-center font-medium text-[18px] lg:text-[18px] pt-[5px]"
               >
                 {cat.title}
               </div>
@@ -652,7 +657,7 @@ const PublicPlaylist = () => {
         <div
           className="relative w-full max-w-[1328px] bg-cover bg-center rounded-[32px] overflow-hidden"
           style={{
-            backgroundImage: "url('/Images/mine/s3.png')", // replace with your image
+            backgroundImage: "url('/Images/bluebrand/list25.webp')", // replace with your image
           }}
         >
           {/* Overlay for readability */}
